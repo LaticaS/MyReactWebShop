@@ -1,6 +1,8 @@
 function Header(){
     return(
-        <div>Header</div>
+        <div>Header
+            <h1>Hello WebShop2</h1>
+        </div>
     )
 }
 export {Header}
