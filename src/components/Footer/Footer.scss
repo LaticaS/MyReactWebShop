@@ -1,0 +1,13 @@
+                
+        footer {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+            background-color: white; color: crimson; 
+            font-family: Verdana; font-size:small; text-align: center;}
+        section {width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; flex: 1 1 auto;}
+        .div-foot {flex-wrap: wrap; width: 23%}   
+        .div-foot:nth-of-type(4) {flex-grow: 1.5;}    
+        .LaticaS {flex-wrap: wrap; width:100%; background-color: crimson; color: white;}
+        
+                       
+        ul {list-style-type: none;}
+        li a {color: crimson; text-decoration: none;}
+        li a:hover {text-decoration: underline; color: darkslategrey;}

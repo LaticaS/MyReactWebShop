@@ -6,8 +6,7 @@ import { Header } from './components/Header/Header.jsx';
 import { MainComponent } from './components/MainComponent/MainComponent.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
 
-function App() {
-  const [count, setCount] = useState(0)
+function App() { 
 
   return (
     <>    
