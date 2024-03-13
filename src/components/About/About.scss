@@ -1,0 +1,20 @@
+
+        section {position: relative; top: 0%; left: 10%;}
+        p, li {line-height: 1.5;}
+
+        #figure-CEO {float: right; width: 40%; shape-outside: circle(20%);}
+        #fotka-CEO {transition-property: width height;
+            transition-duration: 2s; transition-timing-function: ease;
+            max-width: 100%; min-width: 50%;}
+        #fotka-CEO:hover {width: 59%; height: 59%; }
+        #fotka-tim {padding: 1vw; transition-property: width height; transition-duration: 2s; transition-timing-function: ease;} 
+        #fotka-tim:hover {width: 60%; height: 60%;} 
+        figcaption {color: crimson;}
+        p::first-letter {font-size: 130%; color: crimson; font-weight: bold;}  
+        
+        #tablica-podaci {width: 70%; padding: 1rem; position: relative; left: 15%;}
+        #tr-tablica {line-height: 2.5;}
+        #td-tablica {border-bottom: 1px solid crimson; color: darkslategray; text-align: left;}
+        #td-tablica:first-of-type {width: 30%; background-color: beige;}
+        
+        

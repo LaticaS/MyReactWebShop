@@ -4,17 +4,19 @@ function Header() {
     return(
         <div>                      
         <header>            
-                <section class="head1">                                    
+                <section class="head1">                 
+                      {/**                            
                 <div class="div-trazilica">
-                    {/**
+                    
                     <form action="action/page">
                       <input type="text" name="search" placeholder="Pretraži shop" id="input-header-pretrazi">                                       
-                    </form>   
-                    <div id="div-ikonica-search">
-                    <img src="../images/search-svgrepo-com.svg" alt="Traži" title="Traži" width="30px" height="30px" id="search"> 
-                    </div>
-                    */}
+                    </form>
+                     <div id="div-ikonica-search">
+                    <img src=" " alt="Traži" title="Traži" width="30px" id="search" /> 
+                    </div>   
+                       
                 </div>
+                */} 
                 <div>
                     {/**
                     <a href="../cart.html" target="_parent"><img src="../images/cart-3-svgrepo-com.svg" alt="Košarica" width="30px" height="30px" title="Moja košarica" id="Kosara"></a>
@@ -31,7 +33,7 @@ function Header() {
                     </div>         
             </section>
             <section class="head2">
-               {/** <div class="div-Logo"><a href="../index.html" target="_parent"><img src="../images/Logo.png" id="logo" alt="Logo Elegans New Fashion" title="Nova moda ELegans" width="130px" height="60px"></a></div> */} 
+               <div class="div-Logo"><a href="../index.html" target="_parent"><img src="https://www.creativefabrica.com/wp-content/uploads/2022/03/04/Fashion-logo-fashion-clothes-shop-Graphics-26436548-1-1-580x386.png" id="logo" alt="Logo Elegans New Fashion" title="Nova moda ELegans" width="130px" height="60px" /></a></div> 
                 <a href="../index.html" class="nav2" title="ELegans / Početna" target="_parent"><div class="div-navi">HOME</div></a>
                 <a href="../products.html" class="nav2" title="Pregledajte ponudu odjeće za žene i muškarce" target="_parent"><div class="div-navi">PONUDA</div></a> 
                 <a href="../about.html" class="nav2" title="Upoznajte nas" target="_parent"><div class="div-navi">O NAMA</div></a>  
