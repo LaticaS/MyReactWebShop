@@ -1,0 +1,33 @@
+main {
+    color: white;
+}
+table {
+    background-color: whitesmoke;
+    width: 100%;
+    border: 1px solid white;
+    color: darkgreen;
+    & th, td {
+        padding: 1rem;
+        border-bottom: 1px solid darkslategrey;
+    }
+    & img {
+        width: 150px;
+        padding: 1rem;
+    }
+    & input {
+        accent-color: dimgrey;
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    & .promotivni-input {
+        width: 60%;        
+    }
+    & button {
+        padding: 0.5rem 1rem;
+        background-color: lightseagreen;
+    }
+    & button:hover {
+        background-color: lightgreen;
+    }
+}
