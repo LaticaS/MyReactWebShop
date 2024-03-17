@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Card, Button } from "react-bootstrap"
+import { Container, Row, Card, Button } from "react-bootstrap"
 import { useEffect } from "react"
 
 function SingleProduct({product}){
@@ -8,15 +8,19 @@ function SingleProduct({product}){
 
     console.log("product", product)
 
-    return(
-        <div className={"single-product"}>
+    return( 
+      <>  
+          {/** 
+          <div className={"single-product"}>
             <h2>Some single product title</h2>
             <Link to="/about">Go to about page</Link>
             <br />
             <a href="/about">go to about</a>
+            </div>            
+            */}                   
 
-            <br /><br />            
-
+            <Container>
+            <Row>
             <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={product.thumbnail} />
       <Card.Body>
@@ -28,7 +32,10 @@ function SingleProduct({product}){
         <Button as={Link} to={"/product/"+product.id} variant="primary">Detailed View</Button>
       </Card.Body>
     </Card>
-        </div>
+    </Row> 
+    </Container>
+    </>
+            
     )
 }
 export {SingleProduct}

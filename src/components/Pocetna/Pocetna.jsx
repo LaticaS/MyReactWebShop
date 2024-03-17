@@ -5,7 +5,7 @@ function Pocetna() {
         <div>
             <main>
         
-        <a href="products.html" title="AKCIJSKI POPUSTI NA XL ARTIKLE 50%" target="_parent">
+        <a href="products.html" title="AKCIJSKI POPUSTI 50%" target="_parent">
         <div class="div-banner">            
             <div class="div-text-banner">
                 AKCIJSKI POPUSTI 50%
@@ -17,48 +17,48 @@ function Pocetna() {
             
             <div>
                 <a href="products.html" target="_parent" id="link-u-naslovu">                
-                <h2>ELEGANS 4 EVERYONE</h2>
+                <h2>BEST SELLING BOOKS</h2>
                 </a>              
             </div>                       
-            <div id="div-kategorija-žene" title="Bogata ponuda odjeće za žene">
+            <div id="div-kategorija-žene" title="">
                 <a href="women-products.html" target="_parent">
-                <div id="ime-kategorije"><h3>ŽENE</h3></div>
+                <div id="ime-kategorije"><h3>KUHARICE</h3></div>
                 </a>               
             </div>
-            <div id="div-kategorija-modni-dodaci" title="Upotpunite svoj stil ELegans modnim dodacima">
+            <div id="div-kategorija-modni-dodaci" title="">
                 <a href="modni-dodaci.html" target="_parent">
-                <div id="ime-kategorije"><h3>MODNI DODACI</h3></div>
+                <div id="ime-kategorije"><h3>SELF-HELP</h3></div>
                 </a>          
             </div>
-            <div id="div-kategorija-muškarci" title="Bogat izbor odjeće za muškarce">
+            <div id="div-kategorija-muškarci" title="">
                 <a href="men-products.html" target="_parent">
-                <div id="ime-kategorije"><h3>MUŠKARCI</h3></div>
+                <div id="ime-kategorije"><h3>BELETRISTIKA</h3></div>
                 </a>
             </div>           
         </section>       
 
         <section class="sect3">
             <div>
-                <h2>POPULARNO</h2>
+                <h2>MOST POPULAR</h2>
             </div>
-            <div id="div-haljine" title="Haljine za dnevne i svečane prigode">
+            <div id="div-haljine" title="">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
-                <div id="ime-kategorije"><h3>HALJINE </h3></div>
+                <div id="ime-kategorije"><h3>FANTASTIKA </h3></div>
                 </a>
             </div>
-            <div id="div-bluze" title="Bogata ponuda ženstvenih bluza">
+            <div id="div-bluze" title="">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
-                <div id="ime-kategorije"><h3>BLUZE </h3></div>
+                <div id="ime-kategorije"><h3>BIOGRAFIJE </h3></div>
                 </a>
             </div>
-            <div id="div-kaputi" title="Topli kaputi za hladne dane">
+            <div id="div-kaputi" title="">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
-                <div id="ime-kategorije"><h3>KAPUTI </h3></div>
+                <div id="ime-kategorije"><h3>STRIPOVI </h3></div>
                 </a>
             </div>
-            <div id="div-trenerke" title="Udobne trenirke za rekreaciju i odmor">
+            <div id="div-trenerke" title="">
                 <a href="products.html" target="_parent" id="link-u-naslovu">
-                <div id="ime-kategorije"><h3>TRENIRKE </h3></div>
+                <div id="ime-kategorije"><h3>STRUČNA </h3></div>
                 </a>
             </div> 
         </section> 

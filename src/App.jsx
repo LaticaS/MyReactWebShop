@@ -11,15 +11,24 @@ import { Product } from './components/Product/Product.jsx';
 import { SingleProduct } from './components/Product/SingleProduct.jsx';
 import { Home } from './components/Home/Home.jsx';
 import { Outlet } from 'react-router-dom';
+import { Pocetna } from './components/Pocetna/Pocetna.jsx';
 
 function App() { 
 
-  return (
-    <>  
+  return (   
+  <div>
+    <AppWrapperComponent />
+     
+{/** 
+ * 
+ * 
     <BrowserRouter>
     <Routes>
-    <Route path="/" element={<AppWrapperComponent />}>
-    {/**  <Route index element={<Home />} />   */}
+      <Route>
+        
+      </Route>
+     <Route path="/" element={<AppWrapperComponent />}>
+      <Route index element={<Home />} />   */}
       
 
       {/** 
@@ -36,13 +45,27 @@ function App() {
         <Route path="/product/:id" element={<DetailedProductView />} />
         </Route>
 
-        */}
+        
 
       </Route> 
+
+      */}
+
+      {/** 
+      <Route path='/'>
+        <Home />
+      </Route>
+
+      <Route path='/about'>
+        <About />
+      </Route>
+      
       
        </Routes> 
-      </BrowserRouter>        
-    </>
+      </BrowserRouter>  
+            */}
+
+</div>    
   )
 }
 

@@ -1,28 +1,20 @@
-import "./Footer.scss"
+import "./Footer.scss";
 
 function Footer(){
     return(
         <div>
             <footer>
-            <section class="foot1">               
-                
                 <div class="div-foot">
-                    <ul>                        
-                        <li><a href="../terms.html" target="_parent">Uvjeti korištenja</a></li>
-                        <li><a href="../terms-sale.html" target="_parent">Uvjeti plaćanja</a></li>
-                        <li><a href="../privacy.html" target="_parent">Politika privatnosti</a></li>
-                        <li><a href="../cookies.html" target="_parent">Politika o kolačićima</a></li> 
-                        <li><a href="../faq.html" target="_parent">Česta pitanja</a></li>                      
+                    <ul>
+                    <li><a href="../products.html" target="_parent">Ponuda</a></li> 
+                    <li><a href="../cart.html" target="_parent">Košarica</a></li>                   
                     </ul>
                 </div>
 
                 <div class="div-foot">
                     <ul>
                         <li><a href="../index.html" target="_parent">Home / Početna</a></li>
-                        <li><a href="../products.html" target="_parent">Odjeća</a></li>
-                        <li><a href="../cart.html" target="_parent">Košarica</a></li>
-                        <li><a href="../about.html" target="_parent">O nama</a></li>
-                        <li><a href="../blog.html" target="_parent">Blog</a></li>
+                        <li><a href="../about.html" target="_parent">O nama</a></li>                        
                         <li><a href="../contact.html" target="_parent">Kontakt</a></li>
                     </ul>
                     
@@ -32,8 +24,8 @@ function Footer(){
                     <ul>
                         <li><a href="tel:+385022123340" target="_blank">022/123 456</a></li>
                         <li><a href="../contact.html" target="_blank">OIB: 12345678901</a></li>
-                        <li><a href="mailto:info@elegans.hr" target="_blank">info@elegans.hr</a></li>
-                        <li><a href="../contact.html" target="_blank">Preporoda 1, 22000 Šibenik</a></li>
+                        <li><a href="mailto:info@elegans.hr" target="_blank">info@booki.hr</a></li>
+                        <li><a href="../contact.html" target="_blank">Preporoda 3, 22000 Šibenik</a></li>
                     </ul>   
                 </div>
 
@@ -46,9 +38,7 @@ function Footer(){
 
                 */}
 
-                <div class="LaticaS">Izrada: LaticaS, Trokut 2023./24.</div>    
-            </section>
-            
+                <div class="LaticaS">Izrada: LaticaS, Trokut 2024.</div>             
         </footer>  
 
         </div>

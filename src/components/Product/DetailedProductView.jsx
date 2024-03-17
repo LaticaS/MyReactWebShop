@@ -18,8 +18,6 @@ function DetailedProductView(){
     })     
 
     }, []);
-
-
     
     console.log("URL params DetailedProductsView:", urlParams)
     return(

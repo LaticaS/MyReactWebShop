@@ -1,6 +1,7 @@
-import { Header } from "../Header/Header.jsx"
-import { MainComponent } from "../MainComponent/MainComponent.jsx"
-import { Footer } from "../Footer/Footer.jsx"
+import { HeaderDva } from "../Header/HeaderDva.jsx";
+import { Header } from "../Header/Header.jsx";
+import { MainComponent } from "../MainComponent/MainComponent.jsx";
+import { Footer } from "../Footer/Footer.jsx";
 import { Outlet } from "react-router-dom"
 
 function AppWrapperComponent(){
@@ -8,9 +9,8 @@ function AppWrapperComponent(){
 
         <div>
             <Header />
-            <MainComponent />
-            <Footer /> 
-                    
+            <MainComponent /> 
+            <Footer />                     
         </div>
 
     )

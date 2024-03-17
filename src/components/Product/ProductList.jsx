@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import { Product } from "./Product.jsx"
 import { SingleProduct } from "./SingleProduct"
-import { Container, Row } from "react-bootstrap"
 import {Col, Container, Row} from "react-bootstrap"
 import { useEffect, useState } from "react"
 

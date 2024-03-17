@@ -1,0 +1,27 @@
+.div-proizvodi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;  
+    padding: 1rem; 
+   
+    & div {
+        min-width: 20%;
+        background-color: antiquewhite;         
+        margin: 1rem; 
+        padding: 1rem; 
+        border-radius: 5px; 
+        
+        & p:first-of-type {
+            font-weight: bold;}         
+    }
+
+    img {
+        width: 150px;
+    }    
+
+    button {
+        background-color: lightseagreen;
+    } button:hover {background-color: orange;}
+
+}
