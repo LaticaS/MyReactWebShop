@@ -27,7 +27,7 @@ function Header() {
             <section class="head2">
                <div class="div-Logo"><a href="../index.html" target="_parent"><img src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/School-Clipart/Books_Transparent_PNG_Clip_Art_Image.png?m=1523965454" id="logo" alt="Logo Booki" title="Prodaja knjiga Booki" width="100px" height="100px" /></a></div> 
                 <a href="/" class="nav2" title="Booki / Početna"><div class="div-navi">HOME</div></a>
-                <a href="../products.html" class="nav2" title="Pogledajte ponudu" target="_parent"><div class="div-navi">PONUDA</div></a>                
+                <a href="../products.html" class="nav2" title="Pogledajte ponudu" target="_parent"><div class="div-navi">KNJIGE</div></a>                
                 <a href="../contact.html" class="nav2" title="Kontaktirajte nas" target="_parent"><div class="div-navi">KONTAKT</div></a>
                 <a href="../checkout.html" class="nav2" title="Narudžba" target="_parent"><div class="div-navi">NARUDŽBA</div></a>                        
             </section>

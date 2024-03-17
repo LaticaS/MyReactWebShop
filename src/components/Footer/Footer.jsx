@@ -6,15 +6,14 @@ function Footer(){
             <footer>
                 <div class="div-foot">
                     <ul>
-                    <li><a href="../products.html" target="_parent">Ponuda</a></li> 
+                    <li><a href="../products.html" target="_parent">Knjige</a></li> 
                     <li><a href="../cart.html" target="_parent">Košarica</a></li>                   
                     </ul>
                 </div>
 
                 <div class="div-foot">
                     <ul>
-                        <li><a href="../index.html" target="_parent">Home / Početna</a></li>
-                        <li><a href="../about.html" target="_parent">O nama</a></li>                        
+                        <li><a href="../index.html" target="_parent">Home / Početna</a></li>                                                
                         <li><a href="../contact.html" target="_parent">Kontakt</a></li>
                     </ul>
                     

@@ -18,9 +18,11 @@
             
             .div-trazilica {display: flex; flex-wrap: wrap;}
             
-            #input-header-pretrazi {border: 1px solid darkgreen; width: 15vw; height: 5vh;} 
-            #search {margin-top: 2px; padding: 6px; border: none; border-top-right-radius: 30%; border-bottom-right-radius: 30%; cursor: pointer;}                                            
-            #search:hover {background-color: lightgray;}
+            #input-header-pretrazi {border: 1px solid darkgreen; border-radius: 5px; width: 25vw; height: 5vh;} 
+            #search {margin-top: 2px; padding: 7px; border: none;
+                border-top-right-radius: 30%; border-bottom-right-radius: 30%; cursor: pointer;
+                background-color: lightgray;}                                            
+            #search:hover {opacity: 90%;}
 
             .div-navi {padding: 10px 20px; border-radius: 5px; border-left: 2px solid grey;
                 border-bottom: 2px solid grey;} 

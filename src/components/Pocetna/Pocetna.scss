@@ -31,7 +31,7 @@ section {position: relative; top: 0%; left: 1%; width: 99%;
     background: linear-gradient(to right, orangered , gold);
 }
 .sect2 > div {height: 80%; position: relative; color: white; box-shadow: 2px 2px 2px 2px grey; border-radius: 5%;
-    flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;
+    flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5rem;
     transition-property: all; transition-duration: 1.5s; transition-timing-function:ease;}
     #div-kategorija-žene {background-image: url(https://znanje.hr/product-images/766c3f97-3b87-44c3-9dcb-a71b65045162.jpg); background-size: cover;}
     #div-kategorija-modni-dodaci {background-image: url(https://znanje.hr/product-images/6ca8d542-ceb8-4034-8433-1536f513314a.jpg); background-size: cover;}
@@ -59,7 +59,7 @@ section {position: relative; top: 0%; left: 1%; width: 99%;
     }
     .sect3 > div {height: 80%; position: relative; width: 23%; border-radius: 5%;
         box-shadow: 2px 2px 2px 2px grey; 
-        flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5vh;
+        flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5rem;
         transition-property: all; transition-duration: 1.5s; transition-timing-function: ease;}
     #div-haljine {background-image:url(https://znanje.hr/product-images/544da573-83dc-4e22-8a19-024cca6d991e.jpg) ; background-size: cover; background-position: center;}
     #div-bluze {background-image:url(https://znanje.hr/product-images/889fc787-353a-4bff-b64a-a3bad2ac892f.jpg) ; background-size: cover; background-position: center;}
