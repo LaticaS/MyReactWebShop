@@ -5,10 +5,10 @@ import Books from "../databooks.json"
 function Proizvodi() {
     
     return(
-        <div className="div-proizvodi">                     
+        <div className="div-proizvodi">                                
           {
           Books && Books.map( book => {
-                return(
+                return(                    
                 <div className="div-book" key={book.id}>
                     <a href="" target="_blank" title="Detaljnije">
                     <img src={book.img} alt="book cover" /> 

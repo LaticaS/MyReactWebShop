@@ -1,4 +1,6 @@
 import "./Placanje.scss";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 function Placanje() {
     return (
@@ -7,7 +9,7 @@ function Placanje() {
         <div className="placanje-wrapper">      
             
             <div className="adresa-polje">
-                <h2>Unesite adresu za naplatu/dostavu</h2>
+                <h2>Unesite adresu za dostavu</h2>
 
                 <form action="">
 
@@ -106,6 +108,10 @@ function Placanje() {
       </small>
       </p>
       </div>
+
+      <div className="div-buttoni">
+        <Link to="/cart"><Button>⪡ POVRATAK NA KOŠARICU</Button></Link>
+      </div>  
 
           
       </div>

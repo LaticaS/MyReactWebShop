@@ -53,13 +53,13 @@ function Header() {
                         </div>
                 </Link>                
                 
-                    <Link to="/" className="nav2" title="Booki/Početna"><div class="div-navi">POČETNA</div></Link>
+                    <Link to="/" className="nav2" title="Booki/Početna"><div class="div-navi"><b>POČETNA</b></div></Link>
                                   
-                    <Link to="/products" className="nav2" title="Pogledajte ponudu"><div class="div-navi">KNJIGE</div></Link>
+                    <Link to="/products" className="nav2" title="Pogledajte ponudu"><div class="div-navi"><b>KNJIGE</b></div></Link>
                     
-                    <Link to="/contact" className="nav2" title="Kontaktirajte nas"><div class="div-navi">KONTAKT</div></Link>
+                    <Link to="/contact" className="nav2" title="Kontaktirajte nas"><div class="div-navi"><b>KONTAKT</b></div></Link>
                 
-                    <Link to="/placanje" class="nav2" title="Narudžba"><div class="div-navi">NARUDŽBA</div></Link>
+                    <Link to="/placanje" class="nav2" title="Narudžba"><div class="div-navi"><b>NARUDŽBA</b></div></Link>
                                            
             </section>
             
