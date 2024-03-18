@@ -1,4 +1,5 @@
-import { Table } from "react-bootstrap";
+import {Table, Row, Col, Button} from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Kosarica.scss";
 
 function Kosarica() {
@@ -7,6 +8,7 @@ function Kosarica() {
             <main>
             <h1>Košarica</h1>
             <Table>
+                <thead>
             <tr>
                     <th>Proizvod</th>
                     <th>Količina</th>
@@ -14,6 +16,8 @@ function Kosarica() {
                     <th>Ukupna cijena</th>
                     <th></th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>
                     <img src="https://znanje.hr/product-images/35948cb4-24d1-4ee6-b122-e555bb318f64.jpg" alt="" /> 
@@ -33,58 +37,33 @@ function Kosarica() {
                         </svg>                     
                     </td>
                 </tr>
+                </tbody>
+                <tfoot>
                 <tr>
                     <td>
-                        <input type="password" className="promotivni-input" placeholder="Ako akcija unijeti promotivni kod" />
+                        <input type="text" className="promotivni-input" placeholder="Unijeti promotivni kod" />
                         <button>Priloži</button>
                     </td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td></td>                   
                     <td>
                         <p>Zbroj košarice: €</p>
                         <p>Ukupna cijena: €</p>
                     </td>
-                </tr>               
-            </Table>
-            {/** 
-            <table>
-                <tr>
-                    <th>Proizvod</th>
-                    <th>Količina</th>
-                    <th>Cijena</th>
-                    <th>Ukupna cijena</th>
-                    <th></th>
+                    <td></td>
                 </tr>
-                <tr>
-                    <td>
-                    <img src="" alt="" /> 
-                    <span>Naslov knjige</span>
-                    </td>
-                    <td>
-                    <form action="">
-                        <input type="number" name="količina" min="1" max="20" id="input-količina-proizvod" />
-                    </form>
-                    </td>
-                    <td>5 €</td>
-                    <td>5 €</td>
-                    <td>x</td>
-                </tr> 
-                <tr>
-                    <td>
-                        <input type="password" placeholder="U slučaju akcije unijeti promotivni kod" />
-                        <button>Primjeni</button>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <p>Zbroj košarice: €</p>
-                        <p>Ukupna cijena: €</p>
-                    </td>
-                </tr> 
-            </table>
-            */}
+                </tfoot>             
+            </Table>
+
+            <div className="div-buttoni">
+                <Link to="/products"><Button>⪡ POVRATAK NA WEBSHOP</Button></Link>
+
+            <Button>OČISTI KOŠARICU</Button>
+            <Button>PLAĆANJE ⪢</Button>
+            </div>           
+                
+            
+
             </main>
         </div>
     )

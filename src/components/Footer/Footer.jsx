@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 function Footer(){
@@ -6,15 +7,15 @@ function Footer(){
             <footer>
                 <div class="div-foot">
                     <ul>
-                    <li><a href="../products.html" target="_parent">Knjige</a></li> 
-                    <li><a href="../cart.html" target="_parent">Košarica</a></li>                   
+                    <li><Link to="/products">Knjige</Link></li> 
+                    <li><Link to="/cart">Košarica</Link></li>                   
                     </ul>
                 </div>
 
                 <div class="div-foot">
                     <ul>
-                        <li><a href="../index.html" target="_parent">Home / Početna</a></li>                                                
-                        <li><a href="../contact.html" target="_parent">Kontakt</a></li>
+                        <li><Link to="/">Home/Početna</Link></li>                                                
+                        <li><Link to="/contact">Kontakt</Link></li>
                     </ul>
                     
                 </div>                
@@ -22,9 +23,9 @@ function Footer(){
                 <div class="div-foot">
                     <ul>
                         <li><a href="tel:+385022123340" target="_blank">022/123 456</a></li>
-                        <li><a href="../contact.html" target="_blank">OIB: 12345678901</a></li>
+                        <li><Link to="/contact">OIB: 12345678901</Link></li>
                         <li><a href="mailto:info@elegans.hr" target="_blank">info@booki.hr</a></li>
-                        <li><a href="../contact.html" target="_blank">Preporoda 3, 22000 Šibenik</a></li>
+                        <li><Link to="/contact">Preporoda 3, 22000 Šibenik</Link></li>
                     </ul>   
                 </div>
 

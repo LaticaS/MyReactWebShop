@@ -18,11 +18,12 @@
             
             .div-trazilica {display: flex; flex-wrap: wrap;}
             
-            #input-header-pretrazi {border: 1px solid darkgreen; border-radius: 5px; width: 25vw; height: 5vh;} 
-            #search {margin-top: 2px; padding: 7px; border: none;
+            #input-header-pretrazi {border: 1px solid darkgreen; border-bottom-left-radius: 5px; border-top-left-radius: 5px;
+                width: 25vw; height: 5vh; font-size: 1.1rem;} 
+            #search {margin-top: 2px; padding: 4px; border: none;
                 border-top-right-radius: 30%; border-bottom-right-radius: 30%; cursor: pointer;
-                background-color: lightgray;}                                            
-            #search:hover {opacity: 90%;}
+                background-color: gold;}                                            
+            #search:hover {background-color: yellow;}
 
             .div-navi {padding: 10px 20px; border-radius: 5px; border-left: 2px solid grey;
                 border-bottom: 2px solid grey;} 
@@ -30,10 +31,10 @@
             .nav1, .nav2 {text-decoration: none; font-size: 1.1rem; color: darkgreen;} 
             .nav1:hover {text-decoration:underline; color:whitesmoke;}          
            
-            #Kosara:hover {opacity: 70%;}    
+            #Kosara:hover {opacity: 80%;}    
 
             .nav2:hover {background-color: lightseagreen; color:white;}
-            #Face, #Insta, #Twitt {opacity: 60%;} 
+            #Face, #Insta, #Twitt {opacity: 60%; margin: 0px 5px;} 
             #Face:hover, #Insta:hover, #Twitt:hover {opacity: 95%;}
 
             main {margin-top: 10px;}

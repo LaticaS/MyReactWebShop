@@ -1,10 +1,8 @@
-main {
-    color: white;
-}
 table {
-    background-color: whitesmoke;
+    background-color: antiquewhite;
     width: 100%;
     border: 1px solid white;
+    border-radius: 5px;
     color: darkgreen;
     & th, td {
         padding: 1rem;
@@ -19,6 +17,7 @@ table {
         padding: 0.5rem;
         border-radius: 5px;
         margin: 5px;
+        font-size: 1.1rem;
     }
     & .promotivni-input {
         width: 60%;        
@@ -28,6 +27,21 @@ table {
         background-color: lightseagreen;
     }
     & button:hover {
+        background-color: orange;
+    }
+    & svg:hover { 
+        cursor: pointer;
+    }
+}
+.div-buttoni {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem 0rem;
+    padding: 0.5rem 0.5rem;
+    & Button:hover {
         background-color: lightgreen;
     }
 }

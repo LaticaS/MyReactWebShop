@@ -5,21 +5,43 @@ import './App.css'
 import { Header } from './components/Header/Header.jsx';
 import { MainComponent } from './components/MainComponent/MainComponent.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AppWrapperComponent } from './components/AppWrapper/AppWrapperComponent.jsx';
 import { Product } from './components/Product/Product.jsx';
 import { SingleProduct } from './components/Product/SingleProduct.jsx';
 import { Home } from './components/Home/Home.jsx';
 import { Outlet } from 'react-router-dom';
 import { Pocetna } from './components/Pocetna/Pocetna.jsx';
+import { Proizvodi } from './components/Product/Proizvodi.jsx';
+import { Kosarica } from './components/Kosarica/Kosarica.jsx';
+import { ErrorPage } from './components/ErrorPage.jsx';
+import { Kontakt } from './components/Kontakt/Kontakt.jsx';
+import { Ruta } from './components/Ruta.jsx';
 
 function App() { 
 
-  return (   
+  return (
+    
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AppWrapperComponent />} >
+            <Route index element={<Pocetna />} />
+            <Route path='/products' element={<Proizvodi />} />
+            <Route path='/cart' element={<Kosarica />} />
+            <Route path='/contact' element={<Kontakt />} />
+            <Route path="*" element={<ErrorPage />} />            
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+
+{/** 
   <div>
     <AppWrapperComponent />
      
-{/** 
+
  * 
  * 
     <BrowserRouter>
@@ -63,10 +85,13 @@ function App() {
       
        </Routes> 
       </BrowserRouter>  
-            */}
+            
 
-</div>    
+</div>  
+
   )
+  */}
+
 }
 
 export default App
