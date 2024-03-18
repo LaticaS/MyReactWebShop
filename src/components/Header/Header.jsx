@@ -58,7 +58,9 @@ function Header() {
                     <Link to="/products" className="nav2" title="Pogledajte ponudu"><div class="div-navi">KNJIGE</div></Link>
                     
                     <Link to="/contact" className="nav2" title="Kontaktirajte nas"><div class="div-navi">KONTAKT</div></Link>
-                <a href="../checkout.html" class="nav2" title="Narudžba" target="_parent"><div class="div-navi">NARUDŽBA</div></a>                        
+                
+                    <Link to="/placanje" class="nav2" title="Narudžba"><div class="div-navi">NARUDŽBA</div></Link>
+                                           
             </section>
             
         </header> 

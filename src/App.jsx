@@ -16,6 +16,7 @@ import { Proizvodi } from './components/Product/Proizvodi.jsx';
 import { Kosarica } from './components/Kosarica/Kosarica.jsx';
 import { ErrorPage } from './components/ErrorPage.jsx';
 import { Kontakt } from './components/Kontakt/Kontakt.jsx';
+import { Placanje } from './components/Placanje/Placanje.jsx';
 import { Ruta } from './components/Ruta.jsx';
 
 function App() { 
@@ -30,6 +31,7 @@ function App() {
             <Route path='/products' element={<Proizvodi />} />
             <Route path='/cart' element={<Kosarica />} />
             <Route path='/contact' element={<Kontakt />} />
+            <Route path='/placanje' element={<Placanje />} />
             <Route path="*" element={<ErrorPage />} />            
           </Route>
         </Routes>

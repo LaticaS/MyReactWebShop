@@ -59,7 +59,7 @@ function Kosarica() {
                 <Link to="/products"><Button>⪡ POVRATAK NA WEBSHOP</Button></Link>
 
             <Button>OČISTI KOŠARICU</Button>
-            <Button>PLAĆANJE ⪢</Button>
+            <Link to="/placanje"><Button>PLAĆANJE ⪢</Button></Link>
             </div>           
                 
             
