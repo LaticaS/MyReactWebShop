@@ -1,11 +1,4 @@
 
-.podheader {display: flex; align-items: center;} 
-.podheader:hover {color: crimson;}            
-    #podheader-div {width: 95%; padding: 0vh 2vw; text-align: right;
-    transition-property: color; transition-duration: 1s; transition-timing-function: ease;}                       
-    #prvi-h1{color: lightgrey; font-size: large; font-family: Arial Narrow; font-weight: lighter; padding: 3vh 0vw;}
-    #prvi-h1:hover{color:crimson; font-weight: bold;}             
-
 
 section {position: relative; top: 0%; left: 1%; width: 99%;
     height: 90vh; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
@@ -32,7 +25,7 @@ section {position: relative; top: 0%; left: 1%; width: 99%;
 }
 .sect2 > div {height: 80%; position: relative; color: white; box-shadow: 2px 2px 2px 2px grey; border-radius: 5%;
     flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5rem;
-    transition-property: all; transition-duration: 1.5s; transition-timing-function:ease;}
+    }
     #div-kategorija-žene {background-image: url(https://znanje.hr/product-images/766c3f97-3b87-44c3-9dcb-a71b65045162.jpg); background-size: cover;}
     #div-kategorija-modni-dodaci {background-image: url(https://znanje.hr/product-images/6ca8d542-ceb8-4034-8433-1536f513314a.jpg); background-size: cover;}
     #div-kategorija-muškarci {background-image: url(https://znanje.hr/product-images/e747899d-3092-448f-983b-62e7819b5326.jpg); background-size: cover;}            
@@ -40,10 +33,11 @@ section {position: relative; top: 0%; left: 1%; width: 99%;
     #div-kategorija-modni-dodaci:hover { border-style: outset;  }
     #div-kategorija-muškarci:hover { border-style: outset;  }
 
-    #ime-kategorije {width: 50%; position: absolute; top: 60%; left: 30%;
-        background-color:lightseagreen; color: white; padding: 1px;
-        border-radius:5px; border: 2px solid whitesmoke; opacity: 95%;}
-        #ime-kategorije:hover {padding: 1.1px; font-size: 1.1rem;}
+    .ime-kategorije {width: 50%; position: absolute; top: 60%; left: 30%;
+        background-color:lightseagreen; color: white; padding: 1rem 2rem;
+        border-radius:5px; border: 2px solid whitesmoke; opacity: 95%;
+        font-size: larger; font-weight: bold; }
+    .ime-kategorije:hover {border: 2px solid gold;}
 
     #link-u-naslovu {text-decoration: none;}
     #link-u-naslovu:link {color: white;}
@@ -52,15 +46,14 @@ section {position: relative; top: 0%; left: 1%; width: 99%;
     #link-u-naslovu:active {color:white;} 
     
     .sect3 {margin-top: 0.5vh; margin-bottom: 0.5vh; }
-    .sect3 > div:first-of-type {width: 100%; height: 10%; color: white;  padding-bottom: 0.5rem;
-        transition-property: all; transition-duration: 1.5s; transition-timing-function: ease;
+    .sect3 > div:first-of-type {width: 100%; height: 10%; color: white;  padding-bottom: 0.5rem;        
         background: orangered;
         background: linear-gradient(to right, orangered , gold);
     }
     .sect3 > div {height: 80%; position: relative; width: 23%; border-radius: 5%;
         box-shadow: 2px 2px 2px 2px grey; 
         flex-wrap: wrap; justify-content: space-between; flex: 1 1 auto; margin: 0.5rem;
-        transition-property: all; transition-duration: 1.5s; transition-timing-function: ease;}
+        }
     #div-haljine {background-image:url(https://znanje.hr/product-images/544da573-83dc-4e22-8a19-024cca6d991e.jpg) ; background-size: cover; background-position: center;}
     #div-bluze {background-image:url(https://znanje.hr/product-images/889fc787-353a-4bff-b64a-a3bad2ac892f.jpg) ; background-size: cover; background-position: center;}
     #div-kaputi {background-image:url(https://znanje.hr/product-images/bb1523ec-e96c-4086-bd6f-85724652bb9d.jpg) ; background-size: cover; background-position: center;}

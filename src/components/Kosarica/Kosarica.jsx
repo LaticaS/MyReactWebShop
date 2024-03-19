@@ -7,7 +7,7 @@ function Kosarica() {
         <div className="kosarica-wrapper">
             <main>
             <h1>Košarica</h1>
-            <Table>
+            <table>
                 <thead>
             <tr>
                     <th>Proizvod</th>
@@ -53,7 +53,7 @@ function Kosarica() {
                     <td></td>
                 </tr>
                 </tfoot>             
-            </Table>
+            </table>
 
             <div className="div-buttoni">
                 <Link to="/products"><Button>⪡ POVRATAK NA WEBSHOP</Button></Link>

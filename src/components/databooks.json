@@ -110,5 +110,62 @@
         "website":"https://doi.org/10.1007/978-1-4842-4221-6",
         "img": "https://media.springernature.com/w92/springer-static/cover/book/978-1-4842-4221-6.jpg?as=webp",
         "price": 49
+    },
+    {
+        "id": 9,
+        "isbn":"9780307036520",
+        "title":"Addition and Subtraction",
+        "subtitle":"(Grades 1 - 2)",
+        "author":"Kate Cole",
+        "published":"1999",
+        "publisher":"Penguin Random House US",
+        "pages":64,
+        "description":"This teacher-approved Step Ahead workbook from Golden Books is a great guide to addition and subtraction for 1st and 2nd graders--now in a deluxe edition with twice the pages and over 70 colorful stickers. Perfect for back to school--no matter what that looks like!",
+        "website":"https://znanje.hr/product/addition-and-subtraction-grades-1-2/260988",
+        "img": "https://znanje.hr/product-images/35948cb4-24d1-4ee6-b122-e555bb318f64.jpg",
+        "price": 5.10
+    },
+    {
+        "id": 10,
+        "isbn":"9781787633629",
+        "title":"Sentinel",
+        "subtitle":"The world's number one bestseller",
+        "author":"Lee and Andrew Child",
+        "published":"2020",
+        "publisher":"The Book Service",
+        "pages":400,
+        "description":"Jack Reacher gets off the bus in a sleepy no-name town outside Nashville, Tennessee. He plans to grab a cup of coffee and move right along.Not going to happen.",
+        "website":"https://znanje.hr/product/sentinel/416920",
+        "img": "https://znanje.hr/product-images/c1781626-f550-48a1-a5f7-5e10aab790b8.jpg",
+        "price": 19.78
+    },
+    {
+        "id": 11,
+        "isbn":"9789533608228",
+        "title":"Savršen plan",
+        "subtitle":"No plan B",
+        "author":"Lee Child; Andrew Child",
+        "published":"2023",
+        "publisher":"The Book Service",
+        "pages":336,
+        "description":"U gradiću Gerrardsvilleu u Coloradu nepoznata žena stradala je u naletu autobusa. Svi svjedoci tvrde da se radi o samoubojstvu. Ali Jack Reacher je jedini vidio što se doista dogodilo.",
+        "website":"https://znanje.hr/product/savrsen-plan/451565",
+        "img": "https://znanje.hr/product-images/b49073ce-b9a6-44d0-b599-0f7bd7638c26.jpg",
+        "price": 6.5
+    },
+    {
+        "id": 12,
+        "isbn":"9780441172719",
+        "title":"Dune",
+        "subtitle":"Spice must flow",
+        "author":"Frank Herbert",
+        "published":"2011",
+        "publisher":"Penguin Random House US",
+        "pages":535,
+        "description":"In 1965, after being rejected by more than a dozen publishing houses, a book called Dune was brought out by the Chilton Book Company. Its respected author, journalist Frank Herbert, had written Dune with nothing more in mind than to entertain his readers with the telling of a particularly complex story, one which had occupied his thoughts for more than six years. No one - not Herbert, not Chilton, not the science fiction community at the time - had any idea that Dune would be adopted and read by successive generations with a fervor bordering on cult worship. Or that it would prove to be merely the first of what have now become five international bestsellers about a desert world of the future - the planet Arrakis, called Dune.",
+        "website":"https://znanje.hr/product/dune/256410",
+        "img": "https://znanje.hr/product-images/544da573-83dc-4e22-8a19-024cca6d991e.jpg",
+        "price": 11.2
     }
+
 ]

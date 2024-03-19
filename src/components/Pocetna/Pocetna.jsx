@@ -22,17 +22,17 @@ function Pocetna() {
             </div>                       
             <div id="div-kategorija-žene" title="">
                 <Link to="/products">                
-                <div id="ime-kategorije"><h3>KUHARICE</h3></div>
+                <div class="ime-kategorije">KUHARICE</div>
                 </Link>             
             </div>
             <div id="div-kategorija-modni-dodaci" title="">
             <Link to="/products">
-                <div id="ime-kategorije"><h3>SELF-HELP</h3></div>
+                <div class="ime-kategorije">SELF-HELP</div>
             </Link>             
             </div>
             <div id="div-kategorija-muškarci" title="">
             <Link to="/products">
-                <div id="ime-kategorije"><h3>BELETRISTIKA</h3></div>
+                <div class="ime-kategorije">TRILERI</div>
             </Link>    
             </div>           
         </section>       
@@ -45,22 +45,23 @@ function Pocetna() {
             </div>
             <div id="div-haljine" title="">
                 <Link to="/products">
-                <div id="ime-kategorije"><h3>FANTASTIKA </h3></div>
+                <div class="ime-kategorije">FANTASY</div>
                 </Link>
             </div>
+
             <div id="div-bluze" title="">
             <Link to="/products">
-                <div id="ime-kategorije"><h3>BIOGRAFIJE </h3></div>
+                <div class="ime-kategorije">BIOGRAFIJE</div>
             </Link>  
-            </div>
+            </div>            
             <div id="div-kaputi" title="">
             <Link to="/products">
-                <div id="ime-kategorije"><h3>STRIPOVI </h3></div>
+                <div class="ime-kategorije">STRIPOVI</div>
             </Link>
             </div>
             <div id="div-trenerke" title="">
             <Link to="/products">
-                <div id="ime-kategorije"><h3>STRUČNA </h3></div>
+                <div class="ime-kategorije">STRUČNA</div>
             </Link>
             </div> 
         </section> 

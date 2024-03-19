@@ -1,4 +1,3 @@
-import "./MainComponent.scss";
 import { Outlet } from "react-router-dom";
 import { Pocetna } from "../Pocetna/Pocetna.jsx";
 import { ProizvodBoot } from "../Product/ProizvodBoot.jsx";

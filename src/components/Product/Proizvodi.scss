@@ -18,7 +18,8 @@
     }
 
     img {
-        width: 150px;
+        width: 100%;
+        padding: 0.5rem 0rem;
     }    
 
     button {
@@ -26,3 +27,28 @@
     } button:hover {background-color: orange;}
 
 }
+    @media only screen and (max-width: 800px) {
+        .div-proizvodi div {
+            width: 45%;
+            background-color: antiquewhite;         
+            margin: 0.4rem 0rem; 
+            padding: 0.5rem;  
+        }
+        img {
+            min-width: 80%;
+            padding: 0.5rem 0rem;
+        } 
+        }
+
+        @media only screen and (max-width: 500px) {
+            .div-proizvodi div {
+                width: 100%;
+                background-color: antiquewhite;         
+                margin: 0.5rem 0rem; 
+                padding: 0.5rem;  
+            }
+            img {
+                min-width: 90%;
+                padding: 0.5rem 0rem;
+            }
+            }
