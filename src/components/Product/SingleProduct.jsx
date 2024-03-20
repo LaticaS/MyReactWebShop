@@ -29,7 +29,7 @@ function SingleProduct({product}){
           {product.description}
         </Card.Text>
        {/**  <Link to={"/product/"+product.id}>Detailed view</Link> */}
-        <Button as={Link} to={"/product/"+product.id} variant="primary">Detailed View</Button>
+        <Button as={Link} to={"/product/" + product.id} variant="primary">Detailed View</Button>
       </Card.Body>
     </Card>
     </Row> 

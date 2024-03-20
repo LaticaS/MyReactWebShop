@@ -1,14 +1,25 @@
-import { useState } from "react";
+import { createContext, useState, useContext } from "react";
 import "./Proizvodi.scss";
-import Books from "../databooks.json"
+import books from "../databooks.json";
+
+const KosaricaContext = createContext();
 
 function Proizvodi() {
-    
-    return(
+
+    const dodajKosarici = (book) => {
+        console.log("button clicked", book);
+        setBasket({...basket, items: [...basket.items, book] });        
+        console.log("book in basket", book) //provjera da dodalo knjigu
+    };
+    const [basket, setBasket] = useState({items:[]});    
+
+    return( 
+        <>
+        <KosaricaContext.Provider value={{basket, dodajKosarici}}>
         <div className="div-proizvodi">                                
           {
-          Books && Books.map( book => {
-                return(                                      
+          books && books.map( book => {
+                return (                                      
                 <div className="div-book" key={book.id}>
                     <a href="" target="_blank" title="Detaljnije">
                     <img src={book.img} alt="book cover" /> 
@@ -17,13 +28,16 @@ function Proizvodi() {
                 <p><em>{book.subtitle}</em></p>
                 <p><strong> {book.author} </strong></p>
                 <p style={{padding:5, color:"red", fontSize:"larger"}}>{book.price} €</p>
-                <button>DODAJ U KOŠARICU</button>
-            </div>                    
+                 
+                <button onClick={() => dodajKosarici(book)}>DODAJ U KOŠARICU</button>
+            </div>         
                 )
             })
             }
-        </div>
-    )
+        </div> 
+        </KosaricaContext.Provider>  
+        </>
+    );
 }
 
-export {Proizvodi}
+export {Proizvodi, KosaricaContext }

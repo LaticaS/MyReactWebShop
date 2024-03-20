@@ -5,14 +5,14 @@ function Footer(){
     return(
         <div>
             <footer>
-                <div class="div-foot">
+                <div className="div-foot">
                     <ul>
                     <li><Link to="/products">Knjige</Link></li> 
                     <li><Link to="/cart">Košarica</Link></li>                   
                     </ul>
                 </div>
 
-                <div class="div-foot">
+                <div className="div-foot">
                     <ul>
                         <li><Link to="/">Home/Početna</Link></li>                                                
                         <li><Link to="/contact">Kontakt</Link></li>
@@ -20,7 +20,7 @@ function Footer(){
                     
                 </div>                
 
-                <div class="div-foot">
+                <div className="div-foot">
                     <ul>
                         <li><a href="tel:+385022123340" target="_blank">022/123 456</a></li>
                         <li><Link to="/contact">OIB: 12345678901</Link></li>
@@ -38,7 +38,7 @@ function Footer(){
 
                 */}
 
-                <div class="LaticaS">Izrada: LaticaS, Trokut 2024.</div>             
+                <div className="LaticaS">Izrada: LaticaS, Trokut 2024.</div>             
         </footer>  
 
         </div>

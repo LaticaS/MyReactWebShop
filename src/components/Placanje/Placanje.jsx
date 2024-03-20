@@ -69,13 +69,13 @@ function Placanje() {
                 </tbody>
                 <tfoot>
                 <tr>                                       
-                    <td className="ukupnaCijena" colspan="4">
+                    <td className="ukupnaCijena" colSpan="4">
                         <p>Zbroj košarice: €</p>
                         <p>Standardna dostava (DPD Croatia): 3,50 €</p>                       
                     </td>                   
                 </tr>
                 <tr>
-                    <td className="ukupnaCijena" colspan="4">
+                    <td className="ukupnaCijena" colSpan="4">
                     <p>UKUPNA CIJENA: €</p>
                     </td>
                 </tr>
