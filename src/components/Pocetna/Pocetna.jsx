@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Pocetna.scss"
+import {toast} from "react-hot-toast"
+
 
 function Pocetna() {
     return(
@@ -13,14 +15,14 @@ function Pocetna() {
         </div>        
         </Link> 
       
-        <section class="sect2">
-            
+        <section class="sect2">            
             <div>
             <Link to="/products" id="link-u-naslovu">                               
                 <h2>BEST SELLING BOOKS</h2>                
             </Link>             
             </div>                       
             <div id="div-kategorija-žene" title="">
+            <button onClick={()=> toast.success("Hello world")}>TOAST</button>
                 <Link to="/products">                
                 <div class="ime-kategorije">KUHARICE</div>
                 </Link>             
