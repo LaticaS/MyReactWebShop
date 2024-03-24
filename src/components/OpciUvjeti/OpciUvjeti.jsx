@@ -137,6 +137,81 @@ function OpciUvjeti() {
         <p>
         Svrha za provedbu svih gore navedenih obrada je održavanje i praćenje performansi internetske stranice te kontinuirano poboljšanje stranice i usluga koje Booki nudi svojim korisnicima.
         </p>
+        <hr />
+
+        <h2>Registrirani korisnici</h2>
+        <p>
+        Osobni podaci dobiveni registracijom korisnika (ime, prezime, e-mail) obrađuju se u skladu s Uredbom o privatnosti.  Korisnik u profil može još dodati broj telefona i adresu.
+        </p>
+        <ul>
+            <li>
+            Broj telefona korisnik nije obvezan dati, ali u slučaju kupnje proizvoda komunikacija putem e-maila možda neće omogućiti pravovremenu komunikaciju, te može uzrokovati kašnjenje u dostavi narudžbe.
+            </li>
+            <li>
+            Adresu korisnik nije obvezan dati, ali u tom slučaju neće moći kupovati proizvode u našoj web trgovini.
+            </li>
+        </ul>
+
+        <p>
+        Korisnik u bilo kojem trenutku ima pravo obrisati svoju registraciju na našim internetskim stranicama. Osobni podaci dobiveni tijekom registracije neće se dijeliti trećim stranama osim u slučaju narudžbe, kada se isti (ime, prezime, adresa, broj telefona) dijele s dostavnom službom.
+        </p>
+        <p>
+        Osobni podaci dobiveni tijekom registracije čuvaju se do trenutka brisanja registracije, a najduže 5 godina nakon zadnje prijave u korisnički račun.
+        </p>
+        <hr />
+
+        <h2>Kupci</h2>
+        <p>
+        Osobni podaci dobiveni narudžbom (ime, prezime, adresa, adresa za dostavu, IBAN) obrađuju se u skladu s Izjavom o privatnosti i koriste se u svrhu uspješne realizacije narudžbe. Osobni podaci dobiveni tijekom narudžbe ne dijele se s trećim stranama, osim s dostavnom službom čiju uslugu kupac odabere, a u svrhu dostave narudžbe. Dostavne službe s kojima surađujemo i među kojima kupac može odabrati dostavu su DPD Croatia d.o.o. za dostave unutar Hrvatske, te DHL Express za dostave u inozemstvo.
+        </p>
+        <p>
+        U slučaju odabira kartičnog plaćanja, osobni podaci korisnika (ime, prezime, adresa), broj i sigurnosni kod kartice dijele se s tvrtkom WSPay - Web studio d.o.o, koja u skladu s PCI DSS standardima štiti prijenos podataka i privatnost s TLS 1.2 kriptografskim protokolima. Obavijest o privatnosti tvrtke WSPay - Web studio d.o.o. dostupna je na njihovim web stranicama.
+        </p>
+        <p>
+        Osobni podaci dobiveni tijekom narudžbe i sadržaj narudžbe čuvaju se do brisanja registracije, a najduže 5 godina nakon zadnje prijave u korisnički račun.
+        </p>
+        <hr />
+
+        <h2>Newsletter</h2>
+        <p>
+        Prijavom na newsletter Booki korisnik dopušta Bookiu da ga kontaktira e-mailom. E-mail se obrađuje u skladu s izjavom o privatnosti i neće biti podijeljen s trećim osobama. Svrha za prikupljanje e-mail adresa korisnika je slanje obavijesti o novitetima, akcijama i popustima, novim objavama, te najavi događaja u organizaciji Booki. Korisnik ni na koji način nije obvezan niti primoran prijaviti se na newsletter Booki, a nakon učinjene prijave, u bilo kojem trenutku se može odjaviti. U slučaju prijave na newsletter, popust koji kupac ostvaruje ovom radnjom ne zbraja se s drugim popustima, odnosno popusti i akcije se međusobno isključuju. Popust se ne ostvaruje promotivnim kodom nego prijavom istom e-mail adresom pri unosu narudžbe. Popust se u košarici obračunava u posljednjem koraku narudžbe nakon odabira opcije "naruči", odnosno prije same naplate narudžbe.
+        </p>
+        <p>
+        Otvaranjem newslettera, korisnik Booki šalje obavijest o tome da je pogledao isti. Klikom na link u newsletteru, Booki se šalje informacija o istome. E-mail adrese korisnika na koje šalje newsletter, Booki čuva do trenutka odjave korisnika.
+        </p>
+        <hr />
+
+        <h2>Prigovori i upiti</h2>
+        <p>
+        U slučajevima prigovora ili upita, osobni podaci koji se prikupljaju preko telefona, e-maila, društvenih medija, pošte i kontakt obrazaca koristit će se isključivo u svrhu obrade žalbe, upita i za provjeru razine pružene usluge. Booki obradom osobnih podataka primljenih tijekom upita ili prigovora namjerava osigurati kvalitetu svojih usluga i proizvoda na zadovoljstvo svojih klijenata.
+        </p>
+        <hr />
+
+        <h2>Završna uredba</h2>
+        <p>
+        Politika zaštite osobnih podataka na internetskim stranicama bit će objavljena na internetskim stranicama https://booki.hr/.
+        </p>
+        <p>
+        Na sva pitanja koja nisu uređena ovom Politikom primjenjuju se neposredno uredbe Uredbe, zakona i propisa. Booki.o.o.  zadržava pravo izmjene ove Politike. Svaka izmjena Politike zaštite osobnih podataka na internetskim stranicama bit će objavljena na internetskim stranicama https://booki.hr/.
+        </p>
+        <p>
+        Ova uredba stupa na snagu i primjenjuje se od 25.05.2018.g. (ažurirano 30.03.2023.)
+        </p>
+        <hr />
+
+        <h2>Kontakt</h2>
+        <p>
+        Ako imate bilo kakvih pitanja ili pritužbi u vezi s ovim Pravilima o zaštiti privatnosti ili našim postupcima obrade vaših podataka, možete nam poslati e-poštu ili nas kontaktirati na:
+        </p>
+        <p>
+            Booki, Preporoda 3, 22000 Šibenik.
+        </p>
+        <p>
+        E-mail: info@booki.hr           
+        </p>
+        <p>
+            Telefon: 022/123 456
+        </p>
 
         </div>
         </>

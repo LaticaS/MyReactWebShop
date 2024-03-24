@@ -21,6 +21,7 @@ import { Ruta } from './components/Ruta.jsx';
 import { PojediniProizvod } from './components/Product/PojediniProizvod.jsx';
 import { About } from './components/About/About.jsx';
 import { OpciUvjeti } from './components/OpciUvjeti/OpciUvjeti.jsx';
+import { UvjetiKupnje } from './components/UvjetiKupnje/UvjetiKupnje.jsx';
 
 
 function App() { 
@@ -39,6 +40,8 @@ function App() {
             <Route path='/pojedini' element={<PojediniProizvod />} /> 
             <Route path='/about' element={<About />} />
             <Route path='/uvjeti' element={<OpciUvjeti />} />
+            <Route path='/kupnje' element={<UvjetiKupnje />} />
+
             <Route path="*" element={<ErrorPage />} />            
           </Route>
         </Routes>

@@ -9,7 +9,8 @@ function Footer(){
                     <ul>
                     <li><Link to="/products">Knjige</Link></li> 
                     <li><Link to="/cart">Košarica</Link></li> 
-                    <li><Link to="/uvjeti">Opći uvjeti</Link></li>              
+                    <li><Link to="/uvjeti">Opći uvjeti</Link></li> 
+                    <li><Link to="/kupnje">Uvjeti kupnje</Link></li>          
                     </ul>
                 </div>
 
