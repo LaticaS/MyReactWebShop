@@ -8,14 +8,14 @@ function Pocetna() {
         <div>
             <main>
         <Link to="/products" title="AKCIJSKI POPUSTI 50%">        
-        <div class="div-banner">            
-            <div class="div-text-banner">
+        <div className="div-banner">            
+            <div className="div-text-banner">
                 AKCIJSKI POPUSTI 50%
             </div>            
         </div>        
         </Link> 
       
-        <section class="sect2">            
+        <section className="sect2">            
             <div>
             <Link to="/products" id="link-u-naslovu">                               
                 <h2>BEST SELLING BOOKS</h2>                

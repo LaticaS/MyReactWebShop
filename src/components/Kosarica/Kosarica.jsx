@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import { KosaricaContext } from "../Product/Proizvodi.jsx";
 import "./Kosarica.scss";
 
-function Kosarica() {
-    // const {basket} = useContext(KosaricaContext);  
+
+function Kosarica() {   
+      
+    const vrijednostKonteksta = useContext(KosaricaContext);
     
     return(
         <div className="kosarica-wrapper">
@@ -21,11 +23,13 @@ function Kosarica() {
                     <th></th>
                 </tr>
                 </thead>
-                <tbody>                                        
+                <tbody>
+
+                    {/**                                                          
                     <tr>
                     <td>
                     <img src="https://znanje.hr/product-images/35948cb4-24d1-4ee6-b122-e555bb318f64.jpg" alt="" /> 
-                    <p>Naslov knjige: </p>
+                    <p>Naslov knjige:</p>
                     </td>
                     <td>
                     <form action="">
@@ -41,10 +45,9 @@ function Kosarica() {
                         </svg>                     
                     </td>  
                     </tr> 
-                      
-
-                      {/** 
-                {basket && basket.items.map((item) => (
+                     */}   
+                   
+                {vrijednostKonteksta && vrijednostKonteksta.items.map((item) => (
                             <tr key={item.id}>
                                 <td>
                                     <img src={item.img} alt="" />
@@ -52,7 +55,7 @@ function Kosarica() {
                                 </td>
                                 <td>
                                     <form action="">
-                                        <input type="number" name="količina" min="1" max="20" id="input-količina-proizvod" />
+                                        <input type="number" name="količina" min="1" max="20" id="input-kolicina-proizvod" />
                                     </form>
                                 </td>
                                 <td>{item.price} €</td>
@@ -61,9 +64,8 @@ function Kosarica() {
                                     <button>Ukloni</button>
                                 </td>
                             </tr>
-                        ))}
-                        */}
-                                                                    
+                        ))}                            
+
                 </tbody>
                 <tfoot>
                 <tr>

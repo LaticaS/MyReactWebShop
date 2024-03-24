@@ -1,10 +1,10 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState} from "react";
 import "./Proizvodi.scss";
 import books from "../databooks.json";
 
 const KosaricaContext = createContext();
 
-function Proizvodi() {
+function Proizvodi() {    
 
     const dodajKosarici = (book) => {
         console.log("button clicked", book);
@@ -16,6 +16,7 @@ function Proizvodi() {
     return( 
         <>
         <KosaricaContext.Provider value={{basket, dodajKosarici}}>
+            
         <div className="div-proizvodi">                                
           {
           books && books.map( book => {
@@ -30,11 +31,12 @@ function Proizvodi() {
                 <p style={{padding:5, color:"red", fontSize:"larger"}}>{book.price} €</p>
                  
                 <button onClick={() => dodajKosarici(book)}>DODAJ U KOŠARICU</button>
-            </div>         
+            </div> 
+                 
                 )
             })
-            }
-        </div> 
+            }             
+        </div>           
         </KosaricaContext.Provider>  
         </>
     );

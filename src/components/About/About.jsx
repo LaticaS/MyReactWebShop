@@ -2,181 +2,68 @@ import "./About.scss"
 
 function About(){
     return(
-        <div>
-
-<main>
-        <section> 
-            <h1>ELEGANS - NEW FASHION</h1>       
-            <p>ELegans je tvrtka koja se bavi online prodajom ženske i muške odjeće i modnih dodataka. Možete naručiti odjeću ili obuću iz udobnosti svojeg doma, a za par klikova miša Vaša modna kombinacija stiže na Vašu adresu.
-                Mi Vam nudimo modu, Vi sami birate stil.
+        <>
+        <h1>O nama</h1> 
+        <div className="about-wrapper">         
+                  
+            <p>Booki je online knjižara i antikvarijat koja se bavi prodajom i otkupom rabljenih i novih knjiga. Možete naručiti knjige iz udobnosti svojeg doma, a za par klikova miša Vaš knjiški odabir stiže na Vašu adresu.                
             </p>
-            <figcaption align="right"><em>ELegans CEO mr. Ana Anić</em></figcaption>              
-               <figure id="figure-CEO">
-                <img src="./images/pngtree-smiling-business-woman-portrait-ceo-photo-png-image_13262220.png" alt="ELegans CEO mr. Ana Anić" width="50%" title="ELegans korisnici mogu računati na našu profesionalnost i pouzdanost" align="right" id="fotka-CEO" />
+            <figcaption align="right"><em>Booki CEO mr. Mia Mijić</em></figcaption>              
+               <figure className="figure-CEO">
+                <img src="https://media.licdn.com/dms/image/C4E03AQH6nctlUjyCBQ/profile-displayphoto-shrink_200_200/0/1517578535120?e=2147483647&v=beta&t=-PfC-RAZXjIlmp_TOejoEl7rtbneni0nZczgOSLDs3w" alt="Booki CEO mr. Mara Marić" width="50%" title="Booki korisnici mogu računati na našu profesionalnost i pouzdanost" align="right" className="fotka-CEO" />
                </figure>
-            <p>
-                Mi smo trgovina mode koja je zahvaljujući svojoj prepoznatljivoj robnoj marki u 30 godina izrasla u društvo s više od 400 zaposlenih.
-                Kupac nam je uvijek na prvome mjestu, a da bi kupci bili zadovoljni, važno je i zadovoljstvo naših zaposlenika, koji su najvažnija karika našeg lanca. 
-                Uzajamno povjerenje i dugoročni odnosi s partnerima također su neizostavan razlog našeg uspjeha.
-            </p>
-            <p>
-                Naš glavni ured nalazi se u gradu mode Šibeniku. Tijekom našeg postojanja, kontinuiranim radom, izgradili smo domaću tvrtku u tvrtku koja je poznata u još osamnaest europskih zemalja.
-                Među njima su: Češka, Mađarska, Rumunjska, Hrvatska, Slovenija, Bugarska, Srbija, Italija, Bosna i Hercegovina, Grčka, Ukrajina, Španjolska, Litva, Latvija, Estonija, Poljska, Njemačka, Austrija. I idemo još dalje.
-                Naši napori i dalje će biti usmjereni prema cilju da postanemo jedan od najvećih europskih e-commerce igrača u području prodaje odjeće.
-            </p>
-            <p>
-                U današnje vrijeme odjeća nam omogućuje da vizualno izrazimo svoje misli i stavove. Ljudi danas nose upravo ono u čemu se dobro osjećaju.
-                Biti dobro odjeven nije samo dobra odjeća. To je stvar samoizražavanja i karizme koju možemo naglasiti pravilno odabranom odjećom. Uvjereni smo da je širok izbor kvalitetne, ali posebno pristupačne robe ono što našim kupcima treba.
-                Ne fokusiramo se na mainstream brendove, naš izazov je stalno tražiti nešto posebno za naše kupce. Bez obzira da li ste modni fanatik ili samo trebate dopuniti svoju garderobu, tu smo za vas gdje god se spojite na internet.
-                Iz udobnosti svog doma možete odabrati između više od 400.000 artikala koji će vas zahvaljujući našim marljivim djelatnicima uskoro razveseliti.
-            </p>
-            <p>
-                ELegans u brojkama:
-                </p><ul>
-                    <li>Datum osnivanja: 8. lipnja 2015.</li>
-                    <li>Broj zaposlenih: 495</li>
-                    <li>Broj brendova u ponudi: 1.000+</li>
-                    <li>Više od 3 milijuna isporučenih narudžbi za 2023.</li>
-                </ul>
-            <p></p>
-
-            <figcaption><em>Tim ELegans</em></figcaption>
-            <figure id="figure-timELegans">
-                    <img src="./images/Fashion-for-Good-Batch-6-Innovators-Credit@ALINA-KRASIEVA-PHOTOGRAPHY.webp" alt="Foto: Tim ELegans" title="Cilj tima ELegans je pružiti kupcima aktualnu, kvalitetnu i dostupnu modu" width="50%" height="50%" align="left" id="fotka-tim" />
-            </figure> 
             
-            <p> 
-                Kao odjevna tvrtka crpimo inspiraciju iz europskih prijestolnica svjetske mode - Londona, Milana, Pariza i Barcelone.
-                Surađujemo sa službenim distributerima mnogih europskih brendova, što Vam jamči legalno podrijetlo i kvalitetu proizvoda u skladu s najnovijim svjetskim trendovima.            
+            <p>
+            Naš glavni ured nalazi se u gradu Fausta Vrančića, Ive Brešana, Arsena Dedića, i mnogih drugih povijesno-kulturnih veličina - gradu kulture Šibeniku. 
+            </p>           
+            <p>
+            Booki broji ukupno jedanaest knjižara smještenih u većim gradovima diljem Hrvatske: Šibenik, Zagreb, Rijeka, Split, Zadar, Varaždin, Pula, Slavonski Brod i Osijek. Osim u fizičkim knjižarama, Booki svoj cjelokupan asortiman nudi kroz internetsku knjižaru kroz više od 15 000 naslova većine renomiranih hrvatskih nakladnika, te najveći izbor strane knjige na hrvatskom tržištu.             
             </p>
             <p>
-                Uspješno predstavljamo više od 80 robnih marki svjetski poznatih proizvođača i naših vlastitih proizvođača.
-                Izdvajamo: 
-                Dior, Chanel, Gucci, Vercase, Boss, Prada, Emporio Atmani, Nike, Dolce&amp;Gabbana, Adidas,
-                Cartier, Zara, Levi`s, Calvin Klein, Louis Vuitton, Burbberry, Lacoste, Givenchy, Michael Kors,
-                Ralph Lauren, Jimmy Choo, Hermes, Missoni, Bape, United Colors Of Benetton,
-                Puma, Vera Wang, H&amp;M, Ray-Ban, Converse, Victoria`s secret, Hollister,
-                Alma en Pena, Ara, Art, Bagatt, Birkenstock, Buffalo, Bugatti, Camper, Caprice, CAT, Ciciban,
-                Creator, Crocs, Dr.Martens, Emu Australia, Esprit, Gabor, Gioseppo, Guess, Havaianas,
-                Helly Hansen, Ipanema, Liu Jo, Mustang, NeroGiardini, New Balance, Nine West,
-                ON-On Cloud Running, Pepe Jeans, Replay, Rider, Rieker, Skechers, Sorel, Steve Madden,
-                Suoperfit, s.Oliver, TBS, Tamaris, Teva, The North Face,
-                Timberland, Tom Tailor, Under Armour, Vagabond, Wrangler i mnoge druge.
-            </p>
+            Uz stranu knjigu, u ponudi knjižare Booki nalazi se odabrani asortiman većine hrvatskih nakladnika, zatim bogati program izdanja za najmlađe, posebice edukativne slikovnice i bojanke. Naši zaposlenici su strastveni ljubitelji i poznavatelji knjige, te se uz široku ponudu najkvalitetnijih naslova kod nas uvijek može pronaći i zainteresiranog sugovornika koji će rado odgovoriti na pitanje, pružiti savjet i dati preporuku.
+            </p>            
             <p>
-                Pošto smo izravni uvoznik većine brendova koje prodajemo, nudimo atraktivne cijene kolekcija.
-                Našu odjeću su pažljivo odabrali stilisti i zbog toga je uvijek u trendu, a Vi ćete, zahvaljujući našoj odjeći, izgledati moderno i individualno.
+            Booki prodaje i priručnike praktične namjene, kuharice, autobiografije, lektirne naslove te široku ponudu slikovnica i knjiga za djecu. 
+            Kod nas se također može naći velik broj etabliranih i novih hrvatskih i inozemnih autora. Uz beletristiku, Booki preporučuje i razne publicističke naslove. 
             </p>
+              <p>
+            Primjenjujući sva načela izrazito poznate biblioteke čija estetika počiva na svojevrsnom balansiranju između zahtjeva visoke književnosti i popularne kulture, te u kojoj je objavljen veliki broj svjetskih bestselera i djela nagrađenih najuglednijim književnim priznanjima, Booki na ovaj način izdvaja i ističe suvremene kvalitetne autore čiji su romani zaslužili nositi oznaku ove legendarne biblioteke.
+            </p>
+            <h2>Povijest</h2>            
             <p>
-                Naša bogata ponuda omogućuje nam da vam ponudimo odjeću različitih cjenovnih raspona – od najpovoljnijih komada do onih nešto višeg cjenovnog razreda. 
-            </p>
+            Počeci knjižare Booki sežu u 1991. godinu kada preuzimanjem poslovanja dotad najvećeg hrvatskog izdavača rječnika i suosnivača Hrvatskog jezičnog portala Novog libera širimo ponudu vlastitih izdanja rječnicima i ostalim naslovima iz naklade Novog Libera.                            
+            </p> 
             <p>
-                Cilj nam je zadržati poziciju prvog trgovca s najvećom ponudom kvalitetne odjeće po pristupačnim cijenama, slijedeći pritom modne smjernice i osiguravajući modni ukus naših kupaca.
-            </p>
-            <p>
-                Robnoj kući ELegans vjeruju brojni zadovoljni kupci kvalitetne odjeće – pridružite im se i Vi.
-            </p>
-            </section>
+                Booki u brojkama:
+                </p>
+                <ul>
+                    <li>Datum osnivanja: 8. siječnja 2015.</li>
+                    <li>Broj zaposlenih: 25</li>
+                    <li>Broj naslova u ponudi: 15.000+</li>
+                    <li>Više od sto tisuća isporučenih narudžbi za 2023.</li>
+                </ul>
 
-            <section class="section-tablica-podaci">
-            <table id="tablica-podaci">
-                <tbody><tr id="tr-tablica">
-                    <td id="td-tablica">
-                        Naziv firme:                       
-                    </td>
-                    <td id="td-tablica">
-                        ELegans NewFashion moda d.o.o.                        
-                    </td>
-                </tr> 
-                <tr id="tr-tablica">
-                    <td id="td-tablica">
-                        Skraćeno ime:                        
-                    </td>
-                    <td id="td-tablica">
-                        ELegans                        
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica">
-                        Sjedište:                       
-                    </td>
-                    <td id="td-tablica"> 
-                        Narodnog preporoda 1, 22000 Šibenik                       
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica">
-                        Telefon:                       
-                    </td>
-                    <td id="td-tablica">
-                        +385 022 123 456                       
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica">
-                        Faks:                       
-                    </td>
-                    <td id="td-tablica"> 
-                        +385 22 123 4567                        
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica">
-                        E-pošta:                        
-                    </td>
-                    <td id="td-tablica"> 
-                        info@elegans.hr                       
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica">
-                        Web stranica:                         
-                    </td>
-                    <td id="td-tablica"> 
-                        http://www.elegans.hr                      
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica"> 
-                        Djelatnost:                       
-                    </td>
-                    <td id="td-tablica"> 
-                        online trgovina na malo odjećom domaćih i svjetskih brendova                       
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica">
-                        OIB:                       
-                    </td>
-                    <td id="td-tablica">
-                        12345678901                        
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica">
-                        MBS:                        
-                    </td>
-                    <td id="td-tablica"> 
-                        01629557                       
-                    </td>
-                </tr>   
-                <tr id="tr-tablica">
-                    <td id="td-tablica"> 
-                        Transakcijski računi:                       
-                    </td>
-                    <td id="td-tablica"> 
-                        <span>HR7323600001101587704 </span>
-                        <br /> 
-                        <span>HR7623400091110290640 </span>                      
-                    </td>
-                </tr> 
-            </tbody></table>
-        
-        </section>
-    </main>
-
-
+                <h2>Osnovni podaci</h2>
+                <p>Tvrtka:	Booki društvo s ograničenom odgovornošću za trgovinu knjigama </p>
+                <p>Skraćeni naziv:	Booki d.o.o.</p>
+                <p>Sjedište i adresa:	22000 Šibenik, Preporoda 3</p>
+                <p>Osnovna djelatnost:	Trgovačka djelatnost knjigama</p>
+                <p>Pravni oblik:	društvo s ograničenom odgovornošću</p>
+                <p>Direktor:	Mia Mijić</p>
+                <p>Telefon:	022/123 456</p>
+                <p>E-mail:	info@booki.hr</p>
+                <p>Web adresa:	www.booki.hr</p>
+                <p>OIB: 12345678901</p>
+                <p>Matični broj kompanije (MB):	3270492</p>
+                <p>Matični broj subjekta (MBS):	080009862, Trgovački sud u Šibeniku</p>
+                <p>Temeljni kapital Društva:	612.200,00 kuna, uplaćen u cijelosti</p>
+                <p>Godina osnivanja:	1991.</p>
+                <p>Žiro račun: 2484008-1101732179 </p>
+                <p>IBAN: HR4824840081101732179</p>
+                <p>Banka: Raiffeisenbank Austria d.d , Stjepana Radića 9, 10000 Šibenik</p>
+            
         </div>
+        </>
     )
 }
 

@@ -8,7 +8,8 @@ function Footer(){
                 <div className="div-foot">
                     <ul>
                     <li><Link to="/products">Knjige</Link></li> 
-                    <li><Link to="/cart">Košarica</Link></li>                   
+                    <li><Link to="/cart">Košarica</Link></li> 
+                    <li><Link to="/uvjeti">Opći uvjeti</Link></li>              
                     </ul>
                 </div>
 
@@ -16,6 +17,7 @@ function Footer(){
                     <ul>
                         <li><Link to="/">Home/Početna</Link></li>                                                
                         <li><Link to="/contact">Kontakt</Link></li>
+                        <li><Link to="/about">O nama</Link></li>
                     </ul>
                     
                 </div>                
