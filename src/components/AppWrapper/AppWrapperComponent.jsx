@@ -3,6 +3,7 @@ import { Header } from "../Header/Header.jsx";
 import { MainComponent } from "../MainComponent/MainComponent.jsx";
 import { Footer } from "../Footer/Footer.jsx";
 import { Toaster } from "react-hot-toast";
+import Newsletter from "../Newsletter/Newsletter.jsx";
 
 function AppWrapperComponent(){
     return(
@@ -13,7 +14,8 @@ function AppWrapperComponent(){
                 <Toaster />
                 <Outlet />
             </div>            
-            {/* <MainComponent /> */}            
+            {/* <MainComponent /> */} 
+            <Newsletter />           
             <Footer />                     
         </div>
 
