@@ -1,17 +1,24 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import "./Preporuke.scss";
 import books from "../databooks.json";
 
-
-function Preporuke() {
+// Funkcija za miješanje niza
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+// Prije mapiranja, miješamo niz knjiga i zatim uzimamo prvih 4 nasumičnih knjiga
+function Preporuke() { 
   return (
     <div className='preporuke-wrapper'>
         <h3>Moglo bi vas zanimati</h3> 
         <div className='card-wrapper'>
-
-        {books && books.slice(8, 12).map( book => {
+        
+        {books && shuffleArray(books).slice(0, 4).map( book => {
                 return (                                                                           
                 <Card className='card' style={{ width: '18rem' }} key={book.id}>
                     <a href="" target="_blank" title="Detaljnije">
@@ -33,58 +40,7 @@ function Preporuke() {
                 );
             })
             } 
-             </div>  
-
-    {/** 
-    <CardGroup>
-      <Card className='card'>
-        <Card.Img variant="top" src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-          <p>"naslov knjige"</p>
-                <p><em>podnaslov</em></p>
-                <p><strong> autor </strong></p>
-                <p style={{padding:5, color:"red", fontSize:"larger"}}>cijena €</p>
-          </Card.Text>          
-        </Card.Body>
-        <Card.Footer>
-        <Button variant="primary">DODAJ U KOŠARICU</Button>
-        </Card.Footer>
-      </Card>
-      <Card className='card'>
-        <Card.Img variant="top" src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-          <p>"naslov knjige"</p>
-                <p><em>podnaslov</em></p>
-                <p><strong> autor </strong></p>
-                <p style={{padding:5, color:"red", fontSize:"larger"}}>cijena €</p>
-          </Card.Text>          
-        </Card.Body>
-        <Card.Footer>
-        <Button variant="primary">DODAJ U KOŠARICU</Button>
-        </Card.Footer>
-      </Card>
-      <Card className='card'>
-        <Card.Img variant="top" src="https://fastly.picsum.photos/id/125/200/300.jpg?hmac=yLvRBwUcr6LYWuGaGk05UjiU5vArBo3Idr3ap5tpSxU" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-          <p>"naslov knjige"</p>
-                <p><em>podnaslov</em></p>
-                <p><strong> autor </strong></p>
-                <p style={{padding:5, color:"red", fontSize:"larger"}}>cijena €</p>
-          </Card.Text>          
-        </Card.Body>
-        <Card.Footer>
-        <Button variant="primary">DODAJ U KOŠARICU</Button>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
-     */}
-    
+             </div>     
     
     </div>
   );
