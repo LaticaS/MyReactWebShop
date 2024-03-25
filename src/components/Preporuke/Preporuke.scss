@@ -1,0 +1,19 @@
+.preporuke-wrapper {
+    padding: 1rem 0rem;
+
+   & h3 {
+    color: antiquewhite;    
+}
+& .card-wrapper {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;      
+}
+& .card {    
+    margin: 1rem 0.2rem;
+
+    & img {
+        width: 10rem;
+    }
+}
+}

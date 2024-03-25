@@ -1,4 +1,5 @@
-import "./UvjetiKupnje.scss"
+import "./UvjetiKupnje.scss";
+import Preporuke from "../Preporuke/Preporuke";
 
 function UvjetiKupnje(){
     return (
@@ -94,8 +95,9 @@ function UvjetiKupnje(){
                 </li>
             </ol>
         </div>
-        
+        <Preporuke />
         </>
+        
     )
 }
 

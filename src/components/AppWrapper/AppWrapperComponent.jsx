@@ -14,7 +14,7 @@ function AppWrapperComponent(){
                 <Toaster />
                 <Outlet />
             </div>            
-            {/* <MainComponent /> */} 
+            {/* <MainComponent /> */}            
             <Newsletter />           
             <Footer />                     
         </div>

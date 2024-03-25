@@ -2,6 +2,7 @@ import { createContext, useState} from "react";
 import "./Proizvodi.scss";
 import books from "../databooks.json";
 
+
 const KosaricaContext = createContext();
 
 function Proizvodi() {    
@@ -35,7 +36,7 @@ function Proizvodi() {
                  
                 )
             })
-            }             
+            } 
         </div>           
         </KosaricaContext.Provider>  
         </>

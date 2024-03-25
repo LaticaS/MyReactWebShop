@@ -1,40 +1,23 @@
-import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import "./Newsletter.scss"
 
 function Newsletter() {
   return (
-
     <div className='newsletter-wrapper'>
-    <h3>Prvi saznajte za akcije i ponude</h3>
-        <h4>Prijava na newsletter</h4>      
-    <Navbar className="bg-light justify-content-around p-4">    
-      <Form inline>
-        <InputGroup>          
-          <Form.Control          
-            placeholder="Ime i prezime"
-            aria-label="Ime i prezime"            
-          />
-        </InputGroup>
-      </Form>
-      <Form inline>
-        <Row>
-          <Col xs="auto">
-            <Form.Control            
-              type="text"
-              placeholder="Email"              
-            />
-          </Col>
-          <Col xs="auto">
-            <Button type="submit" className='newsletter-dugme'>Potvrđujem prijavu</Button>
-          </Col>
-        </Row>
-      </Form>
-    </Navbar>
+    <h3>Pratite naše akcije i ponude</h3>
+        <h4>Newsletter</h4>
+        <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">        
+        <Form.Control type="email" placeholder="Email" />        
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicText">        
+        <Form.Control type="text" placeholder="Ime i prezime" />
+      </Form.Group>      
+      <Button className='newsletter-dugme' type="submit">
+        Potvrđujem prijavu
+      </Button>
+    </Form>    
     </div> 
 
   );
