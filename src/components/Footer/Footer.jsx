@@ -19,6 +19,8 @@ function Footer(){
                         <li><Link to="/">Home/Početna</Link></li>                                                
                         <li><Link to="/contact">Kontakt</Link></li>
                         <li><Link to="/about">O nama</Link></li>
+                        <li><Link to="/dostava">Uvjeti dostave</Link></li>
+
                     </ul>
                     
                 </div>                
