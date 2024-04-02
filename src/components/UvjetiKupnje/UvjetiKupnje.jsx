@@ -1,5 +1,4 @@
 import "./UvjetiKupnje.scss";
-import Preporuke from "../Preporuke/Preporuke";
 
 function UvjetiKupnje(){
     return (
@@ -94,8 +93,7 @@ function UvjetiKupnje(){
                 ispraznit će se Vaša košarica.
                 </li>
             </ol>
-        </div>
-        <Preporuke />
+        </div>        
         </>
         
     )

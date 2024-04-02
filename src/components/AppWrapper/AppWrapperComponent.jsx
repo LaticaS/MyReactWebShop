@@ -4,11 +4,14 @@ import { MainComponent } from "../MainComponent/MainComponent.jsx";
 import { Footer } from "../Footer/Footer.jsx";
 import { Toaster } from "react-hot-toast";
 import Newsletter from "../Newsletter/Newsletter.jsx";
+import NavbarHamburger from "../NavbarHamburger.jsx";
+import NavbarVertical from "../NavbarVertical.jsx";
+
 
 function AppWrapperComponent(){
     return(
-
         <div>
+            <NavbarHamburger />                    
             <Header /> 
             <div className={"page-content"}>
                 <Toaster />
@@ -16,7 +19,8 @@ function AppWrapperComponent(){
             </div>            
             {/* <MainComponent /> */}            
             <Newsletter />           
-            <Footer />                     
+            <Footer />
+            <NavbarVertical />                     
         </div>
 
     )

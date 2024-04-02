@@ -3,7 +3,7 @@ import "./Footer.scss";
 
 function Footer(){
     return(
-        <div>
+        <>
             <footer>
                 <div className="div-foot">
                     <ul>
@@ -44,9 +44,8 @@ function Footer(){
                 */}
 
                 <div className="LaticaS">Izrada: LaticaS, Trokut 2024.</div>             
-        </footer>  
-
-        </div>
+        </footer> 
+        </>
     )
 }
 export {Footer}

@@ -5,7 +5,7 @@ import { KosaricaContext } from "../Product/Proizvodi.jsx";
 import "./Kosarica.scss";
 
 
-function Kosarica() {   
+function PrikazKosarice() {   
       
     const vrijednostKonteksta = useContext(KosaricaContext);
     
@@ -47,18 +47,18 @@ function Kosarica() {
                     </tr> 
                      */}   
                    
-                {vrijednostKonteksta && vrijednostKonteksta.items.map((item) => (
-                            <tr key={item.id}>
+                {vrijednostKonteksta && vrijednostKonteksta.items.map((book) => (
+                            <tr key={book.id}>
                                 <td>
-                                    <img src={item.img} alt="" />
-                                    <p>Naslov knjige: {item.title}</p>
+                                    <img src={book.img} alt="" />
+                                    <p>Naslov knjige: {book.title}</p>
                                 </td>
                                 <td>
                                     <form action="">
                                         <input type="number" name="količina" min="1" max="20" id="input-kolicina-proizvod" />
                                     </form>
                                 </td>
-                                <td>{item.price} €</td>
+                                <td>{book.price} €</td>
                                 <td>Ukupna cijena</td>
                                 <td>
                                     <button>Ukloni</button>
@@ -95,4 +95,4 @@ function Kosarica() {
         </div>
     )
 }
-export {Kosarica}
+export {PrikazKosarice}

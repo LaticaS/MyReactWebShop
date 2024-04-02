@@ -5,18 +5,26 @@ import books from "../databooks.json";
 
 const KosaricaContext = createContext();
 
-function Proizvodi() {    
+function Proizvodi() {  
 
     const dodajKosarici = (book) => {
         console.log("button clicked", book);
         setBasket({...basket, items: [...basket.items, book] });        
         console.log("book in basket", book) //provjera da dodalo knjigu
-    };
-    const [basket, setBasket] = useState({items:[]});    
+    };  
+    
+    const [basket, setBasket] = useState({items:[]}); 
+    
+    // define initial values to pass to KosaricaContext
+    // const appContextValues = {basket, setBasket};
 
     return( 
-        <>
-        <KosaricaContext.Provider value={{basket, dodajKosarici}}>
+        <>        
+       <KosaricaContext.Provider value={{basket, dodajKosarici}}>
+
+        {/**  
+        <KosaricaContext.Provider value={appContextValues}>
+         */}
             
         <div className="div-proizvodi">                                
           {
@@ -37,10 +45,10 @@ function Proizvodi() {
                 )
             })
             } 
-        </div>           
-        </KosaricaContext.Provider>  
+        </div>         
+        </KosaricaContext.Provider>
         </>
     );
 }
 
-export {Proizvodi, KosaricaContext }
+export {Proizvodi, KosaricaContext}

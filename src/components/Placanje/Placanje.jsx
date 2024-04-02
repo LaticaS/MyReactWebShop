@@ -88,13 +88,13 @@ function Placanje() {
         <div className="div-forme-placanja">
         <form action="">
             <input type="radio" value="kartice" name="nacin-placanja" id="karticama" />
-            <label for="karticama">Plaćanje karticama putem WSPay sustava</label>
+            <label htmlFor="karticama">Plaćanje karticama putem WSPay sustava</label>
             <br />
             <input type="radio" value="uplatnica" name="nacin-placanja" id="uplatnicom" />
-            <label for="uplatnicom">Plaćanje općom uplatnicom / Internet bankarstvom</label>
+            <label htmlFor="uplatnicom">Plaćanje općom uplatnicom / Internet bankarstvom</label>
             <br />
             <input type="radio" value="pouzece" name="nacin-placanja" id="pouzecem" />
-            <label for="pouzecem">Plaćanje pouzećem kurirskoj službi prilikom dostave</label>
+            <label htmlFor="pouzecem">Plaćanje pouzećem kurirskoj službi prilikom dostave</label>
             <br />            
         </form>
         </div>       

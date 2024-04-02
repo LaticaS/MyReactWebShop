@@ -4,7 +4,7 @@ import "./Header.scss";
 function Header() {    
 
     return(
-        <div>                      
+        <>                               
         <header>            
                 <section className="head1">          
                 <div className="div-trazilica">                    
@@ -53,24 +53,19 @@ function Header() {
                         </div>
                 </Link>                
                 
-                    <Link to="/" className="nav2" title="Booki/Početna"><div class="div-navi"><b>POČETNA</b></div></Link>
+                    <Link to="/" className="nav2" title="Booki/Početna"><div className="div-navi"><b>POČETNA</b></div></Link>
                                   
-                    <Link to="/products" className="nav2" title="Pogledajte ponudu"><div class="div-navi"><b>KNJIGE</b></div></Link>
+                    <Link to="/products" className="nav2" title="Pogledajte ponudu"><div className="div-navi"><b>KNJIGE</b></div></Link>
                     
-                    <Link to="/contact" className="nav2" title="Kontaktirajte nas"><div class="div-navi"><b>KONTAKT</b></div></Link>
+                    <Link to="/contact" className="nav2" title="Kontaktirajte nas"><div className="div-navi"><b>KONTAKT</b></div></Link>
                 
-                    <Link to="/placanje" className="nav2" title="Narudžba"><div class="div-navi"><b>NARUDŽBA</b></div></Link>
+                    <Link to="/placanje" className="nav2" title="Narudžba"><div className="div-navi"><b>NARUDŽBA</b></div></Link>
                     
                     {/**  <Link to="/pojedini" className="nav2" title="Pojedini"><div class="div-navi"><b>Pojedini</b></div></Link>  */}                    
             </section>
             
         </header> 
-        </div>
+        </>
     )
 }
 export {Header}
-
-//https://pngimg.com/d/book_PNG2113.png
-//https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/School-Clipart/Books_Transparent_PNG_Clip_Art_Image.png?m=1523965454
-//https://www.freepnglogos.com/uploads/book-png/stack-books-png-6.png
-//https://freepngimg.com/thumb/cactus/36903-7-cactus-transparent-image.png

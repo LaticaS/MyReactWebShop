@@ -13,7 +13,7 @@ import { Home } from './components/Home/Home.jsx';
 import { Outlet } from 'react-router-dom';
 import { Pocetna } from './components/Pocetna/Pocetna.jsx';
 import { Proizvodi } from './components/Product/Proizvodi.jsx';
-import { Kosarica } from './components/Kosarica/Kosarica.jsx';
+import { PrikazKosarice } from './components/Kosarica/Kosarica.jsx';
 import { ErrorPage } from './components/ErrorPage.jsx';
 import { Kontakt } from './components/Kontakt/Kontakt.jsx';
 import { Placanje } from './components/Placanje/Placanje.jsx';
@@ -22,7 +22,8 @@ import { PojediniProizvod } from './components/Product/PojediniProizvod.jsx';
 import { About } from './components/About/About.jsx';
 import { OpciUvjeti } from './components/OpciUvjeti/OpciUvjeti.jsx';
 import { UvjetiKupnje } from './components/UvjetiKupnje/UvjetiKupnje.jsx';
-import { Dostava } from './components/Dostava/Dostava.jsx'; 
+import { Dostava } from './components/Dostava/Dostava.jsx';
+import { KosaricaContext } from './components/Product/Proizvodi.jsx'; 
 
 
 function App() { 
@@ -30,12 +31,13 @@ function App() {
   return (
     
     <>
+      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppWrapperComponent />} >
             <Route index element={<Pocetna />} />
             <Route path='/products' element={<Proizvodi />} />
-            <Route path='/cart' element={<Kosarica />} />
+            <Route path='/cart' element={<PrikazKosarice />} />
             <Route path='/contact' element={<Kontakt />} />
             <Route path='/placanje' element={<Placanje />} />
             <Route path='/pojedini' element={<PojediniProizvod />} /> 
@@ -47,7 +49,7 @@ function App() {
             <Route path="*" element={<ErrorPage />} />            
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>      
     </>
   )
 
