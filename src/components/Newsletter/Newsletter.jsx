@@ -4,7 +4,7 @@ import "./Newsletter.scss"
 
 function Newsletter() {
   return (
-    <div className='newsletter-wrapper'>
+    <div className='newsletter-wrapper' style={{backgroundImage:"linear-gradient(orange, darkgreen)"}}>
     <h3>Pratite naše akcije i ponude</h3>
         <h4>Newsletter</h4>
         <Form>
