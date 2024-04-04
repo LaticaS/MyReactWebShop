@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 function NavbarVertical() {
   return (
     <>
-    <Nav className='flex-row justify-content-around' style={{backgroundColor:"orange"}}> 
+    <Nav className='flex-row justify-content-around' style={{backgroundImage:"linear-gradient(gold, orange)"}}> 
     <Nav defaultActiveKey="/home" className="flex-column">
       <Nav.Link href="/home">Active</Nav.Link>
       <Nav.Link eventKey="link-1">Link</Nav.Link>
@@ -21,7 +21,7 @@ function NavbarVertical() {
       </Nav.Link>      
     </Nav>    
     </Nav>
-    <Nav defaultActiveKey="/home" className="flex-row justify-content-around" style={{backgroundColor:"gold"}}>
+    <Nav defaultActiveKey="/home" className="flex-row justify-content-around" style={{backgroundColor:"orangered"}}>
       <Nav.Link href="/home">Active</Nav.Link>
       <Nav.Link eventKey="link-1">Link</Nav.Link>
       <Nav.Link eventKey="link-2">Link</Nav.Link>

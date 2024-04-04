@@ -44,7 +44,7 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/uvjeti' element={<OpciUvjeti />} />
             <Route path='/dostava' element={<Dostava />} />            
-            <Route path='/kupnje' element={<UvjetiKupnje />} />
+            <Route path='/uvjeti-kupnje' element={<UvjetiKupnje />} />
 
             <Route path="*" element={<ErrorPage />} />            
           </Route>

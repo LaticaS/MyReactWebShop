@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import { Header } from "../Header/Header.jsx";
 import { MainComponent } from "../MainComponent/MainComponent.jsx";
 import { Footer } from "../Footer/Footer.jsx";
 import { Toaster } from "react-hot-toast";
@@ -11,8 +10,7 @@ import NavbarVertical from "../NavbarVertical.jsx";
 function AppWrapperComponent(){
     return(
         <div>
-            <NavbarHamburger />                    
-            <Header /> 
+            <NavbarHamburger />
             <div className={"page-content"}>
                 <Toaster />
                 <Outlet />
