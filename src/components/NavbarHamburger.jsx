@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 
 function NavbarHamburger() {
   return (
-    <Navbar expand="lg" className="text-success" style={{backgroundImage:"linear-gradient(orange, gold)"}}>
+    <Navbar expand="md" className="text-success" style={{backgroundImage:"linear-gradient(orange, gold)"}}>
       <Container>
         <Navbar.Brand href="#home">
           <Link to="/" className='text-decoration-none text-success'>
@@ -22,7 +22,7 @@ function NavbarHamburger() {
               height="100px"            
               className="d-inline-block align-top"              
             /> 
-            <p>Booki</p>
+            <p>Booki Webshop</p>
             </Link>          
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='border-success' />
