@@ -18,7 +18,7 @@ h1 {
     border-top-left-radius: 5px;
     
     & .ime-prezime, .email, .phone {
-        width: 30vw;
+        width: 50vw;
         accent-color: dimgrey;
         padding: 0.5rem;
         border-radius: 5px;
@@ -32,7 +32,7 @@ h1 {
     }
 
     & textarea {
-        width: 30vw;
+        width: 50vw;
         resize: none;
         font-size: 1.1rem;
         font-family: Arial, Helvetica, sans-serif;
@@ -53,4 +53,25 @@ h1 {
     border-top-right-radius: 5px;
     padding: 1rem;
     font-size: larger;
+}
+
+@media only screen and (max-width: 600px) {
+    .kontakt-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem 0rem;
+        padding: 0.1rem;
+    }
+    .kontakt-polje, .kontakt-info { 
+        flex: 1;
+        padding: 0.1rem;
+        align-items: center;
+
+        & .ime-prezime, .email, .phone, .poruka-area {
+            width: 95vw;
+            padding: 0.5rem;
+            margin: 1rem 0rem;
+        } 
+        }
+    
 }

@@ -115,3 +115,10 @@ h1 {
         background-color: lightgreen;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .placanje-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}

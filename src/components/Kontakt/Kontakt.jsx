@@ -13,12 +13,13 @@ function Kontakt() {
             <br /> 
             <input type="phone" id="phone" name="phone" placeholder=" Upišite telefon" className="phone" />
             <br />
-            <textarea
+            <textarea 
+            className="poruka-area"
         name="Poruka"
         placeholder="Upišite svoju poruku"
         rows={10}
         cols={50}
-      /> 
+              /> 
       <br />       
       <p>
       <input type="checkbox" value="kontakt-privola" name="kontakt-privola" id="checkbox" />         
@@ -28,6 +29,7 @@ function Kontakt() {
       <br />           
       <button type="submit" name="Pošalji">Pošalji</button>
       </div>
+      
       <div className="kontakt-info">
       <ul>
         <li>Preporoda 3, 22000 Šibenik</li>
