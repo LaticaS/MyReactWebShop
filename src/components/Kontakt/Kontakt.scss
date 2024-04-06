@@ -1,77 +1,80 @@
 .kontakt-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: stretch;
-    margin: 1rem;
-    color: darkgreen;       
-}
-
-h1 {
-    color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1rem;
+  color: darkgreen;
 }
 
 .kontakt-polje {
-    flex: 2;
-    background-color: antiquewhite;
-    padding: 1rem;
-    border-top-left-radius: 5px;
-    
-    & .ime-prezime, .email, .phone {
-        width: 50vw;
-        accent-color: dimgrey;
-        padding: 0.5rem;
-        border-radius: 5px;
-        margin: 1rem;
-        font-size: 1.1rem;
-    }
-    & input[type=checkbox] {
-        transform: scale(1.5);
-        accent-color: darkgreen;
-        margin: 10px;
-    }
+  flex: 2;
+  background-color: white;
+  padding: 1rem;
+  border-top-left-radius: 5px;
 
-    & textarea {
-        width: 50vw;
-        resize: none;
-        font-size: 1.1rem;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    & button {
-        background-color: lightseagreen;
-        padding: 0.5rem 2rem;
-        font-size: larger;
-    }
-    & button:hover{
-        background-color: orange;
-    }
+  & .ime-prezime,
+  .email,
+  .phone {
+    width: 50vw;
+    accent-color: dimgrey;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  & input[type="checkbox"] {
+    transform: scale(1.5);
+    accent-color: darkgreen;
+    margin: 10px;
+  }
+
+  & textarea {
+    width: 50vw;
+    resize: none;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  & button {
+    background-color: lightseagreen;
+    padding: 0.5rem 2rem;
+    font-size: larger;
+  }
+  & button:hover {
+    background-color: orange;
+  }
 }
 
 .kontakt-info {
-    background-color: lightskyblue;
-    flex: 1;
-    border-top-right-radius: 5px;
-    padding: 1rem;
-    font-size: larger;
+  background-image: linear-gradient(lightgoldenrodyellow, orange);
+  flex: 1;
+  border-top-right-radius: 5px;
+  padding: 1rem;
+  font-size: larger;
 }
 
 @media only screen and (max-width: 600px) {
-    .kontakt-wrapper {
-        display: flex;
-        flex-direction: column;
-        margin: 0.5rem 0rem;
-        padding: 0.1rem;
-    }
-    .kontakt-polje, .kontakt-info { 
-        flex: 1;
-        padding: 0.1rem;
-        align-items: center;
+  .kontakt-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0rem;
+    padding: 0.1rem;
+  }
+  .kontakt-polje,
+  .kontakt-info {
+    flex: 1;
+    padding: 0.1rem;
+    align-items: center;
 
-        & .ime-prezime, .email, .phone, .poruka-area {
-            width: 95vw;
-            padding: 0.5rem;
-            margin: 1rem 0rem;
-        } 
-        }
-    
+    & .ime-prezime,
+    .email,
+    .phone,
+    .poruka-area {
+      width: 95vw;
+      padding: 0.5rem;
+      margin: 1rem 0rem;
+    }
+  }
 }

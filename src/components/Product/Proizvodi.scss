@@ -7,7 +7,8 @@
 
   & div {
     width: 15vw;
-    background-color: antiquewhite;
+    background-color: darkslategray;
+    color: whitesmoke;
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 5px;
@@ -24,10 +25,10 @@
   }
 
   button {
-    background-color: lightseagreen;
+    background-color: orange;
   }
   button:hover {
-    background-color: orange;
+    background-color: gold;
   }
 }
 @media only screen and (max-width: 800px) {

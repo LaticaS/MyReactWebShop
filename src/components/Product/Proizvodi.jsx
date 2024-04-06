@@ -38,7 +38,9 @@ function Proizvodi() {
                   <p>
                     <strong> {book.author} </strong>
                   </p>
-                  <p style={{ padding: 5, color: "red", fontSize: "larger" }}>
+                  <p
+                    style={{ padding: 5, color: "yellow", fontSize: "larger" }}
+                  >
                     {book.price} €
                   </p>
 

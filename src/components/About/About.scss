@@ -1,12 +1,21 @@
 .about-wrapper {
-    text-align: justify;
-    background-color: antiquewhite;
-    padding: 1rem;
-    margin: 1rem;
-    
-    & p, li, h2 {line-height: 1.5;}
-    .figure-CEO {float: right; width: 30%; }
-    .fotka-CEO {filter: drop-shadow(5px 5px 10px gray);
-            max-width: 100%; min-width: 50%; 
-        }                  
-    }
+  text-align: justify;
+  background-image: linear-gradient(lightgoldenrodyellow, orange);
+  padding: 1rem;
+  margin: 1rem;
+
+  & p,
+  li,
+  h2 {
+    line-height: 1.5;
+  }
+  .figure-CEO {
+    float: right;
+    width: 30%;
+  }
+  .fotka-CEO {
+    filter: drop-shadow(5px 5px 10px gray);
+    max-width: 100%;
+    min-width: 50%;
+  }
+}

@@ -3,29 +3,27 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { KosaricaContext } from "../Product/Proizvodi.jsx";
 import "./Kosarica.scss";
+import Table from "react-bootstrap/Table";
 
+function PrikazKosarice() {
+  const vrijednostKonteksta = useContext(KosaricaContext);
 
-function PrikazKosarice() {   
-      
-    const vrijednostKonteksta = useContext(KosaricaContext);
-    
-    return(
-        <div className="kosarica-wrapper">
-            <main>
-            <h1>Košarica</h1>
-            <table>
-                <thead>
+  return (
+    <div className="kosarica-wrapper">
+      <main>
+        <h1>Vaša košarica 〱</h1>
+        <Table responsive="md">
+          <thead>
             <tr>
-                    <th>Proizvod</th>
-                    <th>Količina</th>
-                    <th>Cijena</th>
-                    <th>Ukupna cijena</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-
-                    {/**                                                          
+              <th>Proizvod</th>
+              <th>Količina</th>
+              <th>Cijena</th>
+              <th>Ukupna cijena</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {/**                                                          
                     <tr>
                     <td>
                     <img src="https://znanje.hr/product-images/35948cb4-24d1-4ee6-b122-e555bb318f64.jpg" alt="" /> 
@@ -45,54 +43,70 @@ function PrikazKosarice() {
                         </svg>                     
                     </td>  
                     </tr> 
-                     */}   
-                   
-                {vrijednostKonteksta && vrijednostKonteksta.items.map((book) => (
-                            <tr key={book.id}>
-                                <td>
-                                    <img src={book.img} alt="" />
-                                    <p>Naslov knjige: {book.title}</p>
-                                </td>
-                                <td>
-                                    <form action="">
-                                        <input type="number" name="količina" min="1" max="20" id="input-kolicina-proizvod" />
-                                    </form>
-                                </td>
-                                <td>{book.price} €</td>
-                                <td>Ukupna cijena</td>
-                                <td>
-                                    <button>Ukloni</button>
-                                </td>
-                            </tr>
-                        ))}                            
+                     */}
 
-                </tbody>
-                <tfoot>
-                <tr>
-                    <td>
-                        <input type="text" className="promotivni-input" placeholder="Unijeti promotivni kod" />
-                        <button>Priloži</button>
-                    </td>
-                    <td></td>
-                    <td></td>                   
-                    <td>
-                        <p>Zbroj košarice: €</p>
-                        <p>Popust: €</p>                        
-                        <p><b>KOŠARICA UKUPNO: €</b></p>
-                    </td>
-                    <td></td>
+            {vrijednostKonteksta &&
+              vrijednostKonteksta.items.map((item) => (
+                <tr key={book.id}>
+                  <td>
+                    <img src={book.img} alt="" />
+                    <p>Naslov knjige: {book.title}</p>
+                  </td>
+                  <td>
+                    <form action="">
+                      <input
+                        type="number"
+                        name="količina"
+                        min="1"
+                        max="20"
+                        id="input-kolicina-proizvod"
+                      />
+                    </form>
+                  </td>
+                  <td>{book.price} €</td>
+                  <td>Ukupna cijena</td>
+                  <td>
+                    <button>Ukloni</button>
+                  </td>
                 </tr>
-                </tfoot>             
-            </table>            
+              ))}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  className="promotivni-input"
+                  placeholder="Unijeti promotivni kod"
+                />
+                <br />
+                <button>Priloži</button>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <p>Zbroj košarice: €</p>
+                <p>Popust: €</p>
+                <p>
+                  <b>KOŠARICA UKUPNO: €</b>
+                </p>
+              </td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </Table>
 
-            <div className="div-buttoni">
-            <Link to="/products"><Button>⪡ POVRATAK NA WEBSHOP</Button></Link>
-            <Button>OČISTI KOŠARICU</Button>
-            <Link to="/placanje"><Button>PLAĆANJE ⪢</Button></Link>
-            </div>             
-
-            </main>
+        <div className="div-buttoni">
+          <Link to="/products">
+            <Button>⪡ POVRATAK NA WEBSHOP</Button>
+          </Link>
+          <Button>OČISTI KOŠARICU</Button>
+          <Link to="/placanje">
+            <Button>PLAĆANJE ⪢</Button>
+          </Link>
         </div>
-    )
+      </main>
+    </div>
+  );
 }
-export {PrikazKosarice}
+export { PrikazKosarice };

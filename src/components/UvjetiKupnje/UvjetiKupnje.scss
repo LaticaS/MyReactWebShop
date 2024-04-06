@@ -1,8 +1,12 @@
 .uvjeti-kupnje-wrapper {
-    text-align: justify;
-    background-color: antiquewhite;
-    padding: 1rem;
-    margin: 1rem;
-    
-    & p, li, h2 {line-height: 1.5;}
+  text-align: justify;
+  background-image: linear-gradient(lightgoldenrodyellow, orange);
+  padding: 1rem;
+  margin: 1rem;
+
+  & p,
+  li,
+  h2 {
+    line-height: 1.5;
+  }
 }

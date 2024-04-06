@@ -97,7 +97,7 @@ function NavbarVertical() {
       <Nav
         defaultActiveKey="/home"
         className="flex-row justify-content-around"
-        style={{ background: "green" }}
+        style={{ background: "black" }}
       >
         <Nav.Link eventKey="disabled" disabled>
           design@LaticaS

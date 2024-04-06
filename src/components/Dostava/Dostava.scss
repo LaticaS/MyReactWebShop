@@ -1,13 +1,17 @@
 .dostava-wrapper {
-    text-align: justify;
-    background-color: antiquewhite;
-    padding: 1rem;
-    margin: 1rem;   
-    
-    & p, li, h2 {line-height: 1.5rem;}
+  text-align: justify;
+  background-image: linear-gradient(lightgoldenrodyellow, orange);
+  padding: 1rem;
+  margin: 1rem;
 
-    & .dostava-tekst {
-        text-align: justify;
-        line-height: 1.5rem;               
-    }
+  & p,
+  li,
+  h2 {
+    line-height: 1.5rem;
+  }
+
+  & .dostava-tekst {
+    text-align: justify;
+    line-height: 1.5rem;
+  }
 }

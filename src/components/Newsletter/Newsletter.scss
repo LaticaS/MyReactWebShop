@@ -1,18 +1,19 @@
 .newsletter-wrapper {
-    width: 100%;
-    padding: 1rem;    
-    background-color: orangered;
-    & h3 {
-        color: antiquewhite;
-        padding: 0.5rem;
-    }
-    & h4 {
-        color: yellow;
-        padding: 0.5rem;
-    }
-    & .newsletter-dugme {
-        background-color: orange;
-    } .newsletter-dugme:hover {
-        background-color: lightseagreen;
-    }
+  width: 100%;
+  padding: 1rem;
+  background-image: linear-gradient(darkslategray, black);
+  & h3 {
+    color: antiquewhite;
+    padding: 0.5rem;
+  }
+  & h4 {
+    color: yellow;
+    padding: 0.5rem;
+  }
+  & .newsletter-dugme {
+    background-color: orange;
+  }
+  .newsletter-dugme:hover {
+    background-color: lightseagreen;
+  }
 }
