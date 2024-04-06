@@ -1,52 +1,55 @@
 .div-proizvodi {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    align-items: center;  
-    padding: 1rem; 
-   
-    & div {
-        width: 20%;
-        background-color: antiquewhite;         
-        margin: 0.5rem; 
-        padding: 0.5rem; 
-        border-radius: 5px; 
-        align-self: stretch;
-        
-        & p:first-of-type {
-            font-weight: bold;}         
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  & div {
+    width: 15vw;
+    background-color: antiquewhite;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    align-self: stretch;
+
+    & p:first-of-type {
+      font-weight: bold;
     }
+  }
 
-    img {
-        width: 100%;
-        padding: 0.5rem 0rem;
-    }    
+  img {
+    width: 100%;
+    padding: 0.5rem 0rem;
+  }
 
-    button {
-        background-color: lightseagreen;
-    } button:hover {background-color: orange;}
-
+  button {
+    background-color: lightseagreen;
+  }
+  button:hover {
+    background-color: orange;
+  }
 }
-    @media only screen and (max-width: 800px) {
-        .div-proizvodi div {
-            width: 45%;                     
-            margin: 0.4rem 0rem; 
-            padding: 0.5rem;  
-        }
-        img {
-            min-width: 80%;
-            padding: 0.5rem 0rem;
-        } 
-        }
+@media only screen and (max-width: 800px) {
+  .div-proizvodi div {
+    width: 25%;
+    margin: 0.4rem 0.2rem;
+    padding: 0.5rem;
+  }
+  img {
+    min-width: 80%;
+    padding: 0.5rem 0rem;
+  }
+}
 
-        @media only screen and (max-width: 500px) {
-            .div-proizvodi div {
-                width: 100%;                        
-                margin: 0.5rem 0rem; 
-                padding: 0.5rem;  
-            }
-            img {
-                min-width: 90%;
-                padding: 0.5rem 0rem;
-            }
-            }
+@media only screen and (max-width: 500px) {
+  .div-proizvodi div {
+    width: 90%;
+    margin: 0.5rem 0.1rem;
+    padding: 0.2rem;
+  }
+  img {
+    min-width: 90%;
+    padding: 0.5rem 0rem;
+  }
+}

@@ -1,124 +1,156 @@
 .placanje-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: stretch;
-    margin: 1rem;
-    color: darkgreen;          
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1rem;
+  color: darkgreen;
 }
 
 h1 {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 .adresa-polje {
-    flex: 2;
-    background-color: antiquewhite;
-    padding: 1rem;
-    border-top-left-radius: 5px;
-    
-    & .ime, .prezime, .email, .phone, .ulica, .kucniBroj, .grad, .postanskiBroj, .drzava {
-        width: 20vw;
-        accent-color: dimgrey;
-        padding: 0.5rem;
-        border-radius: 5px;
-        margin: 1rem;
-        font-size: 1.1rem;       
-    }
-    & input[type=checkbox] {
-        transform: scale(1.5);
-        accent-color: darkgreen;
-        margin: 10px;
-    }
+  flex: 2;
+  background-color: antiquewhite;
+  padding: 1rem;
+  border-top-left-radius: 5px;
 
-    & textarea {
-        width: 30vw;
-        resize: none;
-        font-size: 1.1rem;
-        font-family: Arial, Helvetica, sans-serif;
-        border-radius: 5px;
-        padding: 0.5rem;
-    }    
-    & button {
-        background-color: lightseagreen;
-        padding: 0.5rem 2rem;
-        font-size: larger;
-    }
-    & button:hover{
-        background-color: orange;
-    }
+  & .ime,
+  .prezime,
+  .email,
+  .phone,
+  .ulica,
+  .kucniBroj,
+  .grad,
+  .postanskiBroj,
+  .drzava {
+    width: 20vw;
+    accent-color: dimgrey;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 1.1rem;
+  }
+  & input[type="checkbox"] {
+    transform: scale(1.5);
+    accent-color: darkgreen;
+    margin: 10px;
+  }
+
+  & textarea {
+    width: 30vw;
+    resize: none;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+  & button {
+    background-color: lightseagreen;
+    padding: 0.5rem 2rem;
+    font-size: larger;
+  }
+  & button:hover {
+    background-color: orange;
+  }
 }
 
 .placanje-sidebar {
-    background-color: whitesmoke;
-    flex: 1;
-    border-top-right-radius: 5px;
-    padding: 0.5rem 0.5rem;
-    margin: 0rem 0.5rem;
+  background-color: whitesmoke;
+  flex: 1;
+  border-top-right-radius: 5px;
+  padding: 0.5rem 0.5rem;
+  margin: 0rem 0.5rem;
 
-    & table { 
-        background-color: white;       
-        width: 100%;
-        border: 1px solid white;
-        border-radius: 5px;
-        color: darkgreen;
-        & th, td {
-            padding: 1rem;
-            border-bottom: 1px solid darkslategrey;
-        }
-        & .ukupnaCijena {
-            text-align: right;
-            font-weight: bold;
-        }        
-        & img {
-            width: 150px;
-            padding: 1rem;
-        }           
+  & table {
+    background-color: white;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: darkgreen;
+    & th,
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid darkslategrey;
     }
+    & .ukupnaCijena {
+      text-align: right;
+      font-weight: bold;
+    }
+    & img {
+      width: 150px;
+      padding: 1rem;
+    }
+  }
 
-    & .nacin-placanja-polje {
-        background-color: white; 
-        padding: 1rem 0rem;
-        margin: 1rem 0rem;
+  & .nacin-placanja-polje {
+    background-color: white;
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
 
-        & .div-forme-placanja {
-            text-align: left;
-            padding: 0rem 0.5rem;
-        }
-        & input[type=radio] {
-            transform: scale(1.5);
-            accent-color: darkgreen; 
-            padding: 0.5rem 0.5rem;
-            margin: 0.5rem 0.5rem;                     
-        }
+    & .div-forme-placanja {
+      text-align: left;
+      padding: 0rem 0.5rem;
     }
-    & button {
-        width: 20vw;
-        padding: 0.5rem 1rem;
-        margin: 1rem 1rem;
-        background-color: lightseagreen;
+    & input[type="radio"] {
+      transform: scale(1.5);
+      accent-color: darkgreen;
+      padding: 0.5rem 0.5rem;
+      margin: 0.5rem 0.5rem;
     }
-    & button:hover {        
-        background-color: orange;
-    }
+  }
+  & button {
+    width: 20vw;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem;
+    background-color: lightseagreen;
+  }
+  & button:hover {
+    background-color: orange;
+  }
 }
 
 .div-buttoni {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0.5rem 0rem;
-    padding: 0.5rem 0.5rem;
-    & Button:hover {
-        background-color: lightgreen;
-    }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem 0.5rem;
+  & Button:hover {
+    background-color: lightgreen;
+  }
 }
 
-@media only screen and (max-width: 600px) {
-    .placanje-wrapper {
-        display: flex;
-        flex-direction: column;
+@media only screen and (max-width: 700px) {
+  .placanje-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adresa-polje {
+    flex: 1;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-top-left-radius: 5px;
+
+    & .ime,
+    .prezime,
+    .email,
+    .phone,
+    .ulica,
+    .kucniBroj,
+    .grad,
+    .postanskiBroj,
+    .drzava {
+      width: 100%;
     }
+  }
+
+  .placanje-sidebar {
+    margin: 1rem 0.5rem;
+  }
 }
