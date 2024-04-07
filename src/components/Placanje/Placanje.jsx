@@ -9,7 +9,7 @@ function Placanje() {
       <h1>Plaćanje 〱</h1>
       <div className="placanje-wrapper">
         <div className="adresa-polje">
-          <h4>UNESITE ADRESU ZA DOSTAVU</h4>
+          <h4>INFORMACIJE ZA NAPLATU</h4>
 
           <form action="">
             <input
@@ -148,7 +148,7 @@ function Placanje() {
           </div>
 
           <div className="nacin-placanja-polje">
-            <h2>Izaberite način plaćanja</h2>
+            <h4>IZABERITE NAČIN PLAĆANJA</h4>
             <div className="div-forme-placanja">
               <form action="">
                 <input
