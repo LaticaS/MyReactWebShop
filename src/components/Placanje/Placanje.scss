@@ -101,10 +101,12 @@
     width: 30vw;
     padding: 0.5rem 1rem;
     margin: 1rem 1rem;
-    background-image: linear-gradient(darkslategray, black);
+    background-image: linear-gradient(olive, darkgreen);
+    color: yellow;
   }
   & button:hover {
-    background-color: gold;
+    background-image: linear-gradient(yellow, lightgray);
+    color: darkslategray;
   }
 }
 

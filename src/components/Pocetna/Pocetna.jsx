@@ -11,38 +11,22 @@ function Pocetna() {
       <h2>Preporuke beletristika</h2>
       <GrupaProizvoda />
       <h2>Posebna ponuda</h2>
-      <div class="row featurette py-2 my-2">
+      <div class="row featurette py-2 my-2 px-3">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">
-            First featurette heading.{" "}
-            <span class="text-body-secondary">It’ll blow your mind.</span>
+            Znanost začina, nova hit kuharica -{" "}
+            <span class="text-body-secondary">dr. Stuarta Farrimonda</span>
           </h2>
           <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
+            Ljubitelji začina, pustolovi i znatiželjni kuhari, otkrijte kako se
+            okusi stapaju i pokrenite revoluciju u kuhanju. Podignite svoju
+            strast prema začinima na novu razinu zahvaljujući zanimljivim
+            istraživanjima dr. Stuarta Farrimonda, znanstvenika o prehrani i
+            uspješnog autora.
           </p>
         </div>
         <div class="col-md-5">
-          <svg
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="400"
-            height="400"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect
-              width="100%"
-              height="100%"
-              fill="var(--bs-secondary-bg)"
-            ></rect>
-            <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-              500x500
-            </text>
-          </svg>
+          <img src="\carousel-img/znanost začina.jpg" alt="" width={300} />
         </div>
       </div>
       <h2>Preporuke publicistika</h2>

@@ -1,0 +1,42 @@
+.pojedini-proizvod-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.div-img-pojedini-proizvod {
+  flex: 1;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(lightgoldenrodyellow, orange);
+  & img {
+    width: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+.div-podaci-pojedini-proizvod {
+  flex: 2;
+  background-color: white;
+  text-align: left;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  & #kolicina {
+    padding: 0.6em 1.2em;
+    border-color: orange;
+    border-radius: 5px;
+  }
+  & .button-dodaj {
+    margin: 0.5rem;
+    background-color: orange;
+  }
+  & .button-dodaj:hover {
+    background-color: gold;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .div-podaci-pojedini-proizvod {
+    padding-left: 1rem;
+  }
+}

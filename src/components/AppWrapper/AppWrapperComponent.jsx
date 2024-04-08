@@ -4,22 +4,22 @@ import { Toaster } from "react-hot-toast";
 import Newsletter from "../Newsletter/Newsletter.jsx";
 import NavbarHamburger from "../NavbarHamburger.jsx";
 import NavbarVertical from "../NavbarVertical.jsx";
+import NavbarOffcanvas from "../NavbarOffcanvas.jsx";
 
-
-function AppWrapperComponent(){
-    return(
-        <div>
-            <NavbarHamburger />
-            <div className={"page-content"}>
-                <Toaster />
-                <Outlet />
-            </div>            
-            {/* <MainComponent /> */}            
-            <Newsletter /> 
-            <NavbarVertical />                     
-        </div>
-
-    )
+function AppWrapperComponent() {
+  return (
+    <div>
+      <NavbarOffcanvas />
+      <NavbarHamburger />
+      <div className={"page-content"}>
+        <Toaster />
+        <Outlet />
+      </div>
+      {/* <MainComponent /> */}
+      <Newsletter />
+      <NavbarVertical />
+    </div>
+  );
 }
 
-export {AppWrapperComponent}
+export { AppWrapperComponent };

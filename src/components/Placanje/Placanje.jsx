@@ -186,7 +186,7 @@ function Placanje() {
           </div>
 
           <button type="submit" name="Narucujem" className="button-narucujem">
-            Naruči
+            <h5>NARUČI</h5>
           </button>
           <p>
             <small>
