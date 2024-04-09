@@ -123,7 +123,7 @@ function NavbarOffcanvas() {
                 <Nav.Link href="#action2">
                   <a
                     href="mailto:info@booki.hr"
-                    className="nav1"
+                    className="text-decoration-none"
                     target="_blank"
                     title="Mail to: info@booki.hr"
                   >
@@ -132,7 +132,7 @@ function NavbarOffcanvas() {
                   /{" "}
                   <a
                     href="tel:+385022123340"
-                    className="nav1"
+                    className="text-decoration-none"
                     target="_blank"
                     title="Phone Booki: Croatia +385"
                   >
@@ -143,10 +143,10 @@ function NavbarOffcanvas() {
                   <a href="https://www.facebook.com/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="25"
+                      height="25"
                       fill="darkgreen"
-                      className="bi bi-facebook"
+                      className="bi bi-facebook px-1"
                       id="Face"
                       viewBox="0 0 16 16"
                     >
@@ -156,10 +156,10 @@ function NavbarOffcanvas() {
                   <a href="https://www.instagram.com/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="25"
+                      height="25"
                       fill="darkgreen"
-                      className="bi bi-instagram"
+                      className="bi bi-instagram px-1"
                       id="Insta"
                       viewBox="0 0 16 16"
                     >
@@ -169,10 +169,10 @@ function NavbarOffcanvas() {
                   <a href="https://twitter.com/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="25"
+                      height="25"
                       fill="darkgreen"
-                      className="bi bi-twitter-x"
+                      className="bi bi-twitter-x px-1"
                       id="Twitt"
                       viewBox="0 0 16 16"
                     >
