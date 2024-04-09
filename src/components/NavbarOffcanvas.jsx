@@ -11,7 +11,7 @@ function NavbarOffcanvas() {
     <>
       <Navbar
         expand="md"
-        className="bg-body-tertiary mb-3"
+        className="bg-body-tertiary"
         style={{ backgroundImage: "linear-gradient(orange, gold)" }}
       >
         <Container fluid>
@@ -53,20 +53,58 @@ function NavbarOffcanvas() {
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                   </svg>
                 </Form>
-                <Nav.Link href="#action1">POČETNA</Nav.Link>
+                <Nav.Link href="#action1">
+                  <Link to="/" className="text-decoration-none text-dark">
+                    POČETNA
+                  </Link>
+                </Nav.Link>
                 <NavDropdown title="KNJIGE" id="">
-                  <NavDropdown.Item href="#action2">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action3">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action4">
-                    Something else here
-                  </NavDropdown.Item>
+                  <Link
+                    to="/products"
+                    className="text-decoration-none text-dark"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Beletristika
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Publicistika
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Stručna literatura
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      Djeca i mladi
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.5">
+                      Rječnici
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.6">
+                      Enciklopedije
+                    </NavDropdown.Item>
+                  </Link>
                 </NavDropdown>
-                <Nav.Link href="#action1">O NAMA</Nav.Link>
-                <Nav.Link href="#action1">KONTAKT</Nav.Link>
-                <Nav.Link href="#action1">NARUDŽBA</Nav.Link>
+                <Nav.Link href="#action1">
+                  <Link to="/about" className="text-decoration-none text-dark">
+                    O NAMA
+                  </Link>
+                </Nav.Link>
+                <Nav.Link href="#action1">
+                  <Link
+                    to="/contact"
+                    className="text-decoration-none text-dark"
+                  >
+                    KONTAKT
+                  </Link>
+                </Nav.Link>
+                <Nav.Link href="#action1">
+                  <Link
+                    to="/placanje"
+                    className="text-decoration-none text-dark"
+                  >
+                    NARUDŽBA
+                  </Link>
+                </Nav.Link>
                 <Nav.Link href="#action1">
                   <Link to="/cart">
                     <svg
