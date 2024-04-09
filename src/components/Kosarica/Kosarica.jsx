@@ -74,11 +74,15 @@ function PrikazKosarice() {
           <tfoot>
             <tr>
               <td>
-                <input
-                  type="text"
-                  className="promotivni-input"
-                  placeholder="Unijeti promotivni kod"
-                />
+                <label htmlFor="promotivni-input">
+                  Promotivni kod <br />
+                  <input
+                    type="text"
+                    className="promotivni-input"
+                    placeholder="kod"
+                    id="promotivni-input"
+                  />
+                </label>
                 <br />
                 <button>Priloži</button>
               </td>

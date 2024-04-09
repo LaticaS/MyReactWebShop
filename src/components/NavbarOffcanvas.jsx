@@ -38,13 +38,13 @@ function NavbarOffcanvas() {
                   <Form.Control
                     type="search"
                     placeholder="Search"
-                    className="me-2"
+                    className="me-1"
                     aria-label="Search"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="27"
-                    height="27"
+                    width="25"
+                    height="25"
                     fill="darkgreen"
                     className="bi bi-search"
                     id="search"
@@ -128,8 +128,8 @@ function NavbarOffcanvas() {
                     title="Mail to: info@booki.hr"
                   >
                     info@booki.hr
-                  </a>{" "}
-                  /{" "}
+                  </a>
+                  <br />
                   <a
                     href="tel:+385022123340"
                     className="text-decoration-none"
