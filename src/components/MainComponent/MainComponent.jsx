@@ -1,19 +1,17 @@
 import { Outlet } from "react-router-dom";
 import { Pocetna } from "../Pocetna/Pocetna.jsx";
 import { ProizvodBoot } from "../Product/ProizvodBoot.jsx";
-import {Proizvodi} from "../Product/Proizvodi.jsx";
-import {PrikazKosarice} from "../Kosarica/Kosarica.jsx";
+import { Proizvodi } from "../Product/Proizvodi.jsx";
+import { PrikazKosarice } from "../Kosarica/Kosarica.jsx";
 
+function MainComponent() {
+  return (
+    <div>
+      {/**<PrikazKosarice />  */}
 
-function MainComponent(){
-    return(     
-        <div>  
-            <PrikazKosarice />           
-                     
-            
-            <br /> 
+      <br />
 
-           {/** 
+      {/** 
             *  <Pocetna /> 
             * 
             * <Proizvodi /> 
@@ -21,11 +19,11 @@ function MainComponent(){
             <img src="https://media.tenor.com/OCAVH-SFsM8AAAAe/it%27s-fine-im-fine.png" />
             <p>Šiz paragraf za šiz stanje</p>   
             
-            */} 
-                      
-       <Outlet /> 
-    </div>  
-    )
+            */}
+
+      <Outlet />
+    </div>
+  );
 }
 
-export{MainComponent}
+export { MainComponent };

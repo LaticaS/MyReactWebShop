@@ -1,110 +1,86 @@
 import { Button } from "react-bootstrap";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { KosaricaContext } from "../Product/Proizvodi.jsx";
+//import { KosaricaContext } from "../Product/Proizvodi.jsx";
 import "./Kosarica.scss";
-import Table from "react-bootstrap/Table";
+import { CartContext } from "../../context/cart.jsx";
 
 function PrikazKosarice() {
-  const vrijednostKonteksta = useContext(KosaricaContext);
+  //const vrijednostKonteksta = useContext(KosaricaContext);
+  const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } =
+    useContext(CartContext);
 
   return (
     <div className="kosarica-wrapper">
       <main>
         <h1>Vaša košarica 〱</h1>
-        <Table responsive="md">
-          <thead>
-            <tr>
-              <th>Proizvod</th>
-              <th>Količina</th>
-              <th>Cijena</th>
-              <th>Ukupna cijena</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {/**                                                          
-                    <tr>
-                    <td>
-                    <img src="https://znanje.hr/product-images/35948cb4-24d1-4ee6-b122-e555bb318f64.jpg" alt="" /> 
-                    <p>Naslov knjige:</p>
-                    </td>
-                    <td>
-                    <form action="">
-                        <input type="number" name="količina" min="1" max="20" id="input-količina-proizvod" />
-                    </form>
-                    </td>
-                    <td> €</td>
-                    <td> €</td>
-                    <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" className="bi bi-x-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                        </svg>                     
-                    </td>  
-                    </tr> 
-                     */}
 
-            {vrijednostKonteksta &&
-              vrijednostKonteksta.items.map((item) => (
-                <tr key={book.id}>
-                  <td>
-                    <img src={book.img} alt="" />
-                    <p>Naslov knjige: {book.title}</p>
-                  </td>
-                  <td>
-                    <form action="">
-                      <input
-                        type="number"
-                        name="količina"
-                        min="1"
-                        max="20"
-                        id="input-kolicina-proizvod"
-                      />
-                    </form>
-                  </td>
-                  <td>{book.price} €</td>
-                  <td>Ukupna cijena</td>
-                  <td>
-                    <button>Ukloni</button>
-                  </td>
-                </tr>
-              ))}
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>
-                <label htmlFor="promotivni-input">
-                  Promotivni kod <br />
-                  <input
-                    type="text"
-                    className="promotivni-input"
-                    placeholder="kod"
-                    id="promotivni-input"
+        <div className="flex-col flex items-center bg-warning gap-8 p-10 text-black text-sm">
+          <div className="flex flex-col gap-4 bg-warning">
+            {cartItems.map((item) => (
+              <div className="flex justify-between items-center" key={item.id}>
+                <div className="flex gap-4">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="rounded-md h-24"
+                    style={{ width: 150 }}
                   />
-                </label>
-                <br />
-                <button>Priloži</button>
-              </td>
-              <td></td>
-              <td></td>
-              <td>
-                <p>Zbroj košarice: €</p>
-                <p>Popust: €</p>
-                <p>
-                  <b>KOŠARICA UKUPNO: €</b>
-                </p>
-              </td>
-              <td></td>
-            </tr>
-          </tfoot>
-        </Table>
+                  <div className="flex flex-col">
+                    <h1 className="text-lg font-bold">
+                      Naslov: "{item.title}"
+                    </h1>
+                    <p className="text-gray-600">Cijena: {item.price} €</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Button
+                    className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
+                    onClick={() => {
+                      addToCart(item);
+                    }}
+                  >
+                    +
+                  </Button>
+                  <p>Količina: {item.quantity}</p>
+                  <Button
+                    className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
+                    onClick={() => {
+                      removeFromCart(item);
+                    }}
+                  >
+                    -
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+          {cartItems.length > 0 ? (
+            <div className="flex flex-col justify-between items-center">
+              <h1 className="text-lg font-bold">
+                Ukupna cijena: {getCartTotal()} €
+              </h1>
+              <Button
+                className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
+                onClick={() => {
+                  clearCart();
+                }}
+              >
+                Clear cart
+              </Button>
+            </div>
+          ) : (
+            <h1 className="text-lg font-bold">Your cart is empty</h1>
+          )}
+        </div>
+
+        <br />
+        <br />
 
         <div className="div-buttoni">
           <Link to="/products">
             <Button>⪡ POVRATAK NA WEBSHOP</Button>
           </Link>
-          <Button>OČISTI KOŠARICU</Button>
           <Link to="/placanje">
             <Button>PLAĆANJE ⪢</Button>
           </Link>

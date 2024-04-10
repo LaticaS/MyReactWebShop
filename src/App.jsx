@@ -21,7 +21,7 @@ import { About } from "./components/About/About.jsx";
 import { OpciUvjeti } from "./components/OpciUvjeti/OpciUvjeti.jsx";
 import { UvjetiKupnje } from "./components/UvjetiKupnje/UvjetiKupnje.jsx";
 import { Dostava } from "./components/Dostava/Dostava.jsx";
-import { KosaricaContext } from "./components/Product/Proizvodi.jsx";
+//import { KosaricaContext } from "./components/Product/Proizvodi.jsx";
 
 function App() {
   return (
