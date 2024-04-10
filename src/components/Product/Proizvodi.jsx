@@ -38,9 +38,6 @@ function Proizvodi() {
                   {product.price} €
                 </p>
 
-                <button onClick={() => dodajKosarici(product)}>
-                  DODAJ U KOŠARICU
-                </button>
                 <br />
                 <button onClick={() => addToCart(product)}>add to Cart</button>
               </div>
