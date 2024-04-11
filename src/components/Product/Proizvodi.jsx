@@ -2,6 +2,7 @@ import "./Proizvodi.scss";
 import products from "../databooks.json";
 import { CartContext } from "../../context/cart.jsx";
 import { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 //import { PrikazKosarice } from "../Kosarica/Kosarica.jsx";
 
 //const KosaricaContext = createContext();
@@ -39,11 +40,12 @@ function Proizvodi() {
       <div className="div-proizvodi">
         {products &&
           products.map((product) => {
+            const { id } = product;
             return (
               <div className="div-book" key={product.id}>
-                <a href="" target="_blank" title="Detaljnije">
+                <Link to={`/product/${id}`} title="Detaljnije">
                   <img src={product.img} alt="book cover" />
-                </a>
+                </Link>
                 <p>"{product.title}"</p>
                 <p>
                   <em>{product.subtitle}</em>

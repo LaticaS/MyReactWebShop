@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
@@ -34,7 +35,7 @@ function App() {
             <Route path="/cart" element={<PrikazKosarice />} />
             <Route path="/contact" element={<Kontakt />} />
             <Route path="/placanje" element={<Placanje />} />
-            <Route path="/pojedini" element={<PojediniProizvod />} />
+            <Route path="/product/:id" element={<PojediniProizvod />} />
             <Route path="/about" element={<About />} />
             <Route path="/uvjeti" element={<OpciUvjeti />} />
             <Route path="/dostava" element={<Dostava />} />

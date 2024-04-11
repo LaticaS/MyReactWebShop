@@ -33,6 +33,10 @@
   & .button-dodaj:hover {
     background-color: gold;
   }
+  & .h-cijena,
+  .p-opis {
+    line-height: 2;
+  }
 }
 
 @media only screen and (max-width: 600px) {
