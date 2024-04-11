@@ -55,10 +55,14 @@ export const CartProvider = ({ children }) => {
 
   //FUNKCIJA KOŠARICA TOTAL
   const getCartTotal = () => {
-    return cartItems.reduce(
+    const total = cartItems.reduce(
       (total, item) => total + item.price * item.quantity,
       0
     );
+    return total.toFixed(2);
+
+    //return cartItems.reduce(
+    //  (total, item) => total + item.price * item.quantity, 0 );
     // calculates the total price of the items in the cart
   };
 
