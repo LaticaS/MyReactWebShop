@@ -24,6 +24,7 @@ function DetailedProductView() {
     <div>
       {/** 
       <h2>{product.title}</h2>
+      <img src={product.img} alt="" />
       <p>{product.description}</p>
       */}
     </div>

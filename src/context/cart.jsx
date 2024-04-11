@@ -66,7 +66,7 @@ export const CartProvider = ({ children }) => {
     // calculates the total price of the items in the cart
   };
 
-  //FUNKCIJA postavljanje stanja košarice/cart state u browser u localStorage sa stringify JSON
+  //FUNKCIJA postavljanje stanja košarice/cart state u browser localStorage sa stringify JSON
   // sets the value of the specified localStorage item.
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));

@@ -1,47 +1,29 @@
-table {
-  background-color: white;
-  width: 100%;
-  border-top: 1px solid darkslategray;
-  color: darkgreen;
-  & th,
-  td {
-    padding: 1rem;
-    border-bottom: 1px solid darkslategrey;
-  }
-  & img {
-    width: 150px;
-    padding: 1rem;
-  }
-  & input {
-    accent-color: dimgrey;
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin: 5px;
-    font-size: 1.1rem;
-  }
-  & .promotivni-input {
-    width: 60%;
-  }
-  & button {
-    padding: 0.5rem 1rem;
-    background-color: lightseagreen;
-  }
-  & button:hover {
-    background-color: orange;
-  }
-  & svg:hover {
-    cursor: pointer;
-  }
-}
-.div-buttoni {
-  width: 100%;
+.div-proizvoda {
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slika-naslov-cijena-kolicina {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
   justify-content: space-around;
   align-items: center;
-  margin: 0.5rem 0rem;
-  padding: 0.5rem 0.5rem;
-  & Button:hover {
-    background-color: lightgreen;
+
+  & .button-kolicina {
+    font-size: 1.5rem;
+    font-weight: bolder;
   }
+}
+
+.ukupna-cijena {
+  text-align: right;
+  padding: 1rem;
+}
+.buttoni-navigacija {
+  margin: 0.5rem;
 }

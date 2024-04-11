@@ -2,7 +2,7 @@ import "./Proizvodi.scss";
 import products from "../databooks.json";
 import { CartContext } from "../../context/cart.jsx";
 import { useContext, useEffect, useState } from "react";
-import { PrikazKosarice } from "../Kosarica/Kosarica.jsx";
+//import { PrikazKosarice } from "../Kosarica/Kosarica.jsx";
 
 //const KosaricaContext = createContext();
 
