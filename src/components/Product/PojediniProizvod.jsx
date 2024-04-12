@@ -1,7 +1,7 @@
 import products from "../databooks.json";
 import "./PojediniProizvod.scss";
 import { useParams } from "react-router-dom";
-import { Button, Toast } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/cart.jsx";
 import { useContext } from "react";

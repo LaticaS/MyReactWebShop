@@ -61,24 +61,22 @@
   margin: 0rem 0.2rem;
   background-image: linear-gradient(lightgoldenrodyellow, orange);
 
-  & Table {
-    width: 100%;
-    border: 1px solid darkslategray;
-    border-radius: 5px;
-    color: darkgreen;
-    & th,
-    td {
-      padding: 1rem;
-      border-bottom: 1px solid darkslategrey;
+  & .pregled-narudzbe-polje {
+    & .div-proizvoda {
+      color: black;
     }
-    & .ukupnaCijena {
-      text-align: right;
-      font-weight: bold;
+    .slika-kosarica {
+      width: 60px;
     }
-    & img {
-      width: 150px;
-      padding: 1rem;
-    }
+  }
+  .kolicina-artikala {
+    text-align: right;
+    padding: 1rem;
+    color: black;
+  }
+  .ukupna-cijena,
+  .nula-artikala {
+    color: black;
   }
 
   & .nacin-placanja-polje {

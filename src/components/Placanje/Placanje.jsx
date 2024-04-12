@@ -1,9 +1,12 @@
 import "./Placanje.scss";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import Table from "react-bootstrap/Table";
+import { CartContext } from "../../context/cart";
+import { useContext } from "react";
 
 function Placanje() {
+  const { cartItems, getCartTotal, getCartKolicina } = useContext(CartContext);
+
   return (
     <>
       <h1>Plaćanje 〱</h1>
@@ -107,45 +110,45 @@ function Placanje() {
         <div className="placanje-sidebar">
           <div className="pregled-narudzbe-polje">
             <h4>PREGLED VAŠE NARUDŽBE</h4>
-
-            <Table responsive="md">
-              <thead>
-                <tr>
-                  <th>Proizvod</th>
-                  <th>Količina</th>
-                  <th>Cijena</th>
-                  <th>Ukupna cijena</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
+            {cartItems.map((item) => (
+              <div
+                className="flex justify-between items-center div-proizvoda"
+                key={item.id}
+              >
+                <div className="flex gap-4 slika-naslov-cijena-kolicina">
+                  <div>
                     <img
-                      src="https://znanje.hr/product-images/35948cb4-24d1-4ee6-b122-e555bb318f64.jpg"
-                      alt=""
+                      src={item.img}
+                      alt={item.title}
+                      title={item.title + "; " + item.author}
+                      className="rounded-md h-24 slika-kosarica"
                     />
-                    <p>"Addition and Subtraction"</p>
-                  </td>
-                  <td>1</td>
-                  <td>5 €</td>
-                  <td>5 €</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td className="ukupnaCijena" colSpan="4">
-                    <p>Zbroj košarice: €</p>
-                    <p>Standardna dostava (DPD Croatia): 3,50 €</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="ukupnaCijena" colSpan="4">
-                    <p>UKUPNA CIJENA: €</p>
-                  </td>
-                </tr>
-              </tfoot>
-            </Table>
+                  </div>
+
+                  <div className="flex flex-col">
+                    <p className="text-lg font-bold">"{item.title}"</p>
+                    <p className="text-lg font-bold">{item.author}</p>
+                  </div>
+                  <div className="flex flex-col">
+                    <p>Cijena:</p>
+                    <h5 className="text-gray-600">{item.price} € </h5>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
+          {cartItems.length > 0 ? (
+            <div className="flex flex-col justify-between items-center">
+              <h5 className="kolicina-artikala">
+                Količina: {getCartKolicina()}
+              </h5>
+              <h3 className="text-lg font-bold ukupna-cijena">
+                Ukupna cijena: {getCartTotal()} €
+              </h3>
+            </div>
+          ) : (
+            <h4 className="nula-artikala">0 artikala</h4>
+          )}
 
           <div className="nacin-placanja-polje">
             <h4>IZABERITE NAČIN PLAĆANJA</h4>

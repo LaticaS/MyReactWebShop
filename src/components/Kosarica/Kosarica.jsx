@@ -47,19 +47,19 @@ function PrikazKosarice() {
                 <Button
                   className="px-4 py-2 button-kolicina"
                   onClick={() => {
-                    addToCart(item);
+                    removeFromCart(item);
                   }}
                 >
-                  +
+                  -
                 </Button>
                 <p>{item.quantity}</p>
                 <Button
                   className="px-4 py-2 button-kolicina"
                   onClick={() => {
-                    removeFromCart(item);
+                    addToCart(item);
                   }}
                 >
-                  -
+                  +
                 </Button>
               </div>
 

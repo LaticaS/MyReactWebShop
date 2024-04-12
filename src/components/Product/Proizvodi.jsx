@@ -8,12 +8,7 @@ import { Link } from "react-router-dom";
 //const KosaricaContext = createContext();
 
 function Proizvodi() {
-  const [showModal, setshowModal] = useState(false);
   const { cartItems, addToCart } = useContext(CartContext);
-
-  const toggle = () => {
-    setshowModal(!showModal);
-  };
 
   // const dodajKosarici = (book) => {
   //console.log("button clicked", book);
@@ -27,16 +22,7 @@ function Proizvodi() {
   return (
     <>
       <h1>Ponuda 〱</h1>
-      <div>
-        {!showModal && (
-          <button
-            className="px-4 py-2 bg-warning text-white text-xs font-bold uppercase rounded"
-            onClick={toggle}
-          >
-            U košarici ({cartItems.length})
-          </button>
-        )}
-      </div>
+
       <div className="div-proizvodi">
         {products &&
           products.map((product) => {

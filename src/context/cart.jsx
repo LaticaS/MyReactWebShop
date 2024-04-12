@@ -66,6 +66,15 @@ export const CartProvider = ({ children }) => {
     // calculates the total price of the items in the cart
   };
 
+  //FUNKCIJA KOŠARICA KOLICINA?
+  const getCartKolicina = () => {
+    const kolicina = cartItems.reduce(
+      (kolicina, item) => kolicina + item.quantity,
+      0
+    );
+    return kolicina;
+  };
+
   //FUNKCIJA postavljanje stanja košarice/cart state u browser localStorage sa stringify JSON
   // sets the value of the specified localStorage item.
   useEffect(() => {
@@ -88,6 +97,7 @@ export const CartProvider = ({ children }) => {
         removeFromCart,
         clearCart,
         getCartTotal,
+        getCartKolicina,
       }}
     >
       {children}
