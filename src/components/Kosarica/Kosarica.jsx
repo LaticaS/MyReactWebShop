@@ -13,7 +13,7 @@ function PrikazKosarice() {
   return (
     <>
       <h1>Vaša košarica 〱</h1>
-      <hr />
+
       <div className="flex flex-col gap-4">
         {cartItems.map((item) => (
           <div
@@ -26,7 +26,7 @@ function PrikazKosarice() {
                   src={item.img}
                   alt={item.title}
                   title={item.title + "; " + item.author}
-                  className="rounded-md h-24"
+                  className="rounded-md h-24 slika-kosarica"
                   style={{ width: 120 }}
                 />
               </div>

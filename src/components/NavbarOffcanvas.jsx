@@ -18,7 +18,7 @@ function NavbarOffcanvas() {
           <Navbar.Brand href="#">
             <Link to="/" className="text-decoration-none text-success">
               <img
-                src="./book_PNG51049.png"
+                src="\book_PNG51049.png"
                 id="logo"
                 alt="Logo Booki"
                 title="Booki, prodaja knjiga"

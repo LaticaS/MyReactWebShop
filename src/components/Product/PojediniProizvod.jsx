@@ -1,9 +1,14 @@
 import products from "../databooks.json";
 import "./PojediniProizvod.scss";
 import { useParams } from "react-router-dom";
+import { Button, Toast } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { CartContext } from "../../context/cart.jsx";
+import { useContext } from "react";
 
 function PojediniProizvod() {
   let { id } = useParams();
+  const { addToCart } = useContext(CartContext);
 
   const product = products.find((product) => String(product.id) === id);
 
@@ -16,7 +21,7 @@ function PojediniProizvod() {
             src={product.img}
             variant="top"
             alt="naslovnica"
-            title={product.title + ";" + product.author}
+            title={product.title + "; " + product.author}
           />
         </div>
         <div className="div-podaci-pojedini-proizvod">
@@ -33,7 +38,9 @@ function PojediniProizvod() {
             Količina <br />
             <input type="number" id="kolicina" min={1} />
           </label>
-          <button className="button-dodaj">DODAJ U KOŠARICU</button>
+          <button className="button-dodaj" onClick={() => addToCart(product)}>
+            DODAJ U KOŠARICU
+          </button>
           <hr />
           <p>
             Naslov: {product.title} - {product.subtitle}
@@ -57,6 +64,16 @@ function PojediniProizvod() {
             {product.description}
           </p>
         </div>
+      </div>
+      <br />
+      <br />
+      <div className="div-buttoni">
+        <Link to="/products">
+          <Button className="buttoni-navigacija">⪡ POVRATAK NA WEBSHOP</Button>
+        </Link>
+        <Link to="/placanje">
+          <Button className="buttoni-navigacija">PLAĆANJE ⪢</Button>
+        </Link>
       </div>
     </>
   );

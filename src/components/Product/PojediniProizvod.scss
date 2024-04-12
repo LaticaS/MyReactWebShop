@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
+  margin-bottom: 0.5rem;
 }
 .div-img-pojedini-proizvod {
   flex: 1;
@@ -37,6 +38,10 @@
   .p-opis {
     line-height: 2;
   }
+}
+
+.buttoni-navigacija {
+  margin: 0.5rem;
 }
 
 @media only screen and (max-width: 600px) {
