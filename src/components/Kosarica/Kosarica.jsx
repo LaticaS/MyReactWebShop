@@ -15,62 +15,69 @@ function PrikazKosarice() {
       <h1>Vaša košarica 〱</h1>
 
       <div className="flex flex-col gap-4">
-        {cartItems.map((item) => (
-          <div
-            className="flex justify-between items-center div-proizvoda"
-            key={item.id}
-          >
-            <div className="flex gap-4 slika-naslov-cijena-kolicina">
-              <div>
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  title={item.title + "; " + item.author}
-                  className="rounded-md h-24 slika-kosarica"
-                  style={{ width: 120 }}
-                />
-              </div>
+        {cartItems.map((item) => {
+          const { id } = item;
 
-              <div className="flex flex-col">
-                <h4 className="text-lg font-bold">"{item.title}"</h4>
-                <h5 className="text-lg font-bold">{item.author}</h5>
-              </div>
+          return (
+            <div
+              className="flex justify-between items-center div-proizvoda"
+              key={item.id}
+            >
+              <div className="flex gap-4 slika-naslov-cijena-kolicina">
+                <div>
+                  <Link to={`/product/${id}`} title="Klikni za detaljnije">
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      title={item.title + "; " + item.author}
+                      className="rounded-md h-24 slika-kosarica"
+                      style={{ width: 120 }}
+                    />
+                  </Link>
+                </div>
 
-              <div
-                className="flex gap-4"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  fontSize: "1.2rem",
-                }}
-              >
-                <Button
-                  className="px-4 py-2 button-kolicina"
-                  onClick={() => {
-                    removeFromCart(item);
+                <div className="flex flex-col">
+                  <h4 className="text-lg font-bold">"{item.title}"</h4>
+                  <h5 className="text-lg font-bold">{item.author}</h5>
+                </div>
+
+                <div
+                  className="flex gap-4"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    fontSize: "1.2rem",
                   }}
                 >
-                  -
-                </Button>
-                <p>{item.quantity}</p>
-                <Button
-                  className="px-4 py-2 button-kolicina"
-                  onClick={() => {
-                    addToCart(item);
-                  }}
-                >
-                  +
-                </Button>
-              </div>
+                  <Button
+                    className="px-4 py-2 button-kolicina"
+                    onClick={() => {
+                      removeFromCart(item);
+                    }}
+                  >
+                    -
+                  </Button>
+                  <p className="p-broj-kolicine">{item.quantity}</p>
+                  <Button
+                    className="px-4 py-2 button-kolicina"
+                    onClick={() => {
+                      addToCart(item);
+                    }}
+                  >
+                    +
+                  </Button>
+                </div>
 
-              <div className="flex flex-col">
-                <p>Cijena:</p>
-                <h5 className="text-gray-600">{item.price} € </h5>
+                <div className="flex flex-col">
+                  <p>Cijena:</p>
+                  <h5 className="text-gray-600">{item.price} € </h5>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
+
       {cartItems.length > 0 ? (
         <div className="flex flex-col justify-between items-center">
           <h3 className="text-lg font-bold ukupna-cijena">

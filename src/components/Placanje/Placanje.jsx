@@ -127,7 +127,6 @@ function Placanje() {
 
                   <div className="flex flex-col">
                     <p className="text-lg font-bold">"{item.title}"</p>
-                    <p className="text-lg font-bold">{item.author}</p>
                   </div>
                   <div className="flex flex-col">
                     <p>Cijena:</p>
