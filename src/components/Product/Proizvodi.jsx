@@ -29,7 +29,7 @@ function Proizvodi() {
             const { id } = product;
             return (
               <div className="div-book" key={product.id}>
-                <Link to={`/product/${id}`} title="Klikni za detaljnije">
+                <Link to={`/product/${id}`} title="Klik za detalje proizvoda">
                   <img src={product.img} alt="book cover" />
                 </Link>
                 <p>"{product.title}"</p>

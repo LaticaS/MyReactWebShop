@@ -28,8 +28,13 @@ function PrikazKosarice() {
                   <Link to={`/product/${id}`} title="Klikni za detaljnije">
                     <img
                       src={item.img}
-                      alt={item.title}
-                      title={item.title + "; " + item.author}
+                      alt={"naslovnica: " + item.title}
+                      title={
+                        "Klik za detalje proizvoda: " +
+                        item.title +
+                        "; " +
+                        item.author
+                      }
                       className="rounded-md h-24 slika-kosarica"
                       style={{ width: 120 }}
                     />
