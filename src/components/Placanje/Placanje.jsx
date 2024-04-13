@@ -127,6 +127,7 @@ function Placanje() {
 
                   <div className="flex flex-col">
                     <p className="text-lg font-bold">"{item.title}"</p>
+                    <p>količina: {item.quantity}</p>
                   </div>
                   <div className="flex flex-col">
                     <p>Cijena:</p>
@@ -139,7 +140,7 @@ function Placanje() {
           {cartItems.length > 0 ? (
             <div className="flex flex-col justify-between items-center">
               <h5 className="kolicina-artikala">
-                Količina: {getCartKolicina()}
+                Ukupna količina: {getCartKolicina()}
               </h5>
               <h3 className="text-lg font-bold ukupna-cijena">
                 Ukupna cijena: {getCartTotal()} €

@@ -83,6 +83,7 @@ function PrikazKosarice() {
                   <p>Cijena:</p>
                   <h5 className="text-gray-600">{item.price} € </h5>
                 </div>
+
                 <span
                   onClick={() => {
                     removeItemFromCart(item);
