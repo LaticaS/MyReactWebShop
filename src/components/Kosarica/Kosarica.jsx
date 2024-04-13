@@ -7,8 +7,14 @@ import { CartContext } from "../../context/cart.jsx";
 
 function PrikazKosarice() {
   //const vrijednostKonteksta = useContext(KosaricaContext);
-  const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } =
-    useContext(CartContext);
+  const {
+    cartItems,
+    addToCart,
+    removeFromCart,
+    removeItemFromCart,
+    clearCart,
+    getCartTotal,
+  } = useContext(CartContext);
 
   return (
     <>
@@ -77,6 +83,17 @@ function PrikazKosarice() {
                   <p>Cijena:</p>
                   <h5 className="text-gray-600">{item.price} € </h5>
                 </div>
+                <span
+                  onClick={() => {
+                    removeItemFromCart(item);
+                  }}
+                >
+                  <img
+                    src="\close-circle-svgrepo-com.svg"
+                    alt="ikona close-circle"
+                    title="Ukloni proizvod"
+                  />
+                </span>
               </div>
             </div>
           );

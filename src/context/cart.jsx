@@ -48,6 +48,15 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  //FUNKCIJA UKLONI POJEDINI PROIZVOD IZ KOŠARICE
+  const removeItemFromCart = (item) => {
+    const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
+
+    if (isItemInCart.quantity >= 1) {
+      setCartItems(cartItems.filter((cartItem) => cartItem.id !== item.id)); // if the quantity of the item is 1, remove the item from the cart
+    }
+  };
+
   //FUNKCIJA ISPRAZNI KOŠARICU
   const clearCart = () => {
     setCartItems([]); // set the cart items to an empty array
@@ -95,6 +104,7 @@ export const CartProvider = ({ children }) => {
         cartItems,
         addToCart,
         removeFromCart,
+        removeItemFromCart,
         clearCart,
         getCartTotal,
         getCartKolicina,
