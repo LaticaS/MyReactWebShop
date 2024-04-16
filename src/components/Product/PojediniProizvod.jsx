@@ -34,10 +34,6 @@ function PojediniProizvod() {
           <hr />
           <h4 className="h-cijena">Cijena: {product.price} €</h4>
           <hr />
-          <label htmlFor="kolicina">
-            Količina <br />
-            <input type="number" id="kolicina" min={1} />
-          </label>
           <button className="button-dodaj" onClick={() => addToCart(product)}>
             DODAJ U KOŠARICU
           </button>

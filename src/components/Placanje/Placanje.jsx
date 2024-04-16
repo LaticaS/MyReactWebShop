@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Placanje.scss";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
@@ -6,6 +7,11 @@ import { useContext } from "react";
 
 function Placanje() {
   const { cartItems, getCartTotal, getCartKolicina } = useContext(CartContext);
+  const [liked, setLiked] = useState(true);
+
+  function handleChange(e) {
+    setLiked(e.target.checked);
+  }
 
   return (
     <>
@@ -103,8 +109,114 @@ function Placanje() {
               placeholder="Država"
               className="drzava"
             />
-            <br />
           </form>
+          <br />
+
+          <label>
+            <input type="checkbox" checked={liked} onChange={handleChange} />
+            Adresa dostave ista kao adresa za naplatu
+          </label>
+          <br />
+          <br />
+          <div>
+            {liked ? (
+              <></>
+            ) : (
+              <>
+                <h4>INFORMACIJE ZA DOSTAVU</h4>
+                <form action="">
+                  <input
+                    type="text"
+                    id="ime"
+                    name="ime"
+                    placeholder="Upišite ime"
+                    className="ime"
+                  />
+                  <input
+                    type="text"
+                    id="prezime"
+                    name="prezime"
+                    placeholder="Upišite prezime"
+                    className="prezime"
+                  />
+                  <br />
+                  <input
+                    type="email"
+                    id="mail"
+                    name="email"
+                    placeholder=" Upišite email"
+                    className="email"
+                  />
+                  <input
+                    type="phone"
+                    id="phone"
+                    name="phone"
+                    placeholder=" Upišite telefon"
+                    className="phone"
+                  />
+                  <br />
+                  <input
+                    type="text"
+                    id="ulica"
+                    name="ulica"
+                    placeholder="Upišite ime ulice"
+                    className="ulica"
+                  />
+                  <input
+                    type="text"
+                    id="kucni-broj"
+                    name="kucni-broj"
+                    placeholder="Upišite kućni broj"
+                    className="kucniBroj"
+                  />
+                  <br />
+                  <textarea
+                    name="Napomena"
+                    placeholder="Napomena dostavljaču: broj kata, stana i sl. (neobavezno)"
+                    rows={4}
+                    cols={30}
+                  />
+                  <p>
+                    <input
+                      type="checkbox"
+                      value="obavijesti-mailom"
+                      name="privola-obavijesti-mailom"
+                      id="checkbox"
+                    />
+                    <small>
+                      Želim primati informacije o pogodnostima i novim
+                      proizvodima putem emaila.
+                    </small>
+                  </p>
+
+                  <input
+                    type="text"
+                    id="grad"
+                    name="grad"
+                    placeholder="Grad"
+                    className="grad"
+                  />
+                  <input
+                    type="text"
+                    id="postanski-broj"
+                    name="postanski-broj"
+                    placeholder="Poštanski broj"
+                    className="postanskiBroj"
+                  />
+                  <br />
+                  <br />
+                  <input
+                    type="text"
+                    id="drzava"
+                    name="drzava"
+                    placeholder="Država"
+                    className="drzava"
+                  />
+                  <br />
+                </form>
+              </>
+            )}
+          </div>
         </div>
 
         <div className="placanje-sidebar">

@@ -49,7 +49,6 @@ function Proizvodi() {
             );
           })}
       </div>
-      {/*** <PrikazKosarice showModal={showModal} toggle={toggle} /> */}
     </>
   );
 }
