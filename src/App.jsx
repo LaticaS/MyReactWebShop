@@ -23,12 +23,14 @@ import { OpciUvjeti } from "./components/OpciUvjeti/OpciUvjeti.jsx";
 import { UvjetiKupnje } from "./components/UvjetiKupnje/UvjetiKupnje.jsx";
 import { Dostava } from "./components/Dostava/Dostava.jsx";
 import { Naruceno } from "./components/Placanje/Naruceno.jsx";
+import ScrollToTop from "./ScrollToTop.js";
 //import { KosaricaContext } from "./components/Product/Proizvodi.jsx";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<AppWrapperComponent />}>
             <Route index element={<Pocetna />} />
