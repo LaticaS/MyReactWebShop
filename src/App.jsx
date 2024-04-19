@@ -22,6 +22,7 @@ import { About } from "./components/About/About.jsx";
 import { OpciUvjeti } from "./components/OpciUvjeti/OpciUvjeti.jsx";
 import { UvjetiKupnje } from "./components/UvjetiKupnje/UvjetiKupnje.jsx";
 import { Dostava } from "./components/Dostava/Dostava.jsx";
+import { Naruceno } from "./components/Placanje/Naruceno.jsx";
 //import { KosaricaContext } from "./components/Product/Proizvodi.jsx";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             <Route path="/uvjeti" element={<OpciUvjeti />} />
             <Route path="/dostava" element={<Dostava />} />
             <Route path="/uvjeti-kupnje" element={<UvjetiKupnje />} />
+            <Route path="/naruceno" element={<Naruceno />} />
 
             <Route path="*" element={<ErrorPage />} />
           </Route>

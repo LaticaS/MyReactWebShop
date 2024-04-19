@@ -27,6 +27,7 @@ function Placanje() {
               name="ime"
               placeholder="Upišite ime"
               className="ime"
+              required
             />
             <input
               type="text"
@@ -34,6 +35,7 @@ function Placanje() {
               name="prezime"
               placeholder="Upišite prezime"
               className="prezime"
+              required
             />
             <br />
             <input
@@ -42,6 +44,7 @@ function Placanje() {
               name="email"
               placeholder=" Upišite email"
               className="email"
+              required
             />
             <input
               type="phone"
@@ -49,6 +52,7 @@ function Placanje() {
               name="phone"
               placeholder=" Upišite telefon"
               className="phone"
+              required
             />
             <br />
             <input
@@ -57,6 +61,7 @@ function Placanje() {
               name="ulica"
               placeholder="Upišite ime ulice"
               className="ulica"
+              required
             />
             <input
               type="text"
@@ -64,14 +69,19 @@ function Placanje() {
               name="kucni-broj"
               placeholder="Upišite kućni broj"
               className="kucniBroj"
+              required
             />
             <br />
-            <textarea
-              name="Napomena"
-              placeholder="Napomena dostavljaču: broj kata, stana i sl. (neobavezno)"
-              rows={4}
-              cols={30}
-            />
+            {liked ? (
+              <textarea
+                name="Napomena"
+                placeholder="Napomena dostavljaču: broj kata, stana i sl. (neobavezno)"
+                rows={4}
+                cols={30}
+              />
+            ) : (
+              <></>
+            )}
 
             <p>
               <input
@@ -92,6 +102,7 @@ function Placanje() {
               name="grad"
               placeholder="Grad"
               className="grad"
+              required
             />
             <input
               type="text"
@@ -99,6 +110,7 @@ function Placanje() {
               name="postanski-broj"
               placeholder="Poštanski broj"
               className="postanskiBroj"
+              required
             />
             <br />
             <br />
@@ -108,6 +120,7 @@ function Placanje() {
               name="drzava"
               placeholder="Država"
               className="drzava"
+              required
             />
           </form>
           <br />
@@ -131,6 +144,7 @@ function Placanje() {
                     name="ime"
                     placeholder="Upišite ime"
                     className="ime"
+                    required
                   />
                   <input
                     type="text"
@@ -138,6 +152,7 @@ function Placanje() {
                     name="prezime"
                     placeholder="Upišite prezime"
                     className="prezime"
+                    required
                   />
                   <br />
                   <input
@@ -146,6 +161,7 @@ function Placanje() {
                     name="email"
                     placeholder=" Upišite email"
                     className="email"
+                    required
                   />
                   <input
                     type="phone"
@@ -153,6 +169,7 @@ function Placanje() {
                     name="phone"
                     placeholder=" Upišite telefon"
                     className="phone"
+                    required
                   />
                   <br />
                   <input
@@ -161,6 +178,7 @@ function Placanje() {
                     name="ulica"
                     placeholder="Upišite ime ulice"
                     className="ulica"
+                    required
                   />
                   <input
                     type="text"
@@ -168,6 +186,7 @@ function Placanje() {
                     name="kucni-broj"
                     placeholder="Upišite kućni broj"
                     className="kucniBroj"
+                    required
                   />
                   <br />
                   <textarea
@@ -176,18 +195,7 @@ function Placanje() {
                     rows={4}
                     cols={30}
                   />
-                  <p>
-                    <input
-                      type="checkbox"
-                      value="obavijesti-mailom"
-                      name="privola-obavijesti-mailom"
-                      id="checkbox"
-                    />
-                    <small>
-                      Želim primati informacije o pogodnostima i novim
-                      proizvodima putem emaila.
-                    </small>
-                  </p>
+                  <br />
 
                   <input
                     type="text"
@@ -195,6 +203,7 @@ function Placanje() {
                     name="grad"
                     placeholder="Grad"
                     className="grad"
+                    required
                   />
                   <input
                     type="text"
@@ -202,6 +211,7 @@ function Placanje() {
                     name="postanski-broj"
                     placeholder="Poštanski broj"
                     className="postanskiBroj"
+                    required
                   />
                   <br />
                   <br />
@@ -211,6 +221,7 @@ function Placanje() {
                     name="drzava"
                     placeholder="Država"
                     className="drzava"
+                    required
                   />
                   <br />
                 </form>
@@ -300,9 +311,11 @@ function Placanje() {
             </div>
           </div>
 
-          <button type="submit" name="Narucujem" className="button-narucujem">
-            <h5>NARUČI</h5>
-          </button>
+          <Link to="/naruceno">
+            <button type="submit" name="Narucujem" className="button-narucujem">
+              <h5>NARUČI</h5>
+            </button>
+          </Link>
           <p>
             <small>
               Pritiskom na gumb "Naručujem" slažete se sa Općim uvjetima

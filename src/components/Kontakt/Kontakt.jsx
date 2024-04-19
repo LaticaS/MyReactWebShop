@@ -12,6 +12,7 @@ function Kontakt() {
             name="ime"
             placeholder="Upišite ime i prezime"
             className="ime-prezime"
+            required
           />
           <br />
           <input
@@ -20,6 +21,7 @@ function Kontakt() {
             name="email"
             placeholder=" Upišite email"
             className="email"
+            required
           />
           <br />
           <input
