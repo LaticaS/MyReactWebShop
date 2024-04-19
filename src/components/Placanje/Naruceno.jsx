@@ -25,15 +25,26 @@ function Naruceno() {
         </p>
       </div>
       <br />
-      <div className="div-narudžba-id">
+      <div
+        className="div-narudžba-id"
+        style={{
+          background: "white",
+          margin: 5,
+          padding: 10,
+          border: "1px solid grey",
+        }}
+      >
         <h2>Narudžba # broj</h2>
-        <p>NAČIN PLAĆANJA:</p>
+        <p>NAČIN PLAĆANJA: Plaćanje općom uplatnicom / Internet bankarstvom</p>
         <h4 style={{ color: "red" }}>UKUPNO ZA UPLATU: {getCartTotal()} €</h4>
       </div>
       <br />
       <br />
 
-      <div className="pregled-narudzbe-polje">
+      <div
+        className="pregled-narudzbe-polje"
+        style={{ border: "1px solid grey", margin: 5 }}
+      >
         {cartItems.map((item) => (
           <div
             className="flex justify-between items-center div-proizvoda"

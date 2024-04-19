@@ -57,7 +57,7 @@ function PojediniProizvod() {
           <hr />
 
           <p className="p-opis">
-            Opis: <br />
+            Sažetak sadržaja: <br />
             {product.description}
           </p>
         </div>
