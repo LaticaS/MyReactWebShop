@@ -5,9 +5,12 @@ import { Link } from "react-router-dom";
 function Naruceno() {
   const { cartItems, getCartTotal, getCartKolicina } = useContext(CartContext);
   return (
-    <>
-      <h2 style={{ lineHeight: 1.5 }}>ZAHVALJUJEMO VAM NA NARUDŽBI!</h2>
-      <div className="naruceno-wrapper">
+    <div className="naruceno-wrapper">
+      <div className="div-zahvala" style={{ padding: 10 }}>
+        <h2 style={{ lineHeight: 1.5, color: "darkgreen", padding: 50 }}>
+          ZAHVALJUJEMO VAM NA NARUDŽBI!
+        </h2>
+
         <p>
           Nakon što zaprimimo uplatu očekujte proizvode na Vašoj adresi u
           najkraćem mogućem roku. Vaša narudžba će biti isporučena unutar 3-7
@@ -20,11 +23,12 @@ function Naruceno() {
           te odabrati dostavu paketa Vama na ruke ili na sigurno mjesto (terasa,
           garaža i sl.).
         </p>
-        <br />
-        <br />
+      </div>
+      <br />
+      <div className="div-narudžba-id">
         <h2>Narudžba # broj</h2>
-        <p>Način plaćanja:</p>
-        <h4>Ukupno za uplatu: {getCartTotal()} €</h4>
+        <p>NAČIN PLAĆANJA:</p>
+        <h4 style={{ color: "red" }}>UKUPNO ZA UPLATU: {getCartTotal()} €</h4>
       </div>
       <br />
       <br />
@@ -37,8 +41,9 @@ function Naruceno() {
           >
             <div className="flex gap-4 slika-naslov-cijena-kolicina">
               <div className="flex flex-col">
-                <p className="text-lg font-bold">"{item.title}"</p>
-                <p>količina: {item.quantity}</p>
+                <p className="text-lg font-bold">
+                  "{item.title}" / {item.opis} / količina: {item.quantity}
+                </p>
               </div>
               <div className="flex flex-col">
                 <p>Cijena:</p>
@@ -49,7 +54,8 @@ function Naruceno() {
         ))}
       </div>
       <br />
-      <div>
+
+      <div className="div-dostava">
         <h3>Dostava</h3>
         <p>Standardna dostava DPD Croatia - 3.50 €</p>
       </div>
@@ -60,7 +66,7 @@ function Naruceno() {
         <h3>Adresa dostava</h3>
       </div>
       <br />
-    </>
+    </div>
   );
 }
 

@@ -42,7 +42,8 @@ function PojediniProizvod() {
             Naslov: {product.title} - {product.subtitle}
           </p>
           <hr />
-
+          <p>Kratki opis: {product.opis}</p>
+          <hr />
           <p>Godina izdanja: {product.published}</p>
           <hr />
 
