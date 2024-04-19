@@ -73,28 +73,18 @@ function Placanje() {
             />
             <br />
             {liked ? (
-              <textarea
-                name="Napomena"
-                placeholder="Napomena dostavljaču: broj kata, stana i sl. (neobavezno)"
-                rows={4}
-                cols={30}
-              />
+              <>
+                <textarea
+                  name="Napomena"
+                  placeholder="Napomena dostavljaču: broj kata, stana i sl. (neobavezno)"
+                  rows={4}
+                  cols={30}
+                />
+                <br />
+              </>
             ) : (
               <></>
             )}
-
-            <p>
-              <input
-                type="checkbox"
-                value="obavijesti-mailom"
-                name="privola-obavijesti-mailom"
-                id="checkbox"
-              />
-              <small>
-                Želim primati informacije o pogodnostima i novim proizvodima
-                putem emaila.
-              </small>
-            </p>
 
             <input
               type="text"
