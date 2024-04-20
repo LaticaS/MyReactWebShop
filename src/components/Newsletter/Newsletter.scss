@@ -10,10 +10,12 @@
     color: yellow;
     padding: 0.5rem;
   }
-  & .newsletter-dugme {
+  & .newsletter-dugme,
+  .btn-dismiss {
     background-color: orange;
   }
-  .newsletter-dugme:hover {
+  .newsletter-dugme:hover,
+  .btn-dismiss:hover {
     background-color: lightseagreen;
   }
 }

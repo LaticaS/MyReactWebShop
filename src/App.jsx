@@ -1,7 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { MainComponent } from "./components/MainComponent/MainComponent.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -24,7 +22,6 @@ import { UvjetiKupnje } from "./components/UvjetiKupnje/UvjetiKupnje.jsx";
 import { Dostava } from "./components/Dostava/Dostava.jsx";
 import { Naruceno } from "./components/Placanje/Naruceno.jsx";
 import ScrollToTop from "./ScrollToTop.js";
-//import { KosaricaContext } from "./components/Product/Proizvodi.jsx";
 
 function App() {
   return (
