@@ -3,21 +3,9 @@ import products from "../databooks.json";
 import { CartContext } from "../../context/cart.jsx";
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-//import { PrikazKosarice } from "../Kosarica/Kosarica.jsx";
-
-//const KosaricaContext = createContext();
 
 function Proizvodi() {
   const { cartItems, addToCart } = useContext(CartContext);
-
-  // const dodajKosarici = (book) => {
-  //console.log("button clicked", book);
-  //setBasket({ ...basket, items: [...basket.items, book] });
-  //console.log("book in basket", product); //provjera da dodalo knjigu
-  //};
-  // const [basket, setBasket] = useState({ items: [] });
-  // define initial values to pass to KosaricaContext
-  // const appContextValues = {basket, setBasket};
 
   return (
     <>

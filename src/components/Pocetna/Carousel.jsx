@@ -1,77 +1,80 @@
 import Container from "react-bootstrap/Container";
 import Carousel from "react-bootstrap/Carousel";
+//import "./Pocetna.scss";
 
 function CarouselPocetna() {
   return (
     <>
-      <Carousel data-bs-theme="dark">
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\carousel-img\naslovi na sniženju.png"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h5></h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\carousel-img\Banner_1250x326px_135. kolo.jpg"
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h5></h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\carousel-img\Tajna-kucne-pomocnice_banner_1250x326.jpg"
-            alt="Third slide"
-          />
-          <Carousel.Caption>
-            <h5></h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\carousel-img\posljednje-uporiste-1250-326.jpg"
-            alt="Fourth slide"
-          />
-          <Carousel.Caption>
-            <h5></h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="carousel-img\Znanje-banner-Babysitter.jpg"
-            alt="Fifth slide"
-          />
-          <Carousel.Caption>
-            <h5></h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="\carousel-img\sutra-bit-ce-bolje-1250-326.jpg"
-            alt="Sixth slide"
-          />
-          <Carousel.Caption>
-            <h5></h5>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <Container>
+        <Carousel data-bs-theme="dark" className="carousel-wrapper">
+          <Carousel.Item className="carousel-item">
+            <img
+              className="d-block img-fluid"
+              src="carousel-img\naslovi na sniženju.png"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h5></h5>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-item">
+            <img
+              className="d-block img-fluid"
+              src="\carousel-img\Banner_1250x326px_135. kolo.jpg"
+              alt="Second slide"
+            />
+            <Carousel.Caption>
+              <h5></h5>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-item">
+            <img
+              className="d-block img-fluid"
+              src="\carousel-img\Tajna-kucne-pomocnice_banner_1250x326.jpg"
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h5></h5>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-item">
+            <img
+              className="d-block img-fluid"
+              src="\carousel-img\posljednje-uporiste-1250-326.jpg"
+              alt="Fourth slide"
+            />
+            <Carousel.Caption>
+              <h5></h5>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-item">
+            <img
+              className="d-block img-fluid"
+              src="carousel-img\Znanje-banner-Babysitter.jpg"
+              alt="Fifth slide"
+            />
+            <Carousel.Caption>
+              <h5></h5>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-item">
+            <img
+              className="d-block img-fluid"
+              src="\carousel-img\sutra-bit-ce-bolje-1250-326.jpg"
+              alt="Sixth slide"
+            />
+            <Carousel.Caption>
+              <h5></h5>
+              <p></p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </Container>
 
       <Container>
         <div className="my-2">

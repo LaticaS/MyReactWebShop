@@ -19,9 +19,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -36,9 +34,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -53,9 +49,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "10rem" }}>
@@ -69,9 +63,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "10rem" }}>
@@ -85,9 +77,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "10rem" }}>
@@ -101,9 +91,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
           </div>
@@ -122,9 +110,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -139,9 +125,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -156,9 +140,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "10rem" }}>
@@ -172,9 +154,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "10rem" }}>
@@ -188,9 +168,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: "10rem" }}>
@@ -204,9 +182,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
           </div>
@@ -225,9 +201,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -242,9 +216,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -259,9 +231,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -276,9 +246,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -293,9 +261,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
 
@@ -310,9 +276,7 @@ function GrupaProizvoda() {
                 <Card.Text>
                   <p>naslov</p>
                   <p>autor</p>
-                  <p>cijena</p>
                 </Card.Text>
-                <Button variant="warning">Dodaj u košaricu</Button>
               </Card.Body>
             </Card>
           </div>

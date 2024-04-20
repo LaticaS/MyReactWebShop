@@ -1,0 +1,68 @@
+.slideshow-wrapper {
+  margin: 1rem;
+}
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+
+  & .class-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+}
+
+.prev,
+.next {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 100ms ease, color 200ms ease;
+  &:hover {
+    background-color: gold;
+    color: darkslategrey;
+  }
+
+  &.prev {
+    left: 0;
+    border-radius: 0 8px 8px 0;
+  }
+
+  &.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+  }
+}
+
+.ticks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20px;
+  min-width: 200px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  //background-color: gold;
+  span {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: gray;
+    padding: 2px;
+    margin: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    &.active {
+      background-color: gold;
+      border-color: white;
+    }
+  }
+}

@@ -99,7 +99,7 @@ function NavbarVertical() {
         className="flex-row justify-content-around"
         style={{ background: "black" }}
       >
-        <Nav.Link eventKey="disabled" disabled>
+        <Nav.Link eventKey="disabled" disabled className="text-white-50">
           design@LaticaS
         </Nav.Link>
       </Nav>
