@@ -4,6 +4,8 @@ import { toast } from "react-hot-toast";
 import CarouselPocetna from "./Carousel";
 import GrupaProizvoda from "./GrupaProizvoda";
 import { Slideshow } from "./Slideshow.jsx";
+import React from "react";
+
 //import { Carousel2 } from "./Carousel2.jsx";
 
 function Pocetna() {
@@ -40,6 +42,7 @@ function Pocetna() {
       </div>
       <h2>Hit naslovi</h2>
       <Slideshow />
+      <br />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import "./About.scss";
+import { React, useState } from "react";
 
 function About() {
   return (
