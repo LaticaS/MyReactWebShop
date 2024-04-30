@@ -25,10 +25,15 @@ function SearchBarFilter() {
         <ul className="ul-pretraga">
           {data
             .filter((item) => {
-              return search.toLowerCase() === ""
+              //konverzija u mala slova, a onda includes tako da radi za mala i velika slova
+              const searchLower = search.toLowerCase();
+              const titleLower = item.title.toLowerCase();
+              const authorLower = item.author.toLowerCase();
+
+              return search === ""
                 ? item
-                : item.title.toLowerCase().includes(search) ||
-                    item.author.toLowerCase().includes(search);
+                : titleLower.includes(searchLower) ||
+                    authorLower.includes(searchLower);
             })
             .map((item) => (
               <li className="li-pretraga" key={item.id}>
