@@ -22,6 +22,7 @@ import { UvjetiKupnje } from "./components/UvjetiKupnje/UvjetiKupnje.jsx";
 import { Dostava } from "./components/Dostava/Dostava.jsx";
 import { Naruceno } from "./components/Placanje/Naruceno.jsx";
 import ScrollToTop from "./ScrollToTop.js";
+import SearchBarFilter from "./components/SearchBarFilter.jsx";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/dostava" element={<Dostava />} />
             <Route path="/uvjeti-kupnje" element={<UvjetiKupnje />} />
             <Route path="/naruceno" element={<Naruceno />} />
+            <Route path="/search" element={<SearchBarFilter />} />
 
             <Route path="*" element={<ErrorPage />} />
           </Route>

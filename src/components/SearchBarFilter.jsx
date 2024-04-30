@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "./databooks.json";
 import { InputGroup, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function SearchBarFilter() {
   const [search, setSearch] = useState("");
@@ -9,7 +10,7 @@ function SearchBarFilter() {
       <Form>
         <InputGroup className="my-3">
           <Form.Control
-            className="mx-3 py-3"
+            className="mx-3 py-3 l-6"
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search"
           />
@@ -24,8 +25,25 @@ function SearchBarFilter() {
                   item.author.toLowerCase().includes(search);
           })
           .map((item) => (
-            <li key={item.id}>
-              {item.title} / {item.author}
+            <li
+              key={item.id}
+              style={{
+                background: "white",
+                margin: 0,
+                paddingBottom: 2,
+                paddingTop: 2,
+              }}
+            >
+              <Link to={`/product/${item.id}`} title="Klikni za detaljnije">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  title={item.title}
+                  style={{ maxWidth: "80px", margin: 5 }}
+                />
+                {item.title} / {item.author}
+                <hr />
+              </Link>
             </li>
           ))}
       </ul>

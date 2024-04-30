@@ -8,6 +8,7 @@ import { Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/cart.jsx";
 import { useContext } from "react";
+import SearchBarFilter from "./SearchBarFilter.jsx";
 
 function NavbarOffcanvas() {
   const { getCartKolicina } = useContext(CartContext);
@@ -38,13 +39,7 @@ function NavbarOffcanvas() {
             <Offcanvas.Header closeButton></Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-1"
-                    aria-label="Search"
-                  />
+                <Link to="/search">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -56,7 +51,7 @@ function NavbarOffcanvas() {
                   >
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                   </svg>
-                </Form>
+                </Link>
                 <Nav.Link href="#action1">
                   <Link to="/" className="text-decoration-none text-dark">
                     POČETNA
@@ -197,6 +192,7 @@ function NavbarOffcanvas() {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
+      <SearchBarFilter />
     </>
   );
 }
