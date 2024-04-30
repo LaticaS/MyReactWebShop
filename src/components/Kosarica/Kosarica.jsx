@@ -31,16 +31,10 @@ function PrikazKosarice() {
             >
               <div className="flex gap-4 slika-naslov-cijena-kolicina">
                 <div>
-                  <Link to={`/product/${id}`} title="Klikni za detaljnije">
+                  <Link to={`/product/${id}`} title="Klik za detaljnije">
                     <img
                       src={item.img}
-                      alt={"naslovnica: " + item.title}
-                      title={
-                        "Klik za detalje proizvoda: " +
-                        item.title +
-                        "; " +
-                        item.author
-                      }
+                      alt={"Naslovnica knjige: " + item.title}
                       className="rounded-md h-24 slika-kosarica"
                       style={{ width: 120 }}
                     />

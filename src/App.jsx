@@ -22,7 +22,7 @@ import { UvjetiKupnje } from "./components/UvjetiKupnje/UvjetiKupnje.jsx";
 import { Dostava } from "./components/Dostava/Dostava.jsx";
 import { Naruceno } from "./components/Placanje/Naruceno.jsx";
 import ScrollToTop from "./ScrollToTop.js";
-import SearchBarFilter from "./components/SearchBarFilter.jsx";
+import SearchBarFilter from "./components/Search/SearchBarFilter.jsx";
 
 function App() {
   return (

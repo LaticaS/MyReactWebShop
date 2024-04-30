@@ -1,0 +1,36 @@
+.pretraga-wrapper {
+  text-align: left;
+  padding: 1rem;
+}
+
+.input-pretraga {
+  width: 60%;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ul-pretraga {
+  list-style: none;
+}
+
+.li-pretraga {
+  background: "white";
+  margin: 0px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.img-pretraga {
+  width: 5vw;
+  height: auto;
+  margin: 5px;
+}
+
+.link-pretraga {
+  text-decoration: none;
+  color: black;
+}
+.link-pretraga:hover {
+  text-decoration: underline;
+  color: darkslategray;
+}
