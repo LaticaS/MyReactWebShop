@@ -29,11 +29,13 @@ function SearchBarFilter() {
               const searchLower = search.toLowerCase();
               const titleLower = item.title.toLowerCase();
               const authorLower = item.author.toLowerCase();
+              const categoryLower = item.category.toLowerCase();
 
               return search === ""
                 ? item
                 : titleLower.includes(searchLower) ||
-                    authorLower.includes(searchLower);
+                    authorLower.includes(searchLower) ||
+                    categoryLower.includes(searchLower);
             })
             .map((item) => (
               <li className="li-pretraga" key={item.id}>
