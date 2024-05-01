@@ -69,9 +69,10 @@ function Newsletter() {
       ) : (
         <div className="newsletter-wrapper">
           <h3>Hvala na prijavi za naš Newsletter!</h3>
-          <p className="text-warning">
-            Email potvrde je poslan na <span>{email}</span>.
+          <p className="text-warning lh-lg">
+            Email potvrde je poslan na <span>{email}</span>
           </p>
+          <p className="text-warning lh-lg">Ugodan Vam ostatak dana.</p>
           <Button onClick={() => backToForm()} className="btn-dismiss">
             Zatvori poruku
           </Button>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import data from "../databooks.json";
-import { InputGroup, Form } from "react-bootstrap";
+import { InputGroup, Form, FormControl } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Search.scss";
 
@@ -13,15 +13,29 @@ function SearchBarFilter() {
       <div className="pretraga-wrapper">
         <Form>
           <InputGroup className="my-3 input-pretraga">
-            <Form.Control
+            <FormControl
               className="py-3 l-6"
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search"
+              placeholder="Pretražite po naslovu, autoru ili kategoriji"
             />
           </InputGroup>
         </Form>
         <h3>Rezultati pretrage za: "{search}" </h3>
         <br />
+        {search.length == 0 && (
+          <section>
+            <p className="p-nema-proizvoda">Nema rezultata</p>
+            <p>Savjeti i smjernice za pretragu:</p>
+            <ul className="ul-nema-proizvoda">
+              <li>Dvaput provjerite pravopis.</li>
+              <li>Ograničite pretragu na samo jedan ili dva pojma.</li>
+              <li>
+                Koristeći općenite termine prije ćete doći do sličnih i
+                povezanih proizvoda.
+              </li>
+            </ul>
+          </section>
+        )}
         <ul className="ul-pretraga">
           {data
             .filter((item) => {
@@ -32,7 +46,7 @@ function SearchBarFilter() {
               const categoryLower = item.category.toLowerCase();
 
               return search === ""
-                ? item
+                ? null
                 : titleLower.includes(searchLower) ||
                     authorLower.includes(searchLower) ||
                     categoryLower.includes(searchLower);
