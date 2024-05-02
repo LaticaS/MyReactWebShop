@@ -32,7 +32,12 @@ function Proizvodi() {
                 </p>
 
                 <br />
-                <button onClick={() => addToCart(product)}>add to Cart</button>
+                <button
+                  className="button-kosarica"
+                  onClick={() => addToCart(product)}
+                >
+                  add to Cart
+                </button>
               </div>
             );
           })}
