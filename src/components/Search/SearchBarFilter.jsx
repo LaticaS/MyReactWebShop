@@ -22,7 +22,7 @@ function SearchBarFilter() {
         </Form>
         <h3>Rezultati pretrage za: "{search}" </h3>
         <br />
-        {search.length == 0 && (
+        {search.length === 0 && (
           <section>
             <p className="p-nema-proizvoda">Nema rezultata</p>
             <p>Savjeti i smjernice za pretragu:</p>
@@ -41,15 +41,29 @@ function SearchBarFilter() {
             .filter((item) => {
               //konverzija u mala slova, a onda includes tako da radi za mala i velika slova
               const searchLower = search.toLowerCase();
+              const searchWords = searchLower.split(" "); //odvajanje i provjera svake riječi u nizu
               const titleLower = item.title.toLowerCase();
               const authorLower = item.author.toLowerCase();
               const categoryLower = item.category.toLowerCase();
 
-              return search === ""
+              //return search === ""
+              //  ? null
+              //  : titleLower.includes(searchLower) ||
+              //      authorLower.includes(searchLower) ||
+              //      categoryLower.includes(searchLower);
+
+              // Provjera da li prva dva ili tri slova pojma u podacima uključuju traženi pojam
+              return search.length < 2
                 ? null
-                : titleLower.includes(searchLower) ||
-                    authorLower.includes(searchLower) ||
-                    categoryLower.includes(searchLower);
+                : searchWords.every(
+                    (word) =>
+                      titleLower.includes(word) ||
+                      authorLower.includes(word) ||
+                      categoryLower.includes(word)
+                  );
+              //titleLower.startsWith(searchLower) ||
+              // authorLower.startsWith(searchLower) ||
+              // categoryLower.startsWith(searchLower);
             })
             .map((item) => (
               <li className="li-pretraga" key={item.id}>
