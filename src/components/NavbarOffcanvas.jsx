@@ -56,32 +56,14 @@ function NavbarOffcanvas() {
                     POČETNA
                   </Link>
                 </Nav.Link>
-                <NavDropdown title="KNJIGE" id="">
+                <Nav.Link href="#action1">
                   <Link
-                    to="/products"
+                    to="/categories"
                     className="text-decoration-none text-dark"
                   >
-                    <NavDropdown.Item href="#action/3.1">
-                      Beletristika
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">
-                      Publicistika
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">
-                      Stručna literatura
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.4">
-                      Djeca i mladi
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.5">
-                      Rječnici
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.6">
-                      Enciklopedije
-                    </NavDropdown.Item>
+                    KNJIGE
                   </Link>
-                </NavDropdown>
+                </Nav.Link>
                 <Nav.Link href="#action1">
                   <Link to="/about" className="text-decoration-none text-dark">
                     O NAMA

@@ -11,14 +11,14 @@ const CategoryFilter = () => {
 
   const bookCategories = [
     "Kategorije - all",
+    "Publicistika",
     "Beletristika",
     "Kriminalistički",
     "Ljubavni",
     "SF",
-    "Publicistika",
-    "Stručna literatura",
     "Djeca i mladi",
-    "Rječnik",
+    "Stručna literatura",
+    "Rječnici",
     "Enciklopedije",
   ];
 
@@ -39,6 +39,7 @@ const CategoryFilter = () => {
 
   return (
     <div className="kategorije-wrapper">
+      <h1>Ponuda 〱</h1>
       <select
         className="select-kategorije"
         onChange={(e) => handleCategoryChange(e.target.value)}

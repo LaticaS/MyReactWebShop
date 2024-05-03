@@ -11,7 +11,7 @@
     "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
     "img": "https://eloquentjavascript.net/img/cover.jpg",
     "price": 20,
-    "category": "publicistika | stručna literatura",
+    "category": "publicistika stručna literatura",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -26,7 +26,7 @@
     "description": "To get the most out of modern JavaScript, you need learn the latest features of its parent specification, ECMAScript 6 (ES6). This book provides a highly practical look at ES6, without getting lost in the specification or its implementation details.",
     "img": "https://m.media-amazon.com/images/I/51HjLqwOoOL._SY445_SX342_.jpg",
     "price": 10.99,
-    "category": "publicistika | stručna literatura",
+    "category": "publicistika stručna literatura",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -41,7 +41,7 @@
     "description": "ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that ECMAScript 6 brings to JavaScript.",
     "img": "https://d2sofvawe08yqg.cloudfront.net/understandinges6/s_hero2x?1620418785",
     "price": 25,
-    "category": "publicistika | stručna literatura",
+    "category": "publicistika stručna literatura",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Like it or not, JavaScript is everywhere these days -from browser to server to mobile- and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.",
     "img": "https://exploringjs.com/es5/index/speakingjs_cover.jpg",
     "price": 30,
-    "category": "publicistika | stručna literatura",
+    "category": "publicistika stručna literatura",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -71,7 +71,7 @@
     "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you.",
     "img": "https://m.media-amazon.com/images/I/81LpyFBbo8L._SL1500_.jpg",
     "price": 60,
-    "category": "publicistika | stručna literatura",
+    "category": "publicistika stručna literatura",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -86,7 +86,7 @@
     "description": "The worldwide best selling You Don't Know JS book series is back for a 2nd edition: You Don't Know JS Yet. All 6 books are brand new, rewritten to cover all sides of JS for 2020 and beyond.",
     "img": "https://m.media-amazon.com/images/I/41T5H8u7fUL._SY445_SX342_.jpg",
     "price": 30,
-    "category": "publicistika | stručna literatura",
+    "category": "publicistika stručna literatura",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -101,7 +101,7 @@
     "description": "Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.",
     "img": "https://git-scm.com/images/progit2.png",
     "price": 35,
-    "category": "publicistika | stručna literatura",
+    "category": "publicistika stručna literatura",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -116,7 +116,7 @@
     "description": "Get the most out of this foundational reference and improve the productivity of your software teams. This open access book collects the wisdom of the 2017 \"Dagstuhl\" seminar on productivity in software engineering, a meeting of community leaders, who came together with the goal of rethinking traditional definitions and measures of productivity.",
     "img": "https://media.springernature.com/w92/springer-static/cover/book/978-1-4842-4221-6.jpg?as=webp",
     "price": 49,
-    "category": "publicistika | stručna literatura",
+    "category": "publicistika stručna literatura",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -131,7 +131,7 @@
     "description": "This teacher-approved Step Ahead workbook from Golden Books is a great guide to addition and subtraction for 1st and 2nd graders--now in a deluxe edition with twice the pages and over 70 colorful stickers. Perfect for back to school--no matter what that looks like!",
     "img": "https://znanje.hr/product-images/35948cb4-24d1-4ee6-b122-e555bb318f64.jpg",
     "price": 5.19,
-    "category": "djeca i mladi | udžbenici",
+    "category": "djeca i mladi udžbenici",
     "opis": "udžbenik, meki uvez"
   },
   {
@@ -146,7 +146,7 @@
     "description": "Jack Reacher gets off the bus in a sleepy no-name town outside Nashville, Tennessee. He plans to grab a cup of coffee and move right along. Not going to happen...",
     "img": "https://znanje.hr/product-images/c1781626-f550-48a1-a5f7-5e10aab790b8.jpg",
     "price": 19.75,
-    "category": "beletristika | triler | kriminalistički | književnost",
+    "category": "beletristika triler kriminalistički književnost",
     "opis": "knjiga, meki uvez"
   },
   {
@@ -161,7 +161,7 @@
     "description": "U gradiću Gerrardsvilleu u Coloradu nepoznata žena stradala je u naletu autobusa. Svi svjedoci tvrde da se radi o samoubojstvu. Ali Jack Reacher je jedini vidio što se doista dogodilo.",
     "img": "https://znanje.hr/product-images/b49073ce-b9a6-44d0-b599-0f7bd7638c26.jpg",
     "price": 6.59,
-    "category": "beletristika | triler | kriminalistički | književnost",
+    "category": "beletristika triler kriminalistički književnost",
     "opis": "knjiga, meki uvez"
   },
   {
@@ -176,7 +176,7 @@
     "description": "In 1965, after being rejected by more than a dozen publishing houses, a book called Dune was brought out by the Chilton Book Company. Its respected author, journalist Frank Herbert, had written Dune with nothing more in mind than to entertain his readers with the telling of a particularly complex story, one which had occupied his thoughts for more than six years. No one - not Herbert, not Chilton, not the science fiction community at the time - had any idea that Dune would be adopted and read by successive generations with a fervor bordering on cult worship. Or that it would prove to be merely the first of what have now become five international bestsellers about a desert world of the future - the planet Arrakis, called Dune.",
     "img": "https://znanje.hr/product-images/544da573-83dc-4e22-8a19-024cca6d991e.jpg",
     "price": 11.29,
-    "category": "beletristika | sf | science fiction | znanstvena fantastika | roman | književnost",
+    "category": "beletristika sf science fiction znanstvena fantastika roman književnost",
     "opis": "knjiga, meki uvez"
   },
   {
@@ -191,7 +191,7 @@
     "description": "A mother and her daughter-in-law both leave unhappy marriages and take up with new men.",
     "img": "https://m.media-amazon.com/images/I/71dD3Q-GAyL._SY425_.jpg",
     "price": 5.99,
-    "category": "beletristika | romance | ljubavni | književnost",
+    "category": "beletristika romance ljubavni književnost",
     "opis": "roman, meki uvez"
   },
   {
@@ -206,7 +206,7 @@
     "description": "Join the daring How to Catch Kids as they try to wrangle a dinosaur in time for the school science fair and prove they're still around!",
     "img": "https://m.media-amazon.com/images/I/61tjlpOo3wL._SY425_.jpg",
     "price": 4.49,
-    "category": "djeca i mladi | slikovnice | priče | književnost",
+    "category": "djeca i mladi slikovnice priče književnost",
     "opis": "slikovnica, meki uvez"
   },
   {
@@ -221,7 +221,7 @@
     "description": "A beautiful guide to Earth's wildlife and natural history, including its rocks, minerals, animals, plants, fungi, microorganisms and more!",
     "img": "https://m.media-amazon.com/images/I/81tuX-QiyOL._SY425_.jpg",
     "price": 35.99,
-    "category": "enciklopedije | Encyclopedias | stručna literatura",
+    "category": "enciklopedije stručna literatura",
     "opis": "enciklopedija, tvrdi uvez"
   },
   {
@@ -236,7 +236,7 @@
     "description": "This single-volume encyclopedia contains over 5,100 entries on religious movements and concepts, historical and legendary figures, divinities and supernatural characters, and important religious places.",
     "img": "https://m.media-amazon.com/images/I/51BaKhKposL._SY425_.jpg",
     "price": 99,
-    "category": "enciklopedije | Encyclopedias | stručna literatura",
+    "category": "enciklopedije stručna literatura",
     "opis": "enciklopedija, tvrdi uvez"
   },
   {
@@ -251,7 +251,7 @@
     "description": "A revised and updated kindle edition of the best-selling dictionary covering core vocabulary with over a hundred new entries and senses.",
     "img": "https://m.media-amazon.com/images/I/719q2oTszTL._SY425_.jpg",
     "price": 8.99,
-    "category": "rječnik | dictionary | stručna literatura",
+    "category": "rječnik rječnici dictionary stručna literatura",
     "opis": "rječnik, tvrdi uvez"
   },
   {
@@ -266,7 +266,7 @@
     "description": "Bratoljub Klaić, kroatist, leksikograf i prevoditelj, podario je hrvatskoj leksikografiji Rječnik stranih riječi koji je obilježio drugu polovicu 20. stoljeća na hrvatskom prostoru i u široj regiji.",
     "img": "https://shop.skolskaknjiga.hr/media/catalog/product/0/4/040939.jpg",
     "price": 65.39,
-    "category": "rječnik | dictionary | stručna literatura",
+    "category": "rječnik rječnici dictionary stručna literatura",
     "opis": "rječnik, tvrdi uvez"
   },
   {
@@ -281,7 +281,7 @@
     "description": "Ljubitelji začina, pustolovi i znatiželjni kuhari, podignite svoju strast prema začinima na novu razinu zahvaljujući zanimljivim istraživanjima dr. Stuarta Farrimonda, znanstvenika o prehrani i uspješnog autora. Svladajte znanost koja se skriva iza kulinarske umjetnosti stapanja začinskih mješavina te naučite kako spojevi koji tvore okus(e) začina u novim kombinacijama stvaraju drukčije arome i osjete.",
     "img": "/carousel-img/znanost začina.jpg",
     "price": 29.59,
-    "category": "publicistika | kuharice | gastronomija",
+    "category": "publicistika kuharice gastronomija",
     "opis": "kuharica, tvrdi uvez"
   },
   {
@@ -296,7 +296,7 @@
     "description": "Najslavniji jež dolazi vam u obnovljenome ruhu! Prisjetite se svojega djetinjstva i upoznajte djecu s vrhunskim ilustracijama Vilka Glihe Selana i predivnim stihovima Branka Ćopića za ljepši dan i miran san.",
     "img": "https://shop.skolskaknjiga.hr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/3/130506.jpg",
     "price": 7.99,
-    "category": "djeca i mladi | slikovnice | priče | poezija | književnost",
+    "category": "djeca i mladi slikovnice priče poezija književnost",
     "opis": "slikovnica, meki uvez"
   }
 ]

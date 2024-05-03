@@ -23,6 +23,7 @@ import { Dostava } from "./components/Dostava/Dostava.jsx";
 import { Naruceno } from "./components/Placanje/Naruceno.jsx";
 import ScrollToTop from "./ScrollToTop.js";
 import SearchBarFilter from "./components/Search/SearchBarFilter.jsx";
+import CategoryFilter from "./components/Search/CategoryFilter.jsx";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<AppWrapperComponent />}>
             <Route index element={<Pocetna />} />
             <Route path="/products" element={<Proizvodi />} />
+            <Route path="/categories" element={<CategoryFilter />} />
             <Route path="/cart" element={<PrikazKosarice />} />
             <Route path="/contact" element={<Kontakt />} />
             <Route path="/placanje" element={<Placanje />} />
