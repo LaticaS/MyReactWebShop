@@ -5,13 +5,41 @@ import { Button } from "react-bootstrap";
 import { CartContext } from "../../context/cart";
 import { useContext } from "react";
 
-function Placanje() {
+function Placanje({ setNarudzba }) {
   const { cartItems, getCartTotal, getCartKolicina } = useContext(CartContext);
   const [liked, setLiked] = useState(true);
+
+  const [ime, setIme] = useState("");
+  const [prezime, setPrezime] = useState("");
+  const [ulica, setUlica] = useState("");
+  const [kucnibroj, setKucniBroj] = useState("");
+  const [grad, setGrad] = useState("");
+  const [postanski, setPostanski] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefon, setTelefon] = useState("");
+  const [drzava, setDrzava] = useState("");
+  const [napomena, setNapomena] = useState("");
 
   function handleChange(e) {
     setLiked(e.target.checked);
   }
+
+  const handlePlati = () => {
+    // Ovdje možete dodati dodatnu logiku, poput provjera i obrade podataka
+    const narudzba = {
+      ime,
+      prezime,
+      ulica,
+      kucnibroj,
+      grad,
+      postanski,
+      email,
+      telefon,
+      drzava,
+      napomena,
+    };
+    setNarudzba(narudzba); // Pozivamo funkciju za postavljanje podataka narudžbe
+  };
 
   return (
     <>
@@ -28,6 +56,8 @@ function Placanje() {
               placeholder="Upišite ime"
               className="ime"
               required
+              value={ime}
+              onChange={(e) => setIme(e.target.value)}
             />
             <input
               type="text"
@@ -36,6 +66,8 @@ function Placanje() {
               placeholder="Upišite prezime"
               className="prezime"
               required
+              value={prezime}
+              onChange={(e) => setPrezime(e.target.value)}
             />
             <br />
             <input
@@ -45,6 +77,8 @@ function Placanje() {
               placeholder=" Upišite email"
               className="email"
               required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="phone"
@@ -53,6 +87,8 @@ function Placanje() {
               placeholder=" Upišite telefon"
               className="phone"
               required
+              value={telefon}
+              onChange={(e) => setTelefon(e.target.value)}
             />
             <br />
             <input
@@ -62,6 +98,8 @@ function Placanje() {
               placeholder="Upišite ime ulice"
               className="ulica"
               required
+              value={ulica}
+              onChange={(e) => setUlica(e.target.value)}
             />
             <input
               type="text"
@@ -70,6 +108,8 @@ function Placanje() {
               placeholder="Upišite kućni broj"
               className="kucniBroj"
               required
+              value={kucnibroj}
+              onChange={(e) => setKucniBroj(e.target.value)}
             />
             <br />
             {liked ? (
@@ -79,6 +119,8 @@ function Placanje() {
                   placeholder="Napomena dostavljaču: broj kata, stana i sl. (neobavezno)"
                   rows={4}
                   cols={30}
+                  value={napomena}
+                  onChange={(e) => setNapomena(e.target.value)}
                 />
                 <br />
               </>
@@ -93,6 +135,8 @@ function Placanje() {
               placeholder="Grad"
               className="grad"
               required
+              value={grad}
+              onChange={(e) => setGrad(e.target.value)}
             />
             <input
               type="text"
@@ -101,6 +145,8 @@ function Placanje() {
               placeholder="Poštanski broj"
               className="postanskiBroj"
               required
+              value={postanski}
+              onChange={(e) => setPostanski(e.target.value)}
             />
             <br />
             <br />
@@ -111,6 +157,8 @@ function Placanje() {
               placeholder="Država"
               className="drzava"
               required
+              value={drzava}
+              onChange={(e) => setDrzava(e.target.value)}
             />
           </form>
           <br />
@@ -302,15 +350,20 @@ function Placanje() {
           </div>
 
           <Link to="/naruceno">
-            <button type="submit" name="Narucujem" className="button-narucujem">
+            <button
+              type="submit"
+              onClick={handlePlati}
+              name="Narucujem"
+              className="button-narucujem"
+            >
               <h5>NARUČI</h5>
             </button>
           </Link>
           <p>
             <small>
-              Pritiskom na gumb "Naručujem" slažete se sa Općim uvjetima
-              korištenja stranice i pristajete na korištenje Vaših osobnih
-              podataka sukladno uvjetima web stranice.
+              Pritiskom na gumb "Naruči" slažete se sa Općim uvjetima korištenja
+              stranice i pristajete na korištenje Vaših osobnih podataka
+              sukladno uvjetima web stranice.
             </small>
           </p>
         </div>

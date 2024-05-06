@@ -26,6 +26,7 @@ import SearchBarFilter from "./components/Search/SearchBarFilter.jsx";
 import CategoryFilter from "./components/Search/CategoryFilter.jsx";
 
 function App() {
+  const [narudzba, setNarudzba] = useState(null);
   return (
     <>
       <BrowserRouter>
@@ -37,13 +38,19 @@ function App() {
             <Route path="/categories" element={<CategoryFilter />} />
             <Route path="/cart" element={<PrikazKosarice />} />
             <Route path="/contact" element={<Kontakt />} />
-            <Route path="/placanje" element={<Placanje />} />
+            <Route
+              path="/placanje"
+              element={<Placanje setNarudzba={setNarudzba} />}
+            />
             <Route path="/product/:id" element={<PojediniProizvod />} />
             <Route path="/about" element={<About />} />
             <Route path="/uvjeti" element={<OpciUvjeti />} />
             <Route path="/dostava" element={<Dostava />} />
             <Route path="/uvjeti-kupnje" element={<UvjetiKupnje />} />
-            <Route path="/naruceno" element={<Naruceno />} />
+            <Route
+              path="/naruceno"
+              element={<Naruceno narudzba={narudzba} />}
+            />
             <Route path="/search" element={<SearchBarFilter />} />
 
             <Route path="*" element={<ErrorPage />} />

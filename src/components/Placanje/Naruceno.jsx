@@ -1,8 +1,8 @@
+import React from "react";
 import { CartContext } from "../../context/cart";
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 
-function Naruceno() {
+function Naruceno({ narudzba }) {
   const { cartItems, getCartTotal, getCartKolicina } = useContext(CartContext);
   return (
     <div className="naruceno-wrapper">
@@ -72,6 +72,18 @@ function Naruceno() {
       </div>
       <div>
         <h3>Adresa naplata</h3>
+        <p>
+          Ime i prezime: {narudzba.ime} {narudzba.prezime}
+        </p>
+        <p>
+          Ulica/grad: {narudzba.ulica}, {narudzba.kucnibroj}
+        </p>
+        <p>
+          {narudzba.postanski} {narudzba.grad}, {narudzba.drzava}
+        </p>
+        <p>Email: {narudzba.email}</p>
+        <p>Kontakt telefon: {narudzba.telefon} </p>
+        <p>Napomena dostavljaču: {narudzba.napomena}</p>
       </div>
       <div>
         <h3>Adresa dostava</h3>
