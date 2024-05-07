@@ -20,6 +20,17 @@ function Placanje({ setNarudzba }) {
   const [drzava, setDrzava] = useState("");
   const [napomena, setNapomena] = useState("");
 
+  const [ime2, setIme2] = useState("");
+  const [prezime2, setPrezime2] = useState("");
+  const [ulica2, setUlica2] = useState("");
+  const [kucnibroj2, setKucniBroj2] = useState("");
+  const [grad2, setGrad2] = useState("");
+  const [postanski2, setPostanski2] = useState("");
+  const [email2, setEmail2] = useState("");
+  const [telefon2, setTelefon2] = useState("");
+  const [drzava2, setDrzava2] = useState("");
+  const [napomena2, setNapomena2] = useState("");
+
   function handleChange(e) {
     setLiked(e.target.checked);
   }
@@ -37,6 +48,17 @@ function Placanje({ setNarudzba }) {
       telefon,
       drzava,
       napomena,
+
+      ime2,
+      prezime2,
+      ulica2,
+      kucnibroj2,
+      grad2,
+      postanski2,
+      email2,
+      telefon2,
+      drzava2,
+      napomena2,
     };
     setNarudzba(narudzba); // Pozivamo funkciju za postavljanje podataka narudžbe
   };
@@ -183,6 +205,8 @@ function Placanje({ setNarudzba }) {
                     placeholder="Upišite ime"
                     className="ime"
                     required
+                    value={ime2}
+                    onChange={(e) => setIme2(e.target.value)}
                   />
                   <input
                     type="text"
@@ -191,6 +215,8 @@ function Placanje({ setNarudzba }) {
                     placeholder="Upišite prezime"
                     className="prezime"
                     required
+                    value={prezime2}
+                    onChange={(e) => setPrezime2(e.target.value)}
                   />
                   <br />
                   <input
@@ -200,6 +226,8 @@ function Placanje({ setNarudzba }) {
                     placeholder=" Upišite email"
                     className="email"
                     required
+                    value={email2}
+                    onChange={(e) => setEmail2(e.target.value)}
                   />
                   <input
                     type="phone"
@@ -208,6 +236,8 @@ function Placanje({ setNarudzba }) {
                     placeholder=" Upišite telefon"
                     className="phone"
                     required
+                    value={telefon2}
+                    onChange={(e) => setTelefon2(e.target.value)}
                   />
                   <br />
                   <input
@@ -217,6 +247,8 @@ function Placanje({ setNarudzba }) {
                     placeholder="Upišite ime ulice"
                     className="ulica"
                     required
+                    value={ulica2}
+                    onChange={(e) => setUlica2(e.target.value)}
                   />
                   <input
                     type="text"
@@ -225,6 +257,8 @@ function Placanje({ setNarudzba }) {
                     placeholder="Upišite kućni broj"
                     className="kucniBroj"
                     required
+                    value={kucnibroj2}
+                    onChange={(e) => setKucniBroj2(e.target.value)}
                   />
                   <br />
                   <textarea
@@ -232,6 +266,8 @@ function Placanje({ setNarudzba }) {
                     placeholder="Napomena dostavljaču: broj kata, stana i sl. (neobavezno)"
                     rows={4}
                     cols={30}
+                    value={napomena2}
+                    onChange={(e) => setNapomena2(e.target.value)}
                   />
                   <br />
 
@@ -242,6 +278,8 @@ function Placanje({ setNarudzba }) {
                     placeholder="Grad"
                     className="grad"
                     required
+                    value={grad2}
+                    onChange={(e) => setGrad2(e.target.value)}
                   />
                   <input
                     type="text"
@@ -250,6 +288,8 @@ function Placanje({ setNarudzba }) {
                     placeholder="Poštanski broj"
                     className="postanskiBroj"
                     required
+                    value={postanski2}
+                    onChange={(e) => setPostanski2(e.target.value)}
                   />
                   <br />
                   <br />
@@ -260,6 +300,8 @@ function Placanje({ setNarudzba }) {
                     placeholder="Država"
                     className="drzava"
                     required
+                    value={drzava2}
+                    onChange={(e) => setDrzava2(e.target.value)}
                   />
                   <br />
                 </form>

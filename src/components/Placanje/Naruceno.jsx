@@ -73,20 +73,32 @@ function Naruceno({ narudzba }) {
       <div>
         <h3>Adresa naplata</h3>
         <p>
-          Ime i prezime: {narudzba.ime} {narudzba.prezime}
+          - {narudzba.ime} {narudzba.prezime}
         </p>
         <p>
-          Ulica/grad: {narudzba.ulica}, {narudzba.kucnibroj}
+          - {narudzba.ulica} {narudzba.kucnibroj}
         </p>
         <p>
-          {narudzba.postanski} {narudzba.grad}, {narudzba.drzava}
+          - {narudzba.postanski} {narudzba.grad} {narudzba.drzava}
         </p>
-        <p>Email: {narudzba.email}</p>
-        <p>Kontakt telefon: {narudzba.telefon} </p>
-        <p>Napomena dostavljaču: {narudzba.napomena}</p>
+        <p> - {narudzba.email}</p>
+        <p> - {narudzba.telefon} </p>
+        <p> Napomena: {narudzba.napomena}</p>
       </div>
       <div>
         <h3>Adresa dostava</h3>
+        <p>
+          - {narudzba.ime2} {narudzba.prezime2}
+        </p>
+        <p>
+          - {narudzba.ulica2} {narudzba.kucnibroj2}
+        </p>
+        <p>
+          - {narudzba.postanski2} {narudzba.grad2} {narudzba.drzava2}
+        </p>
+        <p> - {narudzba.email2}</p>
+        <p> - {narudzba.telefon2} </p>
+        <p> Napomena: {narudzba.napomena2}</p>
       </div>
       <br />
     </div>
