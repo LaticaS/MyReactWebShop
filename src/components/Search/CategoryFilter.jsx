@@ -18,6 +18,7 @@ const CategoryFilter = () => {
     "SF",
     "Djeca i mladi",
     "Stručna literatura",
+    "Povijest",
     "Rječnici",
     "Enciklopedije",
   ];
