@@ -11,8 +11,8 @@ const CategoryFilter = () => {
 
   const bookCategories = [
     "Kategorije - all",
-    "Publicistika",
     "Beletristika",
+    "Publicistika",
     "Kriminalistički",
     "Ljubavni",
     "SF",
