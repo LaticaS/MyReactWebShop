@@ -41,7 +41,7 @@ function Naruceno({ narudzba }) {
             ? "Plaćanje karticama putem WSPay sustava"
             : narudzba.uplataUplatnica
             ? "Plaćanje općom uplatnicom / Internet bankarstvom"
-            : narudzba.uplataPouzecem
+            : narudzba.uplataPouzece
             ? "Plaćanje pouzećem kurirskoj službi prilikom dostave"
             : "Nije odabran način plaćanja, odaberite način plaćanja!"}
         </p>

@@ -38,6 +38,7 @@ function Placanje({ setNarudzba }) {
     setLiked(e.target.checked);
   }
 
+  // radio odabir načina plaćanja
   const handlePlacanjeChange = (e) => {
     setUplataKartica(e.target.value === "uplataKartica");
     setUplataUplatnica(e.target.value === "uplataUplatnica");
