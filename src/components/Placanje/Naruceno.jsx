@@ -35,7 +35,16 @@ function Naruceno({ narudzba }) {
         }}
       >
         <h2>Narudžba # broj</h2>
-        <p>NAČIN PLAĆANJA: Plaćanje općom uplatnicom / Internet bankarstvom</p>
+        <p>
+          NAČIN PLAĆANJA:{" "}
+          {narudzba.uplataKartica
+            ? "Plaćanje karticama putem WSPay sustava"
+            : narudzba.uplataUplatnica
+            ? "Plaćanje općom uplatnicom / Internet bankarstvom"
+            : narudzba.uplataPouzecem
+            ? "Plaćanje pouzećem kurirskoj službi prilikom dostave"
+            : "Nije odabran način plaćanja, odaberite način plaćanja!"}
+        </p>
         <h4 style={{ color: "red" }}>UKUPNO ZA UPLATU: {getCartTotal()} €</h4>
       </div>
       <br />

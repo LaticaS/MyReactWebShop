@@ -30,10 +30,19 @@ function Placanje({ setNarudzba }) {
   const [telefon2, setTelefon2] = useState("");
   const [drzava2, setDrzava2] = useState("");
   const [napomena2, setNapomena2] = useState("");
+  const [uplataKartica, setUplataKartica] = useState(false);
+  const [uplataUplatnica, setUplataUplatnica] = useState(false);
+  const [uplataPouzece, setUplataPouzece] = useState(false);
 
   function handleChange(e) {
     setLiked(e.target.checked);
   }
+
+  const handlePlacanjeChange = (e) => {
+    setUplataKartica(e.target.value === "uplataKartica");
+    setUplataUplatnica(e.target.value === "uplataUplatnica");
+    setUplataPouzece(e.target.value === "uplataPouzece");
+  };
 
   const handlePlati = () => {
     // Ovdje možete dodati dodatnu logiku, poput provjera i obrade podataka
@@ -59,7 +68,12 @@ function Placanje({ setNarudzba }) {
       telefon2,
       drzava2,
       napomena2,
+
+      uplataKartica,
+      uplataUplatnica,
+      uplataPouzece,
     };
+
     setNarudzba(narudzba); // Pozivamo funkciju za postavljanje podataka narudžbe
   };
 
@@ -359,9 +373,10 @@ function Placanje({ setNarudzba }) {
               <form action="">
                 <input
                   type="radio"
-                  value="kartice"
+                  value="uplataKartica"
                   name="nacin-placanja"
                   id="karticama"
+                  onChange={handlePlacanjeChange}
                 />
                 <label htmlFor="karticama">
                   Plaćanje karticama putem WSPay sustava
@@ -369,9 +384,10 @@ function Placanje({ setNarudzba }) {
                 <br />
                 <input
                   type="radio"
-                  value="uplatnica"
+                  value="uplataUplatnica"
                   name="nacin-placanja"
                   id="uplatnicom"
+                  onChange={handlePlacanjeChange}
                 />
                 <label htmlFor="uplatnicom">
                   Plaćanje općom uplatnicom / Internet bankarstvom
@@ -379,9 +395,10 @@ function Placanje({ setNarudzba }) {
                 <br />
                 <input
                   type="radio"
-                  value="pouzece"
+                  value="uplataPouzece"
                   name="nacin-placanja"
                   id="pouzecem"
+                  onChange={handlePlacanjeChange}
                 />
                 <label htmlFor="pouzecem">
                   Plaćanje pouzećem kurirskoj službi prilikom dostave
