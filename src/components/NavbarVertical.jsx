@@ -45,7 +45,7 @@ function NavbarVertical() {
             </Link>
           </Nav.Link>
           <Nav.Link eventKey="link-2">
-            <Link to="/products" className="text-decoration-none text-dark">
+            <Link to="/categories" className="text-decoration-none text-dark">
               Knjige
             </Link>
           </Nav.Link>

@@ -147,7 +147,7 @@ function PrikazKosarice() {
       <br />
       <br />
       <div className="div-buttoni">
-        <Link to="/products">
+        <Link to="/categories">
           <Button className="buttoni-navigacija">⪡ POVRATAK NA WEBSHOP</Button>
         </Link>
         <Link to="/placanje">
