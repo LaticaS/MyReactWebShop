@@ -22,7 +22,6 @@ import { UvjetiKupnje } from "./components/UvjetiKupnje/UvjetiKupnje.jsx";
 import { Dostava } from "./components/Dostava/Dostava.jsx";
 import { Naruceno2 } from "./components/Placanje/Naruceno2.jsx";
 import ScrollToTop from "./ScrollToTop.js";
-//import SearchBarFilter from "./components/Search/SearchBarFilterA.jsx";
 import CategoryFilter from "./components/Search/CategoryFilter.jsx";
 import SearchBarFilter from "./components/Search/SearchBarFilter.jsx";
 
