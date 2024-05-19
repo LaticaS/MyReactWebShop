@@ -20,7 +20,7 @@ import { About } from "./components/About/About.jsx";
 import { OpciUvjeti } from "./components/OpciUvjeti/OpciUvjeti.jsx";
 import { UvjetiKupnje } from "./components/UvjetiKupnje/UvjetiKupnje.jsx";
 import { Dostava } from "./components/Dostava/Dostava.jsx";
-import { Naruceno } from "./components/Placanje/Naruceno.jsx";
+import { Naruceno2 } from "./components/Placanje/Naruceno2.jsx";
 import ScrollToTop from "./ScrollToTop.js";
 //import SearchBarFilter from "./components/Search/SearchBarFilterA.jsx";
 import CategoryFilter from "./components/Search/CategoryFilter.jsx";
@@ -50,7 +50,7 @@ function App() {
             <Route path="/uvjeti-kupnje" element={<UvjetiKupnje />} />
             <Route
               path="/naruceno"
-              element={<Naruceno narudzba={narudzba} />}
+              element={<Naruceno2 narudzba={narudzba} />}
             />
             <Route path="/search" element={<SearchBarFilter />} />
 
