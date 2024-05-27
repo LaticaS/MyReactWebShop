@@ -32,7 +32,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<AppWrapperComponent />}>
+          <Route exact path="/" element={<AppWrapperComponent />}>
             <Route index element={<Pocetna />} />
             <Route path="/products" element={<Proizvodi />} />
             <Route path="/categories" element={<CategoryFilter />} />
