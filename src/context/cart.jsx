@@ -1,4 +1,6 @@
 import { createContext, useState, useEffect } from "react";
+import React from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 export const CartContext = createContext();
 
@@ -9,6 +11,8 @@ export const CartProvider = ({ children }) => {
       ? JSON.parse(localStorage.getItem("cartItems"))
       : []
   );
+
+  const notify = () => toast.success("Dodano košarici!");
 
   //FUNKCIJA DODAJ U KOŠARICU
   const addToCart = (item) => {
@@ -29,6 +33,7 @@ export const CartProvider = ({ children }) => {
       setCartItems([...cartItems, { ...item, quantity: 1 }]);
       // if the item is not in the cart, add the item to the cart
     }
+    notify();
   };
 
   //FUNKCIJA UKLONI IZ KOŠARICE

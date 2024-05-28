@@ -3,6 +3,7 @@ import booksData from "../databooks.json";
 import { Link } from "react-router-dom";
 import "./Category.scss";
 import { CartContext } from "../../context/cart.jsx";
+import toast, { Toaster } from "react-hot-toast";
 
 const CategoryFilter = () => {
   const [selectedCategory, setSelectedCategory] = useState("Kategorije - all");
@@ -80,6 +81,7 @@ const CategoryFilter = () => {
             >
               add to Cart
             </button>
+            <Toaster />
           </div>
         ))}
       </div>
