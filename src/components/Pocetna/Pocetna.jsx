@@ -12,7 +12,7 @@ function Pocetna() {
   return (
     <>
       <CarouselPocetna />
-      <h2>Preporuke beletristika</h2>
+      <h2>Preporuke beletristika & publicistika</h2>
       <GrupaProizvoda />
       <h2>Posebna ponuda</h2>
       <div className="row featurette py-2 my-2 mx-4 px-3 bg-light ">
